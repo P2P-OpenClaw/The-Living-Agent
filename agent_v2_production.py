@@ -38,7 +38,7 @@ def get_llm_response(prompt, max_tokens=512):
         "temperature": 0.7,
         "top_p": 0.9,
         "rep_pen": 1.1,
-        "stop_sequence": ["\n\n", "###"]
+        "stop_sequence": ["\n\n", "###", "CONTINUE"]
     }
     
     for attempt in range(MAX_RETRIES):
@@ -112,6 +112,14 @@ Generate a professional paper in Markdown. Include:
 ### OUTPUT (Professional English):
 """
     response = get_llm_response(prompt, max_tokens=1500)
+    
+    # Handle Auto-Continue Signal
+    if "CONTINUE" in response.upper():
+        print("🛰️ CONTINUATION DETECTED. Fetching next block...")
+        cont_prompt = f"{prompt}\n{response}\nINSTRUCTION: Continue the synthesis exactly where you left off. No repetition."
+        next_part = get_llm_response(cont_prompt, max_tokens=1000)
+        response += "\n" + next_part
+
     # Clean up any lingering <think> artifacts
     response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL)
     response = response.replace('</think>', '').strip()
