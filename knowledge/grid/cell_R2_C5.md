@@ -19,6 +19,4 @@ combination., constant, heytinglean.crypto.zk.lincomb.ofconst, linear
 - ⬆️ **N**: [LinComb [dependency]](cell_R0_C5.md)
 - ⬇️ **S**: [applyImp_strong [dependency]](cell_R8_C5.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R7_C8.md)
-- ↘️ **SE**: [applyOr_strong [dependency]](cell_R8_C6.md)
-- ↙️ **SW**: [head_satisfied_imp [dependency]](cell_R9_C1.md)
 - ↙️ **SW**: [head_satisfied_or [dependency]](cell_R9_C2.md)

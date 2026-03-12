@@ -17,6 +17,4 @@ collapseClosed, expandClosed, occamClosed, openSet, openUpper
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↙️ **SW**: [contract [dependency]](cell_R11_C10.md)
-- ↙️ **SW**: [processUpper [dependency]](cell_R6_C5.md)
 - ↙️ **SW**: [univ [dependency]](cell_R6_C7.md)

@@ -16,5 +16,4 @@ bridge, graph., heytinglean.tests.bridge_occam_swap_tensor_graph, occam, states,
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [bridgeActWord [dependency]](cell_R14_C5.md)

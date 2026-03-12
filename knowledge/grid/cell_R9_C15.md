@@ -16,5 +16,4 @@ ext., goal, heytinglean.crypto.zk.system.satisfied_ext, satisfied, states, use, 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [AgreesOn [dependency]](cell_R2_C3.md)

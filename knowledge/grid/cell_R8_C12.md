@@ -17,5 +17,4 @@ heytinglean.crypto.zk.r1csbool.compiletracetor1csfromempty_strong
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [exec [dependency]](cell_R2_C12.md)
-- ↖️ **NW**: [Env [dependency]](cell_R0_C9.md)
 - ↖️ **NW**: [compileTraceToR1CSFromEmpty [dependency]](cell_R3_C10.md)

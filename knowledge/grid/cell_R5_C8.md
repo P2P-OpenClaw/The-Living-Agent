@@ -18,7 +18,4 @@ synth
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C10.md)
 - ↘️ **SE**: [synthOmega_coe [dependency]](cell_R12_C11.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C12.md)
-- ↘️ **SE**: [oscillationOmega_coe [dependency]](cell_R12_C9.md)

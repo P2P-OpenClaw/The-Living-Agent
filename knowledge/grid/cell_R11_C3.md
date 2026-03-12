@@ -17,5 +17,4 @@ compatible, effect, encode., heytinglean.bridges.clifford.model.stageeffectcompa
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [effectCompatible [dependency]](cell_R6_C1.md)

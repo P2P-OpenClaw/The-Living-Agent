@@ -18,6 +18,4 @@ heytinglean.crypto.zk.plonk.system.satisfiednative, native, of, plonk, r1cs, sat
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↘️ **SE**: [native_iff_renamed_sigma_of_bounds [dependency]](cell_R7_C10.md)
-- ↘️ **SE**: [native_iff_renamed_sigma_of_gateBounds [dependency]](cell_R7_C11.md)
 - ↘️ **SE**: [satisfiedNative_iff_r1cs_of_copySatisfied [dependency]](cell_R7_C12.md)

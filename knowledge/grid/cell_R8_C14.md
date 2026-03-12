@@ -16,5 +16,4 @@ heytinglean.crypto.zk.r1csbool.compile_invariant
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
 - ↖️ **NW**: [Invariant [dependency]](cell_R3_C12.md)

@@ -16,6 +16,5 @@ heytinglean.bridges.clifford.projector.model.stageoccam_encode
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
 - ↗️ **NE**: [occam [dependency]](cell_R5_C13.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

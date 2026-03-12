@@ -18,5 +18,3 @@ heytinglean.contracts.stageoccam_spec
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↗️ **NE**: [interiorized [dependency]](cell_R10_C6.md)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↗️ **NE**: [occam [dependency]](cell_R5_C13.md)

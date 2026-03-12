@@ -17,7 +17,6 @@ heytinglean.crypto.zk.r1csbool.stronginvariant
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [Builder [dependency]](cell_R0_C4.md)
 - ↘️ **SE**: [compileStep_strong [dependency]](cell_R8_C9.md)
 - ↙️ **SW**: [bounded_ [dependency]](cell_R8_C0.md)

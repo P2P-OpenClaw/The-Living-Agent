@@ -17,5 +17,4 @@ coe., heytinglean.logic.dialectic.synthomega_coe, omega, states, synth, use, whe
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [synthOmega [dependency]](cell_R5_C14.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [synth [dependency]](cell_R5_C8.md)

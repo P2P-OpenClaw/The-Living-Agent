@@ -17,5 +17,4 @@ coordinates, finite, heytinglean.bridges.tensor.point, in, n.succ, point, tensor
 ---
 ## Navigation (real dependency / similarity edges)
 - ↘️ **SE**: [ofPoint [dependency]](cell_R3_C7.md)
-- ↘️ **SE**: [toPoint [dependency]](cell_R6_C15.md)
 - ↙️ **SW**: [intensityPoint [dependency]](cell_R7_C0.md)

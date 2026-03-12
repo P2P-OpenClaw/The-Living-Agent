@@ -18,5 +18,4 @@ and, contract, encodes, heytinglean.tests.tensor_pack_intensity_round_verified, 
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [tensorPack [dependency]](cell_R10_C12.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [intensityFlags [dependency]](cell_R4_C2.md)

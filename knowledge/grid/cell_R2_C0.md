@@ -18,7 +18,4 @@ Bridges, Contract, Data, Intensity, Legacy, Model, Profile, Round-trip, Sync, Ta
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ⬇️ **S**: [intensityPoint [dependency]](cell_R7_C0.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R11_C11.md)
 - ↘️ **SE**: [fromOmega [dependency]](cell_R6_C11.md)
-- ↘️ **SE**: [tensorIntensityModel [dependency]](cell_R6_C12.md)
-- ↘️ **SE**: [inj [dependency]](cell_R6_C13.md)

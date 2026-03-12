@@ -18,5 +18,4 @@ heytinglean.crypto.zk.r1csbool.compile.eq_1
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [traceFrom [dependency]](cell_R2_C8.md)
 - ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
-- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
 - ↖️ **NW**: [Compiled [dependency]](cell_R1_C6.md)

@@ -17,8 +17,5 @@ according, assemble, bridge, heytinglean.contracts.examples.selectsuite, packs, 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [BridgeSuite [dependency]](cell_R4_C11.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [default [dependency]](cell_R3_C3.md)
-- ↘️ **SE**: [bridge_graph_clifford_commute [dependency]](cell_R15_C11.md)
-- ↘️ **SE**: [bridge_tensor_clifford_commute [dependency]](cell_R15_C12.md)
 - ↘️ **SE**: [bridge_tensor_graph_commute [dependency]](cell_R15_C13.md)

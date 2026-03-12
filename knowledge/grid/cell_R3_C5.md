@@ -17,6 +17,4 @@ permutation
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [System [dependency]](cell_R0_C11.md)
-- ↘️ **SE**: [native_iff_renamed_sigma_of_gateBounds [dependency]](cell_R7_C11.md)
 - ↘️ **SE**: [copySatisfied_of_pairs [dependency]](cell_R7_C7.md)
-- ↘️ **SE**: [Rel_iff_r1cs_of_copySatisfied [dependency]](cell_R9_C11.md)

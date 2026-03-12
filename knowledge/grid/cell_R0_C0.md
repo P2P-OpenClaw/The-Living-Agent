@@ -17,8 +17,4 @@ as, assumptions, base, heytinglean.lof.primaryalgebra, lof, packages, primaryalg
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [Model [dependency]](cell_R2_C0.md)
-- ↘️ **SE**: [Model [dependency]](cell_R1_C10.md)
-- ↘️ **SE**: [DialParam [dependency]](cell_R1_C11.md)
-- ↘️ **SE**: [IntReentry [dependency]](cell_R1_C13.md)
 - ↘️ **SE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↘️ **SE**: [Model [dependency]](cell_R1_C9.md)

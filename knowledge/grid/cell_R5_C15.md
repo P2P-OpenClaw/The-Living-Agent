@@ -16,7 +16,5 @@ a, an, contract, for, heytinglean.contracts.introundtrip, interior, nucleus, rou
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [IntReentry [dependency]](cell_R1_C13.md)
 - ↙️ **SW**: [interiorizedInt [dependency]](cell_R10_C13.md)
-- ↙️ **SW**: [interiorizedInt_id [dependency]](cell_R14_C13.md)

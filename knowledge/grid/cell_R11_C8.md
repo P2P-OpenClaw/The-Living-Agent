@@ -17,5 +17,4 @@ heytinglean.bridges.clifford.projector.model.encode.eq_1
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [fromPair [dependency]](cell_R6_C6.md)

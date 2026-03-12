@@ -16,5 +16,4 @@ heytinglean.contracts.examples.identity_round
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [identity [dependency]](cell_R10_C8.md)

@@ -19,4 +19,3 @@ heytinglean.crypto.zk.r1csbool.compilestep_strong
 - ⬆️ **N**: [Env [dependency]](cell_R0_C9.md)
 - ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↖️ **NW**: [Instr [dependency]](cell_R0_C7.md)

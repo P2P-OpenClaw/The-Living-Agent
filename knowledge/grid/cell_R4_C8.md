@@ -16,5 +16,4 @@ heytinglean.crypto.zk.plonk.gate.c
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Gate [dependency]](cell_R1_C4.md)
 - ↖️ **NW**: [LinComb [dependency]](cell_R1_C5.md)

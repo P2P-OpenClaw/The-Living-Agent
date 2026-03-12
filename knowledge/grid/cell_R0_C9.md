@@ -17,8 +17,5 @@ boolean, environments, fin, for, formulas, heytinglean.crypto.boollens.env, n, o
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [eval [dependency]](cell_R2_C9.md)
-- ⬇️ **S**: [compileStep_strong [dependency]](cell_R8_C9.md)
 - ↘️ **SE**: [exec [dependency]](cell_R2_C12.md)
-- ↘️ **SE**: [step [dependency]](cell_R2_C13.md)
 - ↙️ **SW**: [traceFrom [dependency]](cell_R2_C8.md)
-- ↙️ **SW**: [compile [dependency]](cell_R3_C4.md)

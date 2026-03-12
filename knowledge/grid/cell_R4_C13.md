@@ -16,9 +16,6 @@ heytinglean.logic.modal.dialparam.base
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [DialParam [dependency]](cell_R1_C11.md)
 - ↘️ **SE**: [stageMvAdd_encode [dependency]](cell_R11_C14.md)
-- ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R11_C0.md)
-- ↙️ **SW**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R11_C1.md)
 - ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R12_C0.md)

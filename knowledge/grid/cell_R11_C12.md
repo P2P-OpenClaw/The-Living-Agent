@@ -16,5 +16,4 @@ heytinglean.bridges.tensor.intensity.model.carrier.topoint_fromomega
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [fromOmega [dependency]](cell_R6_C11.md)

@@ -16,9 +16,7 @@ heytinglean.contracts.examples.tensor
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Model [dependency]](cell_R1_C12.md)
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [tensor_shadow_mv_add [dependency]](cell_R13_C14.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C11.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R12_C5.md)

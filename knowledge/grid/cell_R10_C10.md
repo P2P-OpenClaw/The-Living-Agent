@@ -16,8 +16,5 @@ based, bridge, clifford, feature, heytinglean.contracts.examples.cliffordpack, o
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [default [dependency]](cell_R3_C3.md)
 - ↖️ **NW**: [BridgePack [dependency]](cell_R5_C5.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R14_C7.md)
-- ↙️ **SW**: [clifford_pack_projector_round_verified [dependency]](cell_R15_C3.md)

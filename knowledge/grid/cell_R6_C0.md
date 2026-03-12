@@ -19,5 +19,3 @@ by, heyting, heytinglean.logic.stage.dialparam.orthocomplement, induced, negatio
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↗️ **NE**: [DialParam [dependency]](cell_R1_C11.md)
 - ↘️ **SE**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R11_C1.md)
-- ↘️ **SE**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R12_C1.md)
-- ↘️ **SE**: [ladder_orthomodular_disjoint [dependency]](cell_R13_C13.md)

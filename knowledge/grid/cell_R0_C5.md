@@ -18,6 +18,4 @@ coefficient, combination, constraint, linear, variable
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [ofConst [dependency]](cell_R2_C5.md)
 - ↘️ **SE**: [single [dependency]](cell_R2_C6.md)
-- ↘️ **SE**: [eqConstraint [dependency]](cell_R3_C8.md)
-- ↙️ **SW**: [linhead_imp [dependency]](cell_R3_C1.md)
 - ↙️ **SW**: [linhead_or [dependency]](cell_R3_C2.md)

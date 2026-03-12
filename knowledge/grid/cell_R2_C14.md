@@ -17,5 +17,4 @@ heytinglean.crypto.zk.r1csbool.supportok
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [Builder [dependency]](cell_R0_C4.md)
-- ↙️ **SW**: [support_ [dependency]](cell_R8_C1.md)
 - ↙️ **SW**: [compileTraceToR1CSFromEmpty_supportOK [dependency]](cell_R8_C13.md)

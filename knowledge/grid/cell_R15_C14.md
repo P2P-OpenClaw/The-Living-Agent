@@ -16,5 +16,4 @@ bridge, clifford., graph, heytinglean.tests.bridge_occam_rotate_tensor_graph_cli
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [BridgeState [dependency]](cell_R10_C3.md)

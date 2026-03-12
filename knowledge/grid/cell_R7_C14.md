@@ -17,4 +17,3 @@ heytinglean.crypto.zk.r1csbool.builder.system_recordboolean
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↖️ **NW**: [boolConstraint [dependency]](cell_R3_C0.md)

@@ -16,10 +16,7 @@ a, decoded, heytinglean.contracts.stageoccam, occam, of, recover, reduction, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [RoundTrip [dependency]](cell_R4_C12.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C14.md)
-- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R14_C15.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R15_C10.md)
 - ↙️ **SW**: [stageOccam_spec [dependency]](cell_R15_C0.md)

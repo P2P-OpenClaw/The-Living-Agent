@@ -17,7 +17,6 @@ a, build, directly, from, heytinglean.bridges.tensor.intensity.profile.ofpoint, 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Bounds [dependency]](cell_R0_C10.md)
-- ↖️ **NW**: [Profile [dependency]](cell_R1_C0.md)
 - ↖️ **NW**: [Point [dependency]](cell_R1_C3.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R11_C11.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R12_C5.md)

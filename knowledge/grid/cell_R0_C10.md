@@ -16,7 +16,5 @@ bounds, for, heytinglean.bridges.tensor.intensity.bounds, intensity, norm, the, 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↘️ **SE**: [stageMvAdd_encode [dependency]](cell_R11_C14.md)
-- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C15.md)
 - ↘️ **SE**: [fromOmega [dependency]](cell_R6_C11.md)
 - ↙️ **SW**: [ofPoint [dependency]](cell_R3_C7.md)

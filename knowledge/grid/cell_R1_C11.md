@@ -18,6 +18,4 @@ DialParam, dimension
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [base [dependency]](cell_R4_C13.md)
-- ↙️ **SW**: [ladder [dependency]](cell_R5_C0.md)
 - ↙️ **SW**: [mvAdd [dependency]](cell_R5_C3.md)
-- ↙️ **SW**: [orthocomplement [dependency]](cell_R6_C0.md)

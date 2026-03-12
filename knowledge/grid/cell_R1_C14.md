@@ -17,7 +17,4 @@ Algebraic geometry, Algebraic structure, Clifford algebra, Linear algebra, Mathe
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R11_C6.md)
-- ↙️ **SW**: [stageOccam_encode [dependency]](cell_R11_C9.md)
-- ↙️ **SW**: [projectorModel [dependency]](cell_R6_C2.md)
 - ↙️ **SW**: [fromPair [dependency]](cell_R6_C6.md)

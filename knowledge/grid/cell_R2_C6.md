@@ -16,10 +16,7 @@ a, combination, consisting, heytinglean.crypto.zk.lincomb.single, linear, of, si
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [LinComb [dependency]](cell_R0_C5.md)
 - ⬇️ **S**: [applyOr_strong [dependency]](cell_R8_C6.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R7_C8.md)
-- ↙️ **SW**: [applyAnd_invariant [dependency]](cell_R8_C3.md)
-- ↙️ **SW**: [applyAnd_strong [dependency]](cell_R8_C4.md)
 - ↙️ **SW**: [applyImp_strong [dependency]](cell_R8_C5.md)

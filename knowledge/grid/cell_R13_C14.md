@@ -16,5 +16,4 @@ add., heytinglean.tests.tensor_shadow_mv_add, mv, shadow, states, tensor, use, w
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [tensor [dependency]](cell_R5_C6.md)

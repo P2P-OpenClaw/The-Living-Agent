@@ -17,7 +17,5 @@ computes, construct, defines, heytinglean.bridges.graph.alexandroff.model.univ, 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C10.md)
-- ↗️ **NE**: [Model [dependency]](cell_R1_C15.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [graph_alexandroff_round_verified [dependency]](cell_R13_C10.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C8.md)

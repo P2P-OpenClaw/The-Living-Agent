@@ -19,5 +19,3 @@ a, bridge, carrier, execution, heytinglean.contracts.examples.bridgepack, pack, 
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [cliffordPack [dependency]](cell_R10_C10.md)
-- ↘️ **SE**: [graphPack [dependency]](cell_R10_C11.md)
-- ↘️ **SE**: [tensorPack [dependency]](cell_R10_C12.md)

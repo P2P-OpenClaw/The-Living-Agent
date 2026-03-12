@@ -16,6 +16,4 @@ carrier, heytinglean.bridges.tensor.intensity.model.stageoccam_encode, intensity
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Bounds [dependency]](cell_R0_C10.md)
-- ↖️ **NW**: [mk [dependency]](cell_R5_C4.md)

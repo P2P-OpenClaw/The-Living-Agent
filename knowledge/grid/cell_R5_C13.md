@@ -18,7 +18,4 @@ closes, explanations, heytinglean.epistemic.occam, minimal-birthday, occam, redu
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C15.md)
-- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R14_C15.md)
-- ↙️ **SW**: [stageOccam_encode [dependency]](cell_R11_C5.md)
 - ↙️ **SW**: [stageOccam_encode [dependency]](cell_R11_C9.md)
-- ↙️ **SW**: [stageOccam_spec [dependency]](cell_R15_C0.md)

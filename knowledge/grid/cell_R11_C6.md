@@ -17,6 +17,5 @@ heytinglean.bridges.clifford.projector.model.carrier.frompair.eq_1
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [fromPair [dependency]](cell_R6_C6.md)
-- ↗️ **NE**: [Pair [dependency]](cell_R0_C15.md)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

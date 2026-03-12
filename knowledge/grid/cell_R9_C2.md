@@ -17,6 +17,5 @@ algebra, boolean, expression, function, logic, operation, polynomial, ring, valu
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [linhead_or [dependency]](cell_R3_C2.md)
-- ↗️ **NE**: [satisfied [dependency]](cell_R2_C4.md)
 - ↗️ **NE**: [eqConstraint [dependency]](cell_R3_C8.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

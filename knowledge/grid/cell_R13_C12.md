@@ -16,6 +16,4 @@ adding, an, effect-stage, element, exemplar, heytinglean.tests.ladder_effect_add
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [ladder [dependency]](cell_R5_C0.md)
 - ↖️ **NW**: [mvAdd [dependency]](cell_R5_C3.md)

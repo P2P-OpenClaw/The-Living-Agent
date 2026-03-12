@@ -17,6 +17,4 @@ Booleanity, constraint, v, {0,1}
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
-- ↗️ **NE**: [Constraint [dependency]](cell_R0_C3.md)
-- ↘️ **SE**: [system_recordBoolean [dependency]](cell_R7_C14.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R8_C7.md)

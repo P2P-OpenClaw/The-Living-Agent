@@ -16,6 +16,4 @@ bivector, carrier, pair, two-component
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R11_C6.md)
-- ↙️ **SW**: [toPair_fromPair [dependency]](cell_R11_C7.md)
 - ↙️ **SW**: [fromPair [dependency]](cell_R6_C6.md)

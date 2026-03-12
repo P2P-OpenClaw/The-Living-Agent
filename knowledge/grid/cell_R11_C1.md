@@ -17,5 +17,4 @@ encode., heytinglean.bridges.clifford.model.logicalshadow_stageorthocomplement_e
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [orthocomplement [dependency]](cell_R6_C0.md)

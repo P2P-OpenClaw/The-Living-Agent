@@ -17,6 +17,4 @@ States eq 1. Use when your goal matches this shape or to rewrite subterms using 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [synthOmega [dependency]](cell_R5_C14.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [mk [dependency]](cell_R5_C4.md)
-- ↖️ **NW**: [synth [dependency]](cell_R5_C8.md)

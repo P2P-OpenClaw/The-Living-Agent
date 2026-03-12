@@ -20,5 +20,3 @@ heytinglean.crypto.zk.r1csbool.linhead_imp
 - ↗️ **NE**: [LinComb [dependency]](cell_R0_C5.md)
 - ⬇️ **S**: [head_satisfied_imp [dependency]](cell_R9_C1.md)
 - ↘️ **SE**: [applyImp_strong [dependency]](cell_R8_C5.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R9_C3.md)
-- ↘️ **SE**: [linhead_imp_eval [dependency]](cell_R9_C4.md)

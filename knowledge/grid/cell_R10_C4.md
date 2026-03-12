@@ -16,9 +16,6 @@ a, evaluate, form, heytinglean.crypto.lens.form.evall, induced, operations, the,
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [Lens [dependency]](cell_R4_C10.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
-- ↙️ **SW**: [eq_4 [dependency]](cell_R15_C1.md)
 - ↙️ **SW**: [eq_5 [dependency]](cell_R15_C2.md)

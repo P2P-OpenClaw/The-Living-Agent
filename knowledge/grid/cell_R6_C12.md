@@ -17,6 +17,4 @@ default, heytinglean.contracts.examples.tensorintensitymodel, intensity, model, 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [Model [dependency]](cell_R2_C0.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R12_C5.md)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R14_C11.md)

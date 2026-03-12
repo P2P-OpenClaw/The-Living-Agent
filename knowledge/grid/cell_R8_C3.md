@@ -17,5 +17,4 @@ heytinglean.crypto.zk.r1csbool.applyand_invariant
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Builder [dependency]](cell_R0_C4.md)
-- ↗️ **NE**: [Invariant [dependency]](cell_R3_C12.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

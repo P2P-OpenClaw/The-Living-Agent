@@ -17,5 +17,4 @@ bridge, clifford, contract, heytinglean.tests.runtime_clifford_round_verified, i
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [bridgeSuite [dependency]](cell_R10_C7.md)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

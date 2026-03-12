@@ -16,6 +16,4 @@ heytinglean.contracts.examples.identity_shadow
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [interiorized [dependency]](cell_R10_C6.md)
-- ↖️ **NW**: [identity [dependency]](cell_R10_C8.md)

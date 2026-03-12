@@ -16,5 +16,4 @@ States eq 1. Use when your goal matches this shape or to rewrite subterms using 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [boolConstraint [dependency]](cell_R3_C0.md)

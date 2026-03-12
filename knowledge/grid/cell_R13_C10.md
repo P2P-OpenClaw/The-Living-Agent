@@ -16,5 +16,4 @@ alexandroff, an, decodes, encoded, graph, heytinglean.tests.graph_alexandroff_ro
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [univ [dependency]](cell_R6_C7.md)

@@ -17,6 +17,4 @@ heytinglean.generative.intnucleuskit.ibirth_min
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [IntReentry [dependency]](cell_R1_C13.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [ibreathe [dependency]](cell_R6_C3.md)
-- ↖️ **NW**: [ibirth [dependency]](cell_R6_C4.md)

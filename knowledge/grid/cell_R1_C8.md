@@ -19,7 +19,4 @@ counter, fixed_point, nucleus, orthogonal, primordial, reentry
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ⬇️ **S**: [synth [dependency]](cell_R5_C8.md)
 - ↘️ **SE**: [Lens [dependency]](cell_R4_C10.md)
-- ↘️ **SE**: [BridgeSuite [dependency]](cell_R4_C11.md)
-- ↘️ **SE**: [RoundTrip [dependency]](cell_R4_C12.md)
-- ↘️ **SE**: [Expr [dependency]](cell_R4_C14.md)
 - ↙️ **SW**: [ladder [dependency]](cell_R5_C0.md)

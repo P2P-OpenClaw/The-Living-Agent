@@ -17,5 +17,4 @@ heytinglean.contracts.examples.clifford_encode_synthomega_snd
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↗️ **NE**: [synthOmega [dependency]](cell_R5_C14.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

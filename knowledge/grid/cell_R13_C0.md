@@ -17,6 +17,4 @@ heytinglean.logic.modal.dialparam.expandat_birth
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↗️ **NE**: [expandAt [dependency]](cell_R5_C12.md)
 - ↗️ **NE**: [birth [dependency]](cell_R6_C9.md)

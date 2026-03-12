@@ -16,5 +16,4 @@ a, as, carrier, heytinglean.bridges.tensor.intensity.model.carrier.topoint, in, 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Point [dependency]](cell_R1_C3.md)

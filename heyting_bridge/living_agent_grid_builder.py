@@ -440,25 +440,52 @@ def dependency_edge_type(selected: dict[str, dict], source: str, target: str) ->
 def append_edge(
     cell: Cell,
     target: Cell,
+    by_fqn: dict[str, Cell],
     *,
     edge_type: str,
     provenance: str,
     score: float | None = None,
-) -> None:
-    if any(existing.target_fqn == target.fqn for existing in cell.neighbors):
-        return
+    force_direction: bool = False,
+) -> bool:
     direction = direction_from_delta(target.row - cell.row, target.col - cell.col) or "E"
-    cell.neighbors.append(
-        Neighbor(
-            direction=direction,
-            target_cell=target.cell_filename,
-            target_fqn=target.fqn,
-            edge_type=edge_type,
-            label=target.title,
-            provenance=provenance,
-            score=score,
-        )
+    candidate = Neighbor(
+        direction=direction,
+        target_cell=target.cell_filename,
+        target_fqn=target.fqn,
+        edge_type=edge_type,
+        label=target.title,
+        provenance=provenance,
+        score=score,
     )
+    for idx, existing in enumerate(cell.neighbors):
+        if existing.target_fqn == target.fqn:
+            cell.neighbors[idx] = candidate
+            return True
+        if existing.direction != direction:
+            continue
+        existing_target = by_fqn[existing.target_fqn]
+        candidate_priority = (
+            1 if edge_type == "dependency" else 0,
+            1 if provenance == "dependency:imports" else 0,
+            -max(abs(target.row - cell.row), abs(target.col - cell.col)),
+            score if score is not None else target.pagerank,
+            target.pagerank,
+            target.fqn,
+        )
+        existing_priority = (
+            1 if existing.edge_type == "dependency" else 0,
+            1 if existing.provenance == "dependency:imports" else 0,
+            -max(abs(existing_target.row - cell.row), abs(existing_target.col - cell.col)),
+            existing.score if existing.score is not None else existing_target.pagerank,
+            existing_target.pagerank,
+            existing.target_fqn,
+        )
+        if force_direction or candidate_priority > existing_priority:
+            cell.neighbors[idx] = candidate
+            return True
+        return False
+    cell.neighbors.append(candidate)
+    return True
 
 
 def add_neighbors(
@@ -475,8 +502,8 @@ def add_neighbors(
             continue
         child_edge_type, child_provenance = dependency_edge_type(selected, child, parent)
         parent_edge_type, parent_provenance = dependency_edge_type(selected, parent, child)
-        append_edge(by_fqn[child], by_fqn[parent], edge_type=child_edge_type, provenance=child_provenance)
-        append_edge(by_fqn[parent], by_fqn[child], edge_type=parent_edge_type, provenance=parent_provenance)
+        append_edge(by_fqn[child], by_fqn[parent], by_fqn, edge_type=child_edge_type, provenance=child_provenance)
+        append_edge(by_fqn[parent], by_fqn[child], by_fqn, edge_type=parent_edge_type, provenance=parent_provenance)
 
     for cell in cells:
         real_neighbors = sorted(
@@ -499,7 +526,7 @@ def add_neighbors(
             if existing is None or score > existing[0]:
                 best_real_by_direction[direction] = (score, target, edge_type, provenance)
         for _, target, edge_type, provenance in best_real_by_direction.values():
-            append_edge(cell, target, edge_type=edge_type, provenance=provenance)
+            append_edge(cell, target, by_fqn, edge_type=edge_type, provenance=provenance)
 
         if embeddings is None:
             continue
@@ -526,6 +553,7 @@ def add_neighbors(
             append_edge(
                 cell,
                 by_fqn[target_fqn],
+                by_fqn,
                 edge_type="similarity",
                 provenance=f"embedding:cosine>={SIMILARITY_THRESHOLD}",
                 score=score,
@@ -535,8 +563,85 @@ def add_neighbors(
             if similarity_edges_added >= 2:
                 break
 
+    ensure_connected_neighbors(cells, selected, by_fqn)
+
     for cell in cells:
         cell.neighbors.sort(key=lambda neighbor: (neighbor.direction, neighbor.target_cell))
+
+
+def connected_components(cells: list[Cell]) -> list[set[str]]:
+    graph = {cell.fqn: set() for cell in cells}
+    for cell in cells:
+        for neighbor in cell.neighbors:
+            if neighbor.target_fqn not in graph:
+                continue
+            graph[cell.fqn].add(neighbor.target_fqn)
+            graph[neighbor.target_fqn].add(cell.fqn)
+    seen: set[str] = set()
+    components: list[set[str]] = []
+    for start in graph:
+        if start in seen:
+            continue
+        queue = deque([start])
+        component: set[str] = set()
+        while queue:
+            fqn = queue.popleft()
+            if fqn in component:
+                continue
+            component.add(fqn)
+            seen.add(fqn)
+            queue.extend(graph[fqn] - component)
+        components.append(component)
+    return components
+
+
+def ensure_connected_neighbors(
+    cells: list[Cell],
+    selected: dict[str, dict],
+    by_fqn: dict[str, Cell],
+) -> None:
+    while True:
+        components = connected_components(cells)
+        if len(components) <= 1:
+            return
+        components.sort(key=len, reverse=True)
+        main_component = components[0]
+        repaired = False
+        for component in components[1:]:
+            candidates: list[tuple[int, int, float, str, str]] = []
+            for source_fqn in component:
+                source = by_fqn[source_fqn]
+                source_used = {neighbor.direction for neighbor in source.neighbors}
+                for target_fqn in selected[source_fqn]["all_neighbors"]:
+                    if target_fqn not in main_component or target_fqn not in by_fqn:
+                        continue
+                    target = by_fqn[target_fqn]
+                    direction = direction_from_delta(target.row - source.row, target.col - source.col) or "E"
+                    candidates.append(
+                        (
+                            1 if direction in source_used else 0,
+                            max(abs(target.row - source.row), abs(target.col - source.col)),
+                            -selected[target_fqn]["pagerank"],
+                            source_fqn,
+                            target_fqn,
+                        )
+                    )
+            if not candidates:
+                continue
+            for _, _, _, source_fqn, target_fqn in sorted(candidates):
+                edge_type, provenance = dependency_edge_type(selected, source_fqn, target_fqn)
+                if append_edge(
+                    by_fqn[source_fqn],
+                    by_fqn[target_fqn],
+                    by_fqn,
+                    edge_type=edge_type,
+                    provenance=provenance,
+                    force_direction=True,
+                ):
+                    repaired = True
+                    break
+        if not repaired:
+            raise AssertionError("unable to restore connectivity with real dependency edges")
 
 
 def render_cell(cell: Cell, rows: int) -> str:
@@ -630,6 +735,9 @@ def validate_payload(payload: dict, selected: dict[str, dict], embeddings: Embed
             raise AssertionError(f"missing FQN from lean_index: {fqn}")
         if not cell["decl_file"].startswith("lean/"):
             raise AssertionError(f"unexpected declaration path: {cell['decl_file']}")
+        directions = [neighbor["direction"] for neighbor in cell["neighbors"]]
+        if len(directions) != len(set(directions)):
+            raise AssertionError(f"duplicate compass directions for {fqn}: {directions}")
         for neighbor in cell["neighbors"]:
             target_cell = neighbor["target_cell"]
             target_fqn = neighbor["target_fqn"]
@@ -684,7 +792,8 @@ def validate_payload(payload: dict, selected: dict[str, dict], embeddings: Embed
 def write_install_script(out_root: Path) -> None:
     script = f"""#!/usr/bin/env bash
 set -euo pipefail
-SRC="{out_root}"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${{BASH_SOURCE[0]}}")" && pwd)"
+SRC="$SCRIPT_DIR"
 DEST="{DEFAULT_LIVING_AGENT_ROOT / 'knowledge' / 'grid'}"
 DEST_INDEX="{DEFAULT_LIVING_AGENT_ROOT / 'knowledge' / 'grid_index.md'}"
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"

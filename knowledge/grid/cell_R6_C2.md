@@ -16,8 +16,6 @@ canonical, heytinglean.contracts.examples.projectormodel, model, projector, the,
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R12_C4.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C7.md)

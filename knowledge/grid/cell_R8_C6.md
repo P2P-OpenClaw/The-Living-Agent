@@ -18,6 +18,4 @@ heytinglean.crypto.zk.r1csbool.applyor_strong
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [single [dependency]](cell_R2_C6.md)
 - ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↖️ **NW**: [boolToRat [dependency]](cell_R1_C2.md)
 - ↖️ **NW**: [linhead_or [dependency]](cell_R3_C2.md)

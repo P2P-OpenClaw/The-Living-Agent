@@ -19,5 +19,4 @@ encoded, faithful, heytinglean.contracts.interiorized, is, representation, the, 
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [identity_shadow [dependency]](cell_R14_C10.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C12.md)
 - ↙️ **SW**: [stageOccam_spec [dependency]](cell_R15_C0.md)

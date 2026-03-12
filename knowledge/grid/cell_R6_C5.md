@@ -17,7 +17,5 @@ computes, construct, defines, heytinglean.bridges.graph.alexandroff.model.proces
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C10.md)
-- ↗️ **NE**: [Model [dependency]](cell_R1_C15.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [graph_alexandroff_process_collapse [dependency]](cell_R13_C8.md)
 - ↘️ **SE**: [graph_alexandroff_process_expand [dependency]](cell_R13_C9.md)

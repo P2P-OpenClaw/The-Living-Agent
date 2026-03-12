@@ -16,5 +16,4 @@ heytinglean.crypto.zk.r1csbool.linhead_imp_eval
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [linhead_imp [dependency]](cell_R3_C1.md)

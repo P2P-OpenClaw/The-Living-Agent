@@ -18,8 +18,5 @@ addition, heyting, heytinglean.logic.stage.dialparam.mvadd, join., mv-style, rea
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [DialParam [dependency]](cell_R1_C11.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [stageMvAdd_encode [dependency]](cell_R11_C14.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R11_C4.md)
-- ↘️ **SE**: [ladder_effect_add_orthocomplement [dependency]](cell_R13_C12.md)
-- ↘️ **SE**: [clifford_shadow_mv_add [dependency]](cell_R13_C7.md)
 - ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R11_C0.md)

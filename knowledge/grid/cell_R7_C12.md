@@ -17,5 +17,4 @@ Under copy-satisfaction, converted R1CS semantics, native semantics
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [satisfiedNative [dependency]](cell_R3_C9.md)

@@ -16,7 +16,6 @@ complexity, computability, formal methods, security, software engineering, theor
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
 - ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
 - ↖️ **NW**: [Program [dependency]](cell_R1_C1.md)
 - ⬇️ **S**: [eq_1 [dependency]](cell_R8_C8.md)

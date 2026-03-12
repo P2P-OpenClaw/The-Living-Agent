@@ -17,5 +17,4 @@ States eq 1. Use when reasoning about idempotence or rewriting goals that match 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [projectorModel [dependency]](cell_R6_C2.md)

@@ -17,5 +17,4 @@ an, explicit, heytinglean.crypto.zk.spec.plonk.rel_iff_r1cs_of_pairs, hypothesis
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [copyPairs [dependency]](cell_R1_C7.md)

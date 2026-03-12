@@ -18,8 +18,5 @@ an, build, element, fixed-point, heytinglean.lof.reentry.omega.mk, of, sublocale
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C15.md)
 - ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C5.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C10.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C14.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R13_C1.md)

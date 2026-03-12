@@ -17,4 +17,3 @@ bounded., goal, heytinglean.crypto.zk.r1csbool.stronginvariant.bounded_, matches
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
-- ↗️ **NE**: [Bounded [dependency]](cell_R2_C15.md)

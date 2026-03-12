@@ -16,5 +16,4 @@ heytinglean.crypto.zk.r1csbool.matches.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [Matches [dependency]](cell_R2_C11.md)

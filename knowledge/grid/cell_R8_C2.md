@@ -17,6 +17,4 @@ goal, heytinglean.crypto.zk.r1csbool.stronginvariant.toinvariant, invariant., st
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Builder [dependency]](cell_R0_C4.md)
-- ↗️ **NE**: [Matches [dependency]](cell_R2_C11.md)
-- ↗️ **NE**: [Bounded [dependency]](cell_R2_C15.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

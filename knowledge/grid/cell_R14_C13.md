@@ -17,6 +17,5 @@ heytinglean.contracts.interiorizedint_id
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [interiorizedInt [dependency]](cell_R10_C13.md)
-- ⬆️ **N**: [IntReentry [dependency]](cell_R1_C13.md)
 - ↗️ **NE**: [IntRoundTrip [dependency]](cell_R5_C15.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

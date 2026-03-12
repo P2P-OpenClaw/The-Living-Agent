@@ -17,5 +17,3 @@ heytinglean.bridges.assembly.aspace.setbirth.eq_1
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [ASpace [dependency]](cell_R0_C8.md)
-- ↖️ **NW**: [setBirth [dependency]](cell_R3_C11.md)
-- ↖️ **NW**: [ibirth [dependency]](cell_R6_C4.md)

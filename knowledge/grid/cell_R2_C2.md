@@ -18,6 +18,5 @@ an, assignment, entire, heytinglean.crypto.zk.system.satisfied, iff, satisfies, 
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [System [dependency]](cell_R0_C11.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↘️ **SE**: [satisfiedNative_iff_r1cs_of_pairs [dependency]](cell_R7_C13.md)
 - ↘️ **SE**: [copySatisfied_of_pairs [dependency]](cell_R7_C7.md)
 - ↙️ **SW**: [satisfied_iff_cons [dependency]](cell_R10_C0.md)

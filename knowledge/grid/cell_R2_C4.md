@@ -16,9 +16,6 @@ assignment, satisfied, valid, witness
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [Constraint [dependency]](cell_R0_C3.md)
 - ↘️ **SE**: [satisfied_ext [dependency]](cell_R7_C6.md)
-- ↘️ **SE**: [satisfied_cons_cons [dependency]](cell_R9_C14.md)
-- ↙️ **SW**: [eqConstraint_head_satisfied_of_eval [dependency]](cell_R9_C0.md)
 - ↙️ **SW**: [head_satisfied_imp [dependency]](cell_R9_C1.md)

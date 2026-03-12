@@ -18,4 +18,3 @@ a, agree, and, assignments, every, heytinglean.crypto.zk.agreeson, on
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↘️ **SE**: [satisfied_ext [dependency]](cell_R7_C6.md)
-- ↘️ **SE**: [satisfied_ext [dependency]](cell_R9_C15.md)

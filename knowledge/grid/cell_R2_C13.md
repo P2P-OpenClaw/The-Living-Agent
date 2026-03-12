@@ -16,8 +16,5 @@ a, environment, evaluate, heytinglean.crypto.boollens.step, instruction, single,
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Stack [dependency]](cell_R0_C12.md)
-- ↖️ **NW**: [Instr [dependency]](cell_R0_C7.md)
 - ↖️ **NW**: [Env [dependency]](cell_R0_C9.md)
-- ↙️ **SW**: [eq_2 [dependency]](cell_R7_C2.md)
 - ↙️ **SW**: [traceFrom_cons [dependency]](cell_R7_C5.md)

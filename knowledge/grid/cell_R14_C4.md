@@ -16,6 +16,5 @@ _r, a, evaluate, expression, heytinglean.visual.region.expr.eval, into, region
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [Expr [dependency]](cell_R4_C14.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

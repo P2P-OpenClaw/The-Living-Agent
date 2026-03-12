@@ -17,5 +17,4 @@ heytinglean.crypto.zk.plonk.eqvarconstraint.eq_1
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [eqVarConstraint [dependency]](cell_R3_C15.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [ofConst [dependency]](cell_R2_C5.md)

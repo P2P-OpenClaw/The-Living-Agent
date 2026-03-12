@@ -17,8 +17,5 @@ boolean_algebra, boolean_expression_evaluation, boolean_logic, boolean_program_e
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [exec [dependency]](cell_R2_C12.md)
-- ⬇️ **S**: [Invariant [dependency]](cell_R3_C12.md)
 - ↘️ **SE**: [step [dependency]](cell_R2_C13.md)
-- ↙️ **SW**: [Matches [dependency]](cell_R2_C11.md)
-- ↙️ **SW**: [StrongInvariant [dependency]](cell_R2_C7.md)
 - ↙️ **SW**: [traceFrom [dependency]](cell_R2_C8.md)

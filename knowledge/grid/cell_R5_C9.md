@@ -17,6 +17,4 @@ collapse, core, heyting, heytinglean.logic.stage.dialparam.collapseatomega, ladd
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R13_C1.md)
-- ↙️ **SW**: [collapseAtOmega_coe [dependency]](cell_R13_C2.md)
 - ↙️ **SW**: [effectCollapse_self [dependency]](cell_R13_C3.md)

@@ -17,7 +17,4 @@ _r, fixed-point, heytinglean.logic.dialectic.synthomega, lattice, specialised, s
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R12_C10.md)
-- ↙️ **SW**: [clifford_encode_synthOmega_fst [dependency]](cell_R12_C2.md)
-- ↙️ **SW**: [clifford_encode_synthOmega_snd [dependency]](cell_R12_C3.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R12_C8.md)

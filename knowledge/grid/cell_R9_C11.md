@@ -17,5 +17,4 @@ copy-constraint, heytinglean.crypto.zk.spec.plonk.rel_iff_r1cs_of_copysatisfied,
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [copyConstraintSystem [dependency]](cell_R3_C5.md)

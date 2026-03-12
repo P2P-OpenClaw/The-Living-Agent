@@ -16,8 +16,5 @@ bridge, carriers, controlling, enriched, feature, heytinglean.contracts.examples
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↘️ **SE**: [selectSuite [dependency]](cell_R10_C9.md)
-- ↘️ **SE**: [bridge_graph_clifford_commute [dependency]](cell_R15_C11.md)
 - ↘️ **SE**: [runtime [dependency]](cell_R3_C13.md)
 - ↙️ **SW**: [default [dependency]](cell_R3_C3.md)
-- ↙️ **SW**: [alexandroffFlags [dependency]](cell_R4_C1.md)

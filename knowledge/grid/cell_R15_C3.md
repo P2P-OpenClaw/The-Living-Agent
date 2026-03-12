@@ -18,5 +18,4 @@ any, clifford, contract, heytinglean.tests.clifford_pack_projector_round_verifie
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [projectorFlags [dependency]](cell_R4_C3.md)
 - ↗️ **NE**: [cliffordPack [dependency]](cell_R10_C10.md)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

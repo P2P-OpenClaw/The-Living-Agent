@@ -19,5 +19,3 @@ a, constraint, enforcing, heytinglean.crypto.zk.r1csbool.eqconstraint, lhs, rhs,
 - ↖️ **NW**: [Constraint [dependency]](cell_R0_C3.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R8_C15.md)
 - ↙️ **SW**: [applyImp_strong [dependency]](cell_R8_C5.md)
-- ↙️ **SW**: [eqConstraint_head_satisfied_of_eval [dependency]](cell_R9_C0.md)
-- ↙️ **SW**: [head_satisfied_or [dependency]](cell_R9_C2.md)

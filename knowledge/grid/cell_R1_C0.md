@@ -17,5 +17,3 @@ a, coordinates, heytinglean.bridges.tensor.intensity.profile, intensity, living,
 ---
 ## Navigation (real dependency / similarity edges)
 - ↘️ **SE**: [ofPoint [dependency]](cell_R3_C7.md)
-- ↘️ **SE**: [inj [dependency]](cell_R6_C13.md)
-- ↘️ **SE**: [profile [dependency]](cell_R6_C14.md)

@@ -18,4 +18,3 @@ add, encode., heytinglean.bridges.clifford.model.logicalshadow_stagemvadd_encode
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
-- ↗️ **NE**: [base [dependency]](cell_R4_C13.md)

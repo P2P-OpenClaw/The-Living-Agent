@@ -16,7 +16,6 @@ heytinglean.logic.dialectic.oscillationomega.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
 - ⬆️ **N**: [oscillationOmega [dependency]](cell_R6_C8.md)
 - ↗️ **NE**: [synthOmega [dependency]](cell_R5_C14.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

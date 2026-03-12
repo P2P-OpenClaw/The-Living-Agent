@@ -16,6 +16,4 @@ coe., heytinglean.logic.dialectic.oscillationomega_coe, omega, oscillation, stat
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [synth [dependency]](cell_R5_C8.md)
 - ↖️ **NW**: [oscillationOmega [dependency]](cell_R6_C8.md)

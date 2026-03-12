@@ -16,6 +16,4 @@ Algebraic geometry, Category theory, Computer science, FHE, Intuitionistic logic
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Bounds [dependency]](cell_R0_C10.md)
-- ↖️ **NW**: [mvAdd [dependency]](cell_R5_C3.md)

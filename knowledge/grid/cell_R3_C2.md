@@ -20,4 +20,3 @@ heytinglean.crypto.zk.r1csbool.linhead_or
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ⬇️ **S**: [head_satisfied_or [dependency]](cell_R9_C2.md)
 - ↘️ **SE**: [applyOr_strong [dependency]](cell_R8_C6.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R9_C5.md)

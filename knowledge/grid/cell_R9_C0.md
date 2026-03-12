@@ -16,5 +16,4 @@ heytinglean.crypto.zk.r1csbool.eqconstraint_head_satisfied_of_eval
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
 - ↗️ **NE**: [eqConstraint [dependency]](cell_R3_C8.md)

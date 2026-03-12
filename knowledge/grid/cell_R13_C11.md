@@ -17,5 +17,4 @@ add., graph, heytinglean.tests.graph_shadow_mv_add, mv, shadow, states, use, whe
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [base [dependency]](cell_R4_C13.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [graph [dependency]](cell_R5_C2.md)

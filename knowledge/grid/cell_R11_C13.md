@@ -16,5 +16,4 @@ carrier, contract, heytinglean.bridges.tensor.intensity.model.contract, intensit
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [RoundTrip [dependency]](cell_R4_C12.md)

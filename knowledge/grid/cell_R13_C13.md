@@ -16,6 +16,4 @@ are, disjoint, elements, exemplar, from, heytinglean.tests.ladder_orthomodular_d
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [orthocomplement [dependency]](cell_R6_C0.md)
 - ↖️ **NW**: [effectCompatible [dependency]](cell_R6_C1.md)

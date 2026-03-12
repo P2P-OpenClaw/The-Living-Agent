@@ -17,6 +17,4 @@ bridge, categorical logic, category theory, computer science, core nucleus, data
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R12_C0.md)
-- ↙️ **SW**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R12_C1.md)
 - ↙️ **SW**: [tensor [dependency]](cell_R5_C6.md)

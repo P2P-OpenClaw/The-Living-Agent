@@ -18,6 +18,4 @@ States eq 1. Use when your goal matches this shape or to rewrite subterms using 
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [graphPack [dependency]](cell_R10_C11.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [graph [dependency]](cell_R5_C2.md)
 - ↖️ **NW**: [univ [dependency]](cell_R6_C7.md)

@@ -16,6 +16,5 @@ cryptography, zero-knowledge proofs
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
 - ↗️ **NE**: [Bounded [dependency]](cell_R2_C15.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

@@ -16,6 +16,5 @@ core., effect-stage, expansion, heyting, heytinglean.logic.stage.dialparam.effec
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [expandAtOmega [dependency]](cell_R5_C10.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

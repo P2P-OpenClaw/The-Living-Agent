@@ -17,5 +17,4 @@ heytinglean.crypto.boollens.exec_cons
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Instr [dependency]](cell_R0_C7.md)
-- ↗️ **NE**: [exec [dependency]](cell_R2_C12.md)
 - ↖️ **NW**: [Program [dependency]](cell_R1_C1.md)

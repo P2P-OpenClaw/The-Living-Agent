@@ -19,5 +19,4 @@ cryptography, plonk, zero-knowledge proofs
 - ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ⬇️ **S**: [eq_1 [dependency]](cell_R9_C10.md)
-- ↘️ **SE**: [Rel_iff_r1cs_of_copySatisfied [dependency]](cell_R9_C11.md)
 - ↘️ **SE**: [Rel_iff_renamed_sigma_of_gateBounds [dependency]](cell_R9_C13.md)

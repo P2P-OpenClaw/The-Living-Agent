@@ -17,6 +17,5 @@ a, an, build, by, carrier, element, encoding, heytinglean.bridges.tensor.intensi
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [Model [dependency]](cell_R2_C0.md)
 - ⬇️ **S**: [eq_1 [dependency]](cell_R11_C11.md)
 - ↘️ **SE**: [toPoint_fromOmega [dependency]](cell_R11_C12.md)

@@ -17,5 +17,4 @@ a, boolean, compiling, form, heytinglean.crypto.zk.r1csbool.compiled, of, result
 ---
 ## Navigation (real dependency / similarity edges)
 - ↘️ **SE**: [assignment [dependency]](cell_R4_C9.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R8_C8.md)
 - ↙️ **SW**: [compile [dependency]](cell_R3_C4.md)

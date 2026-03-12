@@ -18,4 +18,3 @@ goal, heytinglean.crypto.zk.r1csbool.stronginvariant.support_, matches, states, 
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [Var [dependency]](cell_R0_C1.md)
 - ↗️ **NE**: [Builder [dependency]](cell_R0_C4.md)
-- ↗️ **NE**: [SupportOK [dependency]](cell_R2_C14.md)

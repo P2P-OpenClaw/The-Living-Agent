@@ -16,6 +16,4 @@ heytinglean.bridges.assembly.aspace.intnucleus.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [ASpace [dependency]](cell_R0_C8.md)
-- ↖️ **NW**: [opens [dependency]](cell_R3_C6.md)
 - ↖️ **NW**: [intNucleus [dependency]](cell_R6_C10.md)

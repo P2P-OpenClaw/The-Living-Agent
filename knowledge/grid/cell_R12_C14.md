@@ -16,6 +16,4 @@ heytinglean.logic.modal.dialparam.collapseat_birth
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [collapseAt [dependency]](cell_R5_C11.md)
 - ↖️ **NW**: [birth [dependency]](cell_R6_C9.md)

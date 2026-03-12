@@ -18,5 +18,4 @@ States eq 5. Use when your goal matches this shape or to rewrite subterms using 
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [Form [dependency]](cell_R0_C2.md)
 - ↗️ **NE**: [evalL [dependency]](cell_R10_C4.md)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

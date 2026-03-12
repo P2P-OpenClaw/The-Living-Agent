@@ -16,7 +16,5 @@ a, and, bound, combine, copy-satisfaction, heytinglean.crypto.zk.plonk.native_if
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
 - ↗️ **NE**: [system [dependency]](cell_R3_C14.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [satisfiedNative [dependency]](cell_R3_C9.md)

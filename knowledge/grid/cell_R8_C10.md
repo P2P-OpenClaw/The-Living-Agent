@@ -16,6 +16,5 @@ heytinglean.crypto.zk.r1csbool.compilesteps_strong
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
 - ↗️ **NE**: [exec [dependency]](cell_R2_C12.md)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

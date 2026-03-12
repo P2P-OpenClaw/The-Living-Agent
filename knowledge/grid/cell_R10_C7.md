@@ -16,7 +16,6 @@ BridgeFlags, selectSuite
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [BridgeSuite [dependency]](cell_R4_C11.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ⬇️ **S**: [runtime_graph_round_verified [dependency]](cell_R15_C7.md)

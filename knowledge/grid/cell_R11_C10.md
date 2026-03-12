@@ -16,6 +16,5 @@ heytinglean.bridges.graph.alexandroff.model.contract
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Model [dependency]](cell_R1_C15.md)
 - ↗️ **NE**: [RoundTrip [dependency]](cell_R4_C12.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

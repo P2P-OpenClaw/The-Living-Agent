@@ -16,5 +16,4 @@ alexandroff, every, expansion, heytinglean.tests.graph_alexandroff_process_expan
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [processUpper [dependency]](cell_R6_C5.md)

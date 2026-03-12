@@ -17,6 +17,4 @@ Categorical logic, Category theory, Computer science, Crypto, FHE, Intuitionisti
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [BridgeSuite [dependency]](cell_R4_C11.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [BridgeFlags [dependency]](cell_R0_C6.md)
 - ↖️ **NW**: [bridgeStep [dependency]](cell_R14_C6.md)

@@ -18,6 +18,4 @@ and, copy-satisfaction, gate-bounds, heytinglean.crypto.zk.spec.plonk.rel_iff_re
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [System [dependency]](cell_R0_C13.md)
 - ↗️ **NE**: [system [dependency]](cell_R3_C14.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↖️ **NW**: [Gate [dependency]](cell_R1_C4.md)
 - ↖️ **NW**: [Rel [dependency]](cell_R2_C10.md)

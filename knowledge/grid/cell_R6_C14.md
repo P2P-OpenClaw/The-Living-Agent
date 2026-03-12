@@ -17,4 +17,3 @@ heytinglean.bridges.tensor.intensity.model.carrier.profile
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [Profile [dependency]](cell_R1_C0.md)

@@ -17,6 +17,5 @@ a, as, birth, canonical, heytinglean.logic.modal.dialparam.birth, oscillation, p
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C12.md)
 - ↘️ **SE**: [collapseAt_birth [dependency]](cell_R12_C14.md)
 - ↙️ **SW**: [expandAt_birth [dependency]](cell_R13_C0.md)

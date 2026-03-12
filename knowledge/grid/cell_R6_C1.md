@@ -18,6 +18,4 @@ categorical_logic, category_theory, intuitionistic_logic, logic, proof_assistant
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [DialParam [dependency]](cell_R1_C11.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R11_C2.md)
 - ↘️ **SE**: [stageEffectCompatible_encode [dependency]](cell_R11_C3.md)
-- ↘️ **SE**: [ladder_orthomodular_disjoint [dependency]](cell_R13_C13.md)

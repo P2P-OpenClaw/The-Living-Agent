@@ -17,6 +17,3 @@ LinComb
 ---
 ## Navigation (real dependency / similarity edges)
 - ↘️ **SE**: [gateBound [dependency]](cell_R4_C5.md)
-- ↘️ **SE**: [A [dependency]](cell_R4_C6.md)
-- ↘️ **SE**: [B [dependency]](cell_R4_C7.md)
-- ↘️ **SE**: [Rel_iff_renamed_sigma_of_gateBounds [dependency]](cell_R9_C13.md)

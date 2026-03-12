@@ -18,7 +18,4 @@ Nat
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [linhead_imp [dependency]](cell_R3_C1.md)
 - ↘️ **SE**: [satisfied [dependency]](cell_R2_C2.md)
-- ↘️ **SE**: [AgreesOn [dependency]](cell_R2_C3.md)
-- ↘️ **SE**: [satisfied [dependency]](cell_R2_C4.md)
-- ↘️ **SE**: [StrongInvariant [dependency]](cell_R2_C7.md)
 - ↙️ **SW**: [boolConstraint [dependency]](cell_R3_C0.md)

@@ -17,7 +17,5 @@ Clifford, bridge, model, reentry
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [elim [dependency]](cell_R13_C15.md)
 - ↘️ **SE**: [Diagram [dependency]](cell_R4_C15.md)
-- ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R11_C0.md)
 - ↙️ **SW**: [clifford [dependency]](cell_R5_C7.md)

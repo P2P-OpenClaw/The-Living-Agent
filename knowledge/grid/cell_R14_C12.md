@@ -17,5 +17,4 @@ heytinglean.contracts.interiorized.eq_1
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [RoundTrip [dependency]](cell_R4_C12.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [interiorized [dependency]](cell_R10_C6.md)

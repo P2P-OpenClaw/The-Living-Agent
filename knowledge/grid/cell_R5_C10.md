@@ -17,6 +17,4 @@ core, expansion, heyting, heytinglean.logic.stage.dialparam.expandatomega, ladde
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↙️ **SW**: [effectExpand_self [dependency]](cell_R13_C4.md)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R13_C5.md)
 - ↙️ **SW**: [expandAtOmega_coe [dependency]](cell_R13_C6.md)

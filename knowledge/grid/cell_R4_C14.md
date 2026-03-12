@@ -16,7 +16,5 @@ diagrams, heyting, heytinglean.visual.region.expr, of, over, region, syntax, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Reentry [dependency]](cell_R1_C8.md)
-- ↙️ **SW**: [elim [dependency]](cell_R14_C3.md)
 - ↙️ **SW**: [eval [dependency]](cell_R14_C4.md)

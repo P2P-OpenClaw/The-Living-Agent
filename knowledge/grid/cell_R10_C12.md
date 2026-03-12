@@ -16,7 +16,5 @@ based, bridge, feature, heytinglean.contracts.examples.tensorpack, on, select, t
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [BridgePack [dependency]](cell_R5_C5.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R14_C11.md)
-- ↙️ **SW**: [tensor_pack_intensity_round_verified [dependency]](cell_R15_C8.md)

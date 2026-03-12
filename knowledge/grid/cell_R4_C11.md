@@ -16,10 +16,7 @@ bridge, collection, for, heytinglean.contracts.examples.bridgesuite, of, packs, 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Reentry [dependency]](cell_R1_C8.md)
 - ⬇️ **S**: [bridge_graph_clifford_commute [dependency]](cell_R15_C11.md)
 - ↘️ **SE**: [bridge_tensor_clifford_commute [dependency]](cell_R15_C12.md)
-- ↙️ **SW**: [BridgeState [dependency]](cell_R10_C3.md)
 - ↙️ **SW**: [bridgeSuite [dependency]](cell_R10_C7.md)
-- ↙️ **SW**: [bridgeActWord [dependency]](cell_R14_C5.md)

@@ -16,8 +16,6 @@ a, boolean, compile, environment, form, heytinglean.crypto.zk.r1csbool.compile, 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
 - ↗️ **NE**: [Compiled [dependency]](cell_R1_C6.md)
 - ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R8_C8.md)
-- ↘️ **SE**: [compile_output_eval [dependency]](cell_R9_C8.md)

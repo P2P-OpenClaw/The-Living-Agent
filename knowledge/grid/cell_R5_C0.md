@@ -17,8 +17,5 @@ heytinglean.logic.modal.dialparam.ladder
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↗️ **NE**: [DialParam [dependency]](cell_R1_C11.md)
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C13.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C15.md)
 - ↘️ **SE**: [ladder_effect_add_orthocomplement [dependency]](cell_R13_C12.md)

@@ -16,5 +16,4 @@ heytinglean.crypto.zk.r1csbool.eqconstraint.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [LinComb [dependency]](cell_R0_C5.md)
 - ↖️ **NW**: [eqConstraint [dependency]](cell_R3_C8.md)

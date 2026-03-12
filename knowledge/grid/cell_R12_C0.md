@@ -18,5 +18,3 @@ heytinglean.bridges.tensor.model.logicalshadow_stagemvadd_encode
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C12.md)
-- ↗️ **NE**: [base [dependency]](cell_R4_C13.md)
-- ↗️ **NE**: [mvAdd [dependency]](cell_R5_C3.md)

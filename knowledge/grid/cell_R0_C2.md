@@ -17,8 +17,5 @@ and, bot, imp, or, top, var
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [eq_5 [dependency]](cell_R15_C2.md)
-- ↘️ **SE**: [evalL [dependency]](cell_R10_C4.md)
-- ↘️ **SE**: [eval [dependency]](cell_R2_C9.md)
 - ↘️ **SE**: [compile [dependency]](cell_R3_C4.md)
-- ↘️ **SE**: [exec_compile_aux [dependency]](cell_R7_C3.md)
 - ↙️ **SW**: [eq_4 [dependency]](cell_R15_C1.md)

@@ -17,5 +17,4 @@ a, alexandroff, collapsing, heytinglean.tests.graph_alexandroff_process_collapse
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [processUpper [dependency]](cell_R6_C5.md)

@@ -16,7 +16,5 @@ a, assembly, directed, heytinglean.atheory.aspace, objects, of, over, space
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R10_C15.md)
 - ↘️ **SE**: [setBirth [dependency]](cell_R3_C11.md)
-- ↘️ **SE**: [intNucleus [dependency]](cell_R6_C10.md)
 - ↙️ **SW**: [opens [dependency]](cell_R3_C6.md)

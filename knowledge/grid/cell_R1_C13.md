@@ -19,5 +19,4 @@ interior, packaging, reentry, wrapper
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ⬇️ **S**: [interiorizedInt [dependency]](cell_R10_C13.md)
 - ↘️ **SE**: [IntRoundTrip [dependency]](cell_R5_C15.md)
-- ↙️ **SW**: [ibreathe [dependency]](cell_R6_C3.md)
 - ↙️ **SW**: [ibirth [dependency]](cell_R6_C4.md)

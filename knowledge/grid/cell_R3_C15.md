@@ -17,5 +17,4 @@ and, between, constraint, equality, heytinglean.crypto.zk.plonk.eqvarconstraint,
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R7_C8.md)
 - ↙️ **SW**: [eqVarConstraint_refl_satisfied [dependency]](cell_R7_C9.md)

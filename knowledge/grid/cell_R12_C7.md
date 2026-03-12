@@ -16,6 +16,5 @@ boundary, euler, heytinglean.logic.dialectic.eulerboundary_le_oscillation, le, o
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [oscillationOmega [dependency]](cell_R6_C8.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

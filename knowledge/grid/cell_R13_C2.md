@@ -16,6 +16,5 @@ at, coe., collapse, heytinglean.logic.stage.dialparam.collapseatomega_coe, omega
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [collapseAtOmega [dependency]](cell_R5_C9.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

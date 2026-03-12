@@ -17,6 +17,4 @@ constraint, gate, multiplication, quadratic, r1cs
 ---
 ## Navigation (real dependency / similarity edges)
 - ↘️ **SE**: [satisfied [dependency]](cell_R2_C4.md)
-- ↘️ **SE**: [eqConstraint [dependency]](cell_R3_C8.md)
-- ↘️ **SE**: [satisfied_ext [dependency]](cell_R7_C6.md)
 - ↙️ **SW**: [boolConstraint [dependency]](cell_R3_C0.md)

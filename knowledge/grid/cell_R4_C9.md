@@ -16,5 +16,4 @@ heytinglean.crypto.zk.r1csbool.compiled.assignment
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [Compiled [dependency]](cell_R1_C6.md)

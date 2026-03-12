@@ -17,7 +17,5 @@ collapseAt, ladder
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C13.md)
 - ↘️ **SE**: [collapseAt_birth [dependency]](cell_R12_C14.md)
-- ↙️ **SW**: [eq_1 [dependency]](cell_R13_C1.md)
 - ↙️ **SW**: [collapseAtOmega_coe [dependency]](cell_R13_C2.md)

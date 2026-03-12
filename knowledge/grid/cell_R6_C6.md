@@ -16,9 +16,7 @@ carrier, clifford, frompair, model
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Pair [dependency]](cell_R0_C15.md)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ⬇️ **S**: [eq_1 [dependency]](cell_R11_C6.md)
-- ↘️ **SE**: [toPair_fromPair [dependency]](cell_R11_C7.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R11_C8.md)

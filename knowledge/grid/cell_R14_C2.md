@@ -17,5 +17,4 @@ heytinglean.visual.graph.diagram.comp.inj
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C10.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Diagram [dependency]](cell_R5_C1.md)

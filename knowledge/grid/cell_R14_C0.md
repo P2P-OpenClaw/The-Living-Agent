@@ -18,4 +18,3 @@ goal, heytinglean.visual.clifford.diagram.comp.inj, inj., matches, states, use, 
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
-- ↗️ **NE**: [Diagram [dependency]](cell_R4_C15.md)

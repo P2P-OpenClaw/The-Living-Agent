@@ -16,7 +16,5 @@ States eq 1. Use when your goal matches this shape or to rewrite subterms using 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↗️ **NE**: [collapseAt [dependency]](cell_R5_C11.md)
 - ↗️ **NE**: [collapseAtOmega [dependency]](cell_R5_C9.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

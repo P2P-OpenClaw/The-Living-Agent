@@ -17,8 +17,5 @@ a, boolean, builder, heytinglean.crypto.zk.r1csbool.builder, state, translating,
 ---
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [applyAnd_strong [dependency]](cell_R8_C4.md)
-- ↘️ **SE**: [Matches [dependency]](cell_R2_C11.md)
-- ↘️ **SE**: [SupportOK [dependency]](cell_R2_C14.md)
-- ↘️ **SE**: [Bounded [dependency]](cell_R2_C15.md)
 - ↘️ **SE**: [StrongInvariant [dependency]](cell_R2_C7.md)
 - ↙️ **SW**: [bounded_ [dependency]](cell_R8_C0.md)

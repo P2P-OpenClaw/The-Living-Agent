@@ -17,6 +17,4 @@ constraints, map
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↙️ **SW**: [native_iff_renamed_sigma_of_bounds [dependency]](cell_R7_C10.md)
 - ↙️ **SW**: [native_iff_renamed_sigma_of_gateBounds [dependency]](cell_R7_C11.md)
-- ↙️ **SW**: [satisfied_system [dependency]](cell_R9_C9.md)

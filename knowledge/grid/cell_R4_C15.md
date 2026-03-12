@@ -16,7 +16,6 @@ bridge, built, clifford, diagrams, from, heytinglean.visual.clifford.diagram, op
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Model [dependency]](cell_R1_C9.md)
 - ⬇️ **S**: [elim [dependency]](cell_R13_C15.md)
 - ↙️ **SW**: [inj [dependency]](cell_R14_C0.md)

@@ -18,4 +18,3 @@ a, extracted, from, heytinglean.crypto.zk.plonk.copypairs, i, pairs, perm
 ## Navigation (real dependency / similarity edges)
 - ⬇️ **S**: [copySatisfied_of_pairs [dependency]](cell_R7_C7.md)
 - ↘️ **SE**: [satisfiedNative_iff_r1cs_of_pairs [dependency]](cell_R7_C13.md)
-- ↘️ **SE**: [Rel_iff_r1cs_of_pairs [dependency]](cell_R9_C12.md)

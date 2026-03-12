@@ -18,5 +18,4 @@ Nat.find
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [IntReentry [dependency]](cell_R1_C13.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↘️ **SE**: [eq_1 [dependency]](cell_R10_C15.md)
 - ↘️ **SE**: [ibirth_min [dependency]](cell_R12_C6.md)

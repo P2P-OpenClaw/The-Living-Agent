@@ -17,6 +17,4 @@ bridge, default, flags, heytinglean.contracts.examples.bridgeflags.default, of, 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [BridgeFlags [dependency]](cell_R0_C6.md)
-- ↘️ **SE**: [cliffordPack [dependency]](cell_R10_C10.md)
-- ↘️ **SE**: [graphPack [dependency]](cell_R10_C11.md)
 - ↘️ **SE**: [selectSuite [dependency]](cell_R10_C9.md)

@@ -17,6 +17,4 @@ Model, adjacency, carrier, graph bridge
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↙️ **SW**: [Diagram [dependency]](cell_R5_C1.md)
 - ↙️ **SW**: [graph [dependency]](cell_R5_C2.md)
-- ↙️ **SW**: [processUpper [dependency]](cell_R6_C5.md)

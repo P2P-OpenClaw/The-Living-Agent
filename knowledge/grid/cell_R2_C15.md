@@ -17,6 +17,4 @@ every, heytinglean.crypto.zk.r1csbool.bounded, is, on, stack, stored, the, varia
 ---
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
-- ↙️ **SW**: [bounded_ [dependency]](cell_R8_C0.md)
-- ↙️ **SW**: [toInvariant [dependency]](cell_R8_C2.md)
 - ↙️ **SW**: [matches_fresh_preserve [dependency]](cell_R9_C7.md)

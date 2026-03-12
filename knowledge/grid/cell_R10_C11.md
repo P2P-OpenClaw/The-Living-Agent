@@ -16,7 +16,5 @@ based, bridge, feature, graph, heytinglean.contracts.examples.graphpack, on, sel
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [BridgePack [dependency]](cell_R5_C5.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R14_C8.md)
-- ↙️ **SW**: [graph_pack_alexandroff_round_verified [dependency]](cell_R15_C4.md)

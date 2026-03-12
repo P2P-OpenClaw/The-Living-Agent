@@ -16,5 +16,4 @@ cons., heytinglean.crypto.zk.system.satisfied_iff_cons, iff, satisfied, states, 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
 - ↗️ **NE**: [satisfied_cons [dependency]](cell_R4_C4.md)

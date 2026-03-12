@@ -16,6 +16,4 @@ heytinglean.contracts.stageoccam_encode
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
-- ↖️ **NW**: [stageOccam [dependency]](cell_R10_C5.md)
 - ↖️ **NW**: [occam [dependency]](cell_R5_C13.md)

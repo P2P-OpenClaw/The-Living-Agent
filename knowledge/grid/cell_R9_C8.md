@@ -17,5 +17,4 @@ boolean, compiled, encodes, heytinglean.crypto.zk.r1cssoundness.compile_output_e
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
-- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
 - ↖️ **NW**: [compile [dependency]](cell_R3_C4.md)

@@ -16,7 +16,5 @@ States eq 1. Use when reasoning about nucleus property or rewriting goals that m
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [expandAtOmega [dependency]](cell_R5_C10.md)
-- ↗️ **NE**: [expandAt [dependency]](cell_R5_C12.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

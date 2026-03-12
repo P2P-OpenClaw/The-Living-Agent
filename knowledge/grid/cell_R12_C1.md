@@ -17,5 +17,4 @@ heytinglean.bridges.tensor.model.logicalshadow_stageorthocomplement_encode
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Model [dependency]](cell_R1_C12.md)
-- ↗️ **NE**: [base [dependency]](cell_R4_C13.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

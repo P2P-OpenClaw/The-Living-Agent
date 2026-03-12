@@ -17,6 +17,4 @@ States eq 1. Use when your goal matches this shape or to rewrite subterms using 
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [tensorPack [dependency]](cell_R10_C12.md)
-- ↗️ **NE**: [tensorIntensityModel [dependency]](cell_R6_C12.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [tensor [dependency]](cell_R5_C6.md)

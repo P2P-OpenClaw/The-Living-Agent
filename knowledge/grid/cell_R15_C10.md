@@ -17,5 +17,4 @@ heytinglean.tests.traceconcurrency.bridgestep.eq_1
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [BridgeSuite [dependency]](cell_R4_C11.md)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [stageOccam [dependency]](cell_R10_C5.md)

@@ -17,8 +17,6 @@ heytinglean.contracts.examples.clifford
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
-- ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ⬇️ **S**: [clifford_shadow_mv_add [dependency]](cell_R13_C7.md)
-- ⬇️ **S**: [eq_1 [dependency]](cell_R14_C7.md)
 - ↙️ **SW**: [clifford_encode_synthOmega_fst [dependency]](cell_R12_C2.md)

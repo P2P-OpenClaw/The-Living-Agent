@@ -16,8 +16,5 @@ Carrier, Contracts.RoundTrip
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [Reentry [dependency]](cell_R1_C8.md)
 - ↙️ **SW**: [evalL [dependency]](cell_R10_C4.md)
-- ↙️ **SW**: [eq_4 [dependency]](cell_R15_C1.md)
-- ↙️ **SW**: [eq_5 [dependency]](cell_R15_C2.md)

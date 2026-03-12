@@ -16,5 +16,4 @@ States eq 1. Use when your goal matches this shape or to rewrite subterms using 
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↖️ **NW**: [birth [dependency]](cell_R6_C9.md)

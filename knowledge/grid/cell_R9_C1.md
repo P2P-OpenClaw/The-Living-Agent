@@ -18,5 +18,3 @@ algebra, boolean, head, imp, satisfied
 ## Navigation (real dependency / similarity edges)
 - ⬆️ **N**: [Var [dependency]](cell_R0_C1.md)
 - ↗️ **NE**: [satisfied [dependency]](cell_R2_C4.md)
-- ↗️ **NE**: [ofConst [dependency]](cell_R2_C5.md)
-- ↗️ **NE**: [eqConstraint [dependency]](cell_R3_C8.md)

@@ -20,5 +20,4 @@ algebraic, assistants, category, function, geometry, identity, intuitionistic, l
 - ↗️ **NE**: [RoundTrip [dependency]](cell_R4_C12.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [identity_shadow [dependency]](cell_R14_C10.md)
-- ↘️ **SE**: [identity_round [dependency]](cell_R14_C9.md)
 - ↙️ **SW**: [identity_round_verified [dependency]](cell_R15_C5.md)

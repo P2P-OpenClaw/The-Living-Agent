@@ -18,6 +18,4 @@ DialParam, Heyting, Lean, Logic, Modal, expandAt
 ## Navigation (real dependency / similarity edges)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R12_C15.md)
-- ↙️ **SW**: [expandAt_birth [dependency]](cell_R13_C0.md)
 - ↙️ **SW**: [eq_1 [dependency]](cell_R13_C5.md)
-- ↙️ **SW**: [expandAtOmega_coe [dependency]](cell_R13_C6.md)

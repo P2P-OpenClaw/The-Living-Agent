@@ -17,9 +17,7 @@ a, boolean, connecting, heytinglean.crypto.zk.r1csbool.matches, its, relation, s
 ---
 ## Navigation (real dependency / similarity edges)
 - ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
-- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
 - ↖️ **NW**: [Builder [dependency]](cell_R0_C4.md)
 - ⬇️ **S**: [compileTraceToR1CSFromEmpty_matches [dependency]](cell_R8_C11.md)
 - ↘️ **SE**: [eq_1 [dependency]](cell_R7_C15.md)
-- ↙️ **SW**: [toInvariant [dependency]](cell_R8_C2.md)
 - ↙️ **SW**: [matches_cons_head [dependency]](cell_R9_C6.md)

@@ -16,9 +16,6 @@ heytinglean.tests.traceconcurrency.bridgestate
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
 - ↗️ **NE**: [BridgeSuite [dependency]](cell_R4_C11.md)
 - ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
 - ↘️ **SE**: [bridgeActWord [dependency]](cell_R14_C5.md)
-- ↘️ **SE**: [bridgeStep [dependency]](cell_R14_C6.md)
-- ↘️ **SE**: [bridge_occam_rotate_tensor_graph_clifford [dependency]](cell_R15_C14.md)
