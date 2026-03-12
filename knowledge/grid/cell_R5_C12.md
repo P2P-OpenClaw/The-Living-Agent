@@ -1,21 +1,23 @@
 # Cell [5,12] — KNOWLEDGE
-**FQN**: `HeytingLean.WPP.Wolfram.HGraph`
-**Module**: `HeytingLean.WPP.Wolfram.Hypergraph`
+**FQN**: `HeytingLean.Logic.Modal.DialParam.expandAt`
+**Module**: `HeytingLean.Logic.ModalDial`
 **Kind**: `def`
-**Centrality**: 0.000731
+**Centrality**: 0.000115
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: HGraph
-**Signature**: `Type u → Type u`
+**Declaration**: expandAt
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → Nat → α → α`
 
-A hypergraph state: multiset of expressions (edge multiplicity matters).
+Expansion associated with the arithmetic ladder stage `n`.
 
 ## Keywords
-a, edge, expressions, heytinglean.wpp.wolfram.hgraph, hypergraph, multiset, of, state
+DialParam, Heyting, Lean, Logic, Modal, expandAt
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Net [similarity]](cell_R5_C13.md)
-- ↘️ **SE**: [BB84State [similarity]](cell_R6_C13.md)
-- ⬅️ **W**: [InfoState [similarity]](cell_R5_C11.md)
-- ↖️ **NW**: [RadialGraph [similarity]](cell_R0_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C15.md)
+- ↙️ **SW**: [expandAt_birth [dependency]](cell_R13_C0.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R13_C5.md)
+- ↙️ **SW**: [expandAtOmega_coe [dependency]](cell_R13_C6.md)

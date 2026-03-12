@@ -1,22 +1,24 @@
 # Cell [0,4] — ENTRY
-**FQN**: `HeytingLean.ClosingTheLoop.MR.MRSystem`
-**Module**: `HeytingLean.ClosingTheLoop.MR.Basic`
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.Builder`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
 **Kind**: `inductive`
-**Centrality**: 0.003166
+**Centrality**: 0.000739
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: MRSystem
-**Signature**: `Type (max (u + 1) (v + 1))`
+**Declaration**: Builder
+**Signature**: `Type`
 
-A minimal Rosen (M,R) system in `Set`: admissible maps `H(A,B)`, together with `f ∈ H`.
+Builder state used while translating a boolean trace to R1CS.
 
 ## Keywords
-a, heytinglean.closingtheloop.mr.mrsystem, in, m, minimal, r, rosen, system
+a, boolean, builder, heytinglean.crypto.zk.r1csbool.builder, state, translating, used, while
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [MWObj [similarity]](cell_R0_C5.md)
-- ↘️ **SE**: [System [similarity]](cell_R5_C9.md)
-- ⬇️ **S**: [GlobularSet [similarity]](cell_R4_C4.md)
-- ↙️ **SW**: [HaltSys [similarity]](cell_R6_C0.md)
-- ⬅️ **W**: [MLWEParams [similarity]](cell_R0_C3.md)
+- ⬇️ **S**: [applyAnd_strong [dependency]](cell_R8_C4.md)
+- ↘️ **SE**: [Matches [dependency]](cell_R2_C11.md)
+- ↘️ **SE**: [SupportOK [dependency]](cell_R2_C14.md)
+- ↘️ **SE**: [Bounded [dependency]](cell_R2_C15.md)
+- ↘️ **SE**: [StrongInvariant [dependency]](cell_R2_C7.md)
+- ↙️ **SW**: [bounded_ [dependency]](cell_R8_C0.md)

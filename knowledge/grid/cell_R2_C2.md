@@ -1,21 +1,23 @@
 # Cell [2,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Physics.Substrate.HilbertSubstrate`
-**Module**: `HeytingLean.Physics.Substrate.Hilbert`
-**Kind**: `inductive`
-**Centrality**: 0.001366
+**FQN**: `HeytingLean.Crypto.ZK.System.satisfied`
+**Module**: `HeytingLean.Crypto.ZK.R1CS`
+**Kind**: `def`
+**Centrality**: 0.000149
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: HilbertSubstrate
-**Signature**: `Type`
+**Declaration**: satisfied
+**Signature**: `(HeytingLean.Crypto.ZK.Var → Rat) → HeytingLean.Crypto.ZK.System → Prop`
 
-A finite-dimensional Hilbert space substrate (dimension only, with labels).
+An assignment satisfies the entire system iff it satisfies every constraint.
 
 ## Keywords
-a, dimension, finite-dimensional, heytinglean.physics.substrate.hilbertsubstrate, hilbert, only, space, substrate
+an, assignment, entire, heytinglean.crypto.zk.system.satisfied, iff, satisfies, system, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Obj [similarity]](cell_R2_C3.md)
-- ↘️ **SE**: [ASpace [similarity]](cell_R10_C6.md)
-- ↙️ **SW**: [HaltSys [similarity]](cell_R6_C0.md)
-- ⬅️ **W**: [FinDist [similarity]](cell_R2_C1.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C11.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↘️ **SE**: [satisfiedNative_iff_r1cs_of_pairs [dependency]](cell_R7_C13.md)
+- ↘️ **SE**: [copySatisfied_of_pairs [dependency]](cell_R7_C7.md)
+- ↙️ **SW**: [satisfied_iff_cons [dependency]](cell_R10_C0.md)

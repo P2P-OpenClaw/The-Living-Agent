@@ -1,20 +1,22 @@
 # Cell [12,0] — KNOWLEDGE
-**FQN**: `HeytingLean.ATheory.Paper.Molecular.MolGraph`
-**Module**: `HeytingLean.ATheory.Paper.MolecularSpace`
-**Kind**: `inductive`
-**Centrality**: 0.000479
+**FQN**: `HeytingLean.Bridges.Tensor.Model.logicalShadow_stageMvAdd_encode`
+**Module**: `HeytingLean.Bridges.Tensor`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: MolGraph
-**Signature**: `Type u → Type (max 1 u)`
+**Declaration**: logicalShadow_stageMvAdd_encode
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (M : HeytingLean.Bridges.Tensor.Model α) (a b : M.R.Omega), Eq (M.logicalShadow (M.stageMvAdd (M.contract.encode a) (M.contract.encode b))) (Nucleus.instFunLike.coe M.R.nucleus (HeytingLean.Logic.Stage.DialParam.mvAdd (HeytingLean.Logic.Modal.DialParam.base M.R) a b).val)`
 
-A finite labelled simple graph (hydrogen-suppressed), used as a semantics target. `V` is an abstract finite vertex type; `label` assigns a label in `Atom ⊕ Nat` to each vertex. The underlying graph is unlabelled.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, finite, graph, heytinglean.atheory.paper.molecular.molgraph, hydrogen-suppressed, labelled, simple, used
+heytinglean.bridges.tensor.model.logicalshadow_stagemvadd_encode
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [EVMState [similarity]](cell_R11_C15.md)
-- ➡️ **E**: [Kernel [similarity]](cell_R12_C1.md)
-- ↘️ **SE**: [Protocol [similarity]](cell_R15_C12.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C12.md)
+- ↗️ **NE**: [base [dependency]](cell_R4_C13.md)
+- ↗️ **NE**: [mvAdd [dependency]](cell_R5_C3.md)

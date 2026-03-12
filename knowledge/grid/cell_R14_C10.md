@@ -1,21 +1,21 @@
 # Cell [14,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.E91.E91Substrate`
-**Module**: `HeytingLean.Crypto.QKD.E91.Tasks`
-**Kind**: `def`
-**Centrality**: 0.000424
+**FQN**: `HeytingLean.Contracts.Examples.identity_shadow`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: E91Substrate
-**Signature**: `Type`
+**Declaration**: identity_shadow
+**Signature**: `∀ (α : Type u) [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : R.Omega), Eq (HeytingLean.Contracts.interiorized R (HeytingLean.Contracts.Examples.identity α R) ((HeytingLean.Contracts.Examples.identity α R).encode a)) (Nucleus.instFunLike.coe R.nucleus a.val)`
 
-Substrate for the toy E91 formalization.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-e91, for, formalization., heytinglean.crypto.qkd.e91.e91substrate, substrate, the, toy
+heytinglean.contracts.examples.identity_shadow
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ⬆️ **N**: [E91State [similarity]](cell_R7_C10.md)
-- ➡️ **E**: [LocalOperator [similarity]](cell_R14_C11.md)
-- ⬅️ **W**: [PosSemidef [similarity]](cell_R14_C9.md)
-- ↖️ **NW**: [BB84Substrate [similarity]](cell_R9_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [interiorized [dependency]](cell_R10_C6.md)
+- ↖️ **NW**: [identity [dependency]](cell_R10_C8.md)

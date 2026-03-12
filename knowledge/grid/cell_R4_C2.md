@@ -1,19 +1,20 @@
 # Cell [4,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Core.Ctx`
-**Module**: `HeytingLean.Core.Types`
+**FQN**: `HeytingLean.Contracts.Examples.intensityFlags`
+**Module**: `HeytingLean.Contracts.Examples`
 **Kind**: `def`
-**Centrality**: 0.000874
+**Centrality**: 0.000028
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Ctx
-**Signature**: `Type`
+**Declaration**: intensityFlags
+**Signature**: `HeytingLean.Contracts.Examples.BridgeFlags`
 
-Contexts are lists of types.
+Toggle enabling only the tensor intensity carrier.
 
 ## Keywords
-are, contexts, heytinglean.core.ctx, lists, of, types.
+carrier., enabling, heytinglean.contracts.examples.intensityflags, intensity, only, tensor, the, toggle
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [L [similarity]](cell_R4_C3.md)
-- ⬅️ **W**: [Expr [similarity]](cell_R4_C1.md)
+- ↗️ **NE**: [BridgeFlags [dependency]](cell_R0_C6.md)
+- ↘️ **SE**: [tensor_pack_intensity_round_verified [dependency]](cell_R15_C8.md)

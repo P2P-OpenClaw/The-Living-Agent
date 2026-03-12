@@ -1,19 +1,22 @@
 # Cell [14,7] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.ZK.IR.Backend`
-**Module**: `HeytingLean.Crypto.ZK.IR`
-**Kind**: `inductive`
-**Centrality**: 0.000426
+**FQN**: `HeytingLean.Contracts.Examples.cliffordPack.eq_1`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: Backend
-**Signature**: `Type → Type 1`
+**Declaration**: eq_1
+**Signature**: `∀ (α : Type u) [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (flags : HeytingLean.Contracts.Examples.BridgeFlags), Eq (HeytingLean.Contracts.Examples.cliffordPack α R flags) (if h : Eq flags.useCliffordProjector Bool.true then let model := HeytingLean.Contracts.Examples.projectorModel α R; have hR := ⋯; have hcontr := model.contract; { Carrier := model.Carrier, contract := ⋯.mp hcontr } else { Carrier := (HeytingLean.Contracts.Examples.clifford α R).Carrier, contract := (HeytingLean.Contracts.Examples.clifford α R).contract })`
 
-Lightweight interface that any ZK backend can implement. It is intentionally generic and compiled from the existing BoolLens VM in this codebase.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-any, backend, can, heytinglean.crypto.zk.ir.backend, interface, lightweight, that, zk
+1., eq, goal, heytinglean.contracts.examples.cliffordpack.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [DataValue [similarity]](cell_R14_C8.md)
-- ⬅️ **W**: [BondType [similarity]](cell_R14_C6.md)
+- ⬆️ **N**: [clifford [dependency]](cell_R5_C7.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [projectorModel [dependency]](cell_R6_C2.md)

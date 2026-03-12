@@ -1,19 +1,21 @@
 # Cell [7,12] — KNOWLEDGE
-**FQN**: `HeytingLean.Logic.Stage.OmlCore`
-**Module**: `HeytingLean.Logic.StageSemantics`
-**Kind**: `inductive`
-**Centrality**: 0.000611
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.satisfiedNative_iff_r1cs_of_copySatisfied`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: OmlCore
-**Signature**: `Type u → Type u`
+**Declaration**: satisfiedNative_iff_r1cs_of_copySatisfied
+**Signature**: `∀ (sys : HeytingLean.Crypto.ZK.Plonk.System) (a : HeytingLean.Crypto.ZK.Var → Rat), HeytingLean.Crypto.ZK.System.satisfied a (HeytingLean.Crypto.ZK.Plonk.copyConstraintSystem sys.copyPermutation) → Iff (HeytingLean.Crypto.ZK.Plonk.System.satisfiedNative a sys) (HeytingLean.Crypto.ZK.System.satisfied a sys.toR1CS)`
 
-Orthomodular lattice façade (no laws recorded yet, only operations).
+Under copy-satisfaction, native semantics reduces to the converted R1CS semantics.
 
 ## Keywords
-ade, fa, heytinglean.logic.stage.omlcore, lattice, laws, no, orthomodular, recorded
+Under copy-satisfaction, converted R1CS semantics, native semantics
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [AlgId [similarity]](cell_R7_C13.md)
-- ⬅️ **W**: [Instance [similarity]](cell_R7_C11.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [satisfiedNative [dependency]](cell_R3_C9.md)

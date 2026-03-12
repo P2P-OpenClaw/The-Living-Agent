@@ -1,21 +1,24 @@
 # Cell [0,2] — ENTRY
-**FQN**: `HeytingLean.Chem.PeriodicTable.Element`
-**Module**: `HeytingLean.Chem.PeriodicTable.CIAAW2024`
-**Kind**: `def`
-**Centrality**: 0.011041
+**FQN**: `HeytingLean.Crypto.Form`
+**Module**: `HeytingLean.Crypto.Form`
+**Kind**: `inductive`
+**Centrality**: 0.001239
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Element
-**Signature**: `Type`
+**Declaration**: Form
+**Signature**: `Nat → Type`
 
-No docstring available; inspect the Lean declaration directly.
+Intermediate representation for multi-lens programs. Variables live in a finite context indexed by `Fin n`, giving us a finite semantic roster while keeping the connectives aligned with the Heyting core.
 
 ## Keywords
-heytinglean.chem.periodictable.element
+and, bot, imp, or, top, var
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [MLWEParams [similarity]](cell_R0_C3.md)
-- ⬇️ **S**: [symbol [dependency]](cell_R15_C2.md)
-- ↙️ **SW**: [name [dependency]](cell_R15_C1.md)
-- ⬅️ **W**: [Comb [similarity]](cell_R0_C1.md)
+- ⬇️ **S**: [eq_5 [dependency]](cell_R15_C2.md)
+- ↘️ **SE**: [evalL [dependency]](cell_R10_C4.md)
+- ↘️ **SE**: [eval [dependency]](cell_R2_C9.md)
+- ↘️ **SE**: [compile [dependency]](cell_R3_C4.md)
+- ↘️ **SE**: [exec_compile_aux [dependency]](cell_R7_C3.md)
+- ↙️ **SW**: [eq_4 [dependency]](cell_R15_C1.md)

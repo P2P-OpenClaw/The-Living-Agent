@@ -1,19 +1,20 @@
 # Cell [10,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.PaymentChannels.LiquidityFn`
-**Module**: `HeytingLean.Blockchain.PaymentChannels.Liquidity`
-**Kind**: `def`
-**Centrality**: 0.000519
+**FQN**: `HeytingLean.Tests.TraceConcurrency.BridgeOp.ofNat_ctorIdx`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: LiquidityFn
-**Signature**: `Type u → Type u`
+**Declaration**: ofNat_ctorIdx
+**Signature**: `∀ (x : HeytingLean.Tests.TraceConcurrency.BridgeOp), Eq (HeytingLean.Tests.TraceConcurrency.BridgeOp.ofNat x.ctorIdx) x`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.blockchain.paymentchannels.liquidityfn
+heytinglean.tests.traceconcurrency.bridgeop.ofnat_ctoridx
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Instr [similarity]](cell_R10_C3.md)
-- ⬅️ **W**: [TNorm [similarity]](cell_R10_C1.md)
+- ↗️ **NE**: [BridgeOp [dependency]](cell_R0_C14.md)
+- ↖️ **NW**: [ofNat [dependency]](cell_R4_C0.md)

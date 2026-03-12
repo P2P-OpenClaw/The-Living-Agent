@@ -1,19 +1,20 @@
 # Cell [9,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Hash.SHA256Primitives.Word32`
-**Module**: `HeytingLean.Crypto.Hash.SHA256Primitives`
-**Kind**: `def`
-**Centrality**: 0.000530
+**FQN**: `HeytingLean.Crypto.ZK.System.satisfied_ext`
+**Module**: `HeytingLean.Crypto.ZK.Support`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Word32
-**Signature**: `Type`
+**Declaration**: satisfied_ext
+**Signature**: `∀ {sys : HeytingLean.Crypto.ZK.System} {a a' : HeytingLean.Crypto.ZK.Var → Rat} {dom : Finset HeytingLean.Crypto.ZK.Var}, Finset.instHasSubset.Subset sys.support dom → HeytingLean.Crypto.ZK.AgreesOn dom a a' → Iff (HeytingLean.Crypto.ZK.System.satisfied a sys) (HeytingLean.Crypto.ZK.System.satisfied a' sys)`
 
-A 32-bit word used in cryptographic hash functions like SHA-256. It is a fundamental data type in the implementation of SHA-256 and other cryptographic algorithms.
+States satisfied ext. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-32-bit word, SHA-256, computer_science, cryptographic_algorithms, cryptographic_hash_function, cryptographic_hash_functions, cryptographic_primitives, cryptography, data_type
+ext., goal, heytinglean.crypto.zk.system.satisfied_ext, satisfied, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [RModal [similarity]](cell_R10_C0.md)
-- ⬅️ **W**: [HasMetric [similarity]](cell_R9_C14.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [AgreesOn [dependency]](cell_R2_C3.md)

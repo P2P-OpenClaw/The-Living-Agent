@@ -1,19 +1,21 @@
 # Cell [12,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Information.Side`
-**Module**: `HeytingLean.Information.Primitive`
-**Kind**: `inductive`
-**Centrality**: 0.000464
+**FQN**: `HeytingLean.Logic.Dialectic.oscillationOmega_coe`
+**Module**: `HeytingLean.Logic.Dialectic`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Side
-**Signature**: `inductive Side where | inside | outside`
+**Declaration**: oscillationOmega_coe
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α), Eq (HeytingLean.Logic.Dialectic.oscillationOmega R).val (HeytingLean.Logic.Dialectic.synth R R.primordial R.counter)`
 
-The primitive inside/outside choice, kept intentionally small and computable.
+States oscillation Omega coe. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-bool, distinction, inside, outside
+coe., heytinglean.logic.dialectic.oscillationomega_coe, omega, oscillation, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Rule [similarity]](cell_R12_C10.md)
-- ⬅️ **W**: [QubitCtor [similarity]](cell_R12_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [synth [dependency]](cell_R5_C8.md)
+- ↖️ **NW**: [oscillationOmega [dependency]](cell_R6_C8.md)

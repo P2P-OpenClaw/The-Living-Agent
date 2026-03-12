@@ -1,19 +1,19 @@
 # Cell [7,1] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.Atom`
-**Module**: `HeytingLean.Chem.Bonding.Atoms`
-**Kind**: `inductive`
-**Centrality**: 0.000640
+**FQN**: `HeytingLean.Contracts.Examples.BridgeFlags.runtime.eq_1`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Atom
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `Eq HeytingLean.Contracts.Examples.BridgeFlags.runtime { useTensorIntensity := Decidable.decide True, useGraphAlexandroff := Decidable.decide True, useCliffordProjector := Decidable.decide True }`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.chem.atom
+heytinglean.contracts.examples.bridgeflags.runtime.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [QSeries [similarity]](cell_R7_C2.md)
-- ⬅️ **W**: [RuleTag [similarity]](cell_R7_C0.md)
+- ↗️ **NE**: [runtime [dependency]](cell_R3_C13.md)

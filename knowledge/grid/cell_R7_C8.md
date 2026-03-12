@@ -1,19 +1,21 @@
 # Cell [7,8] — KNOWLEDGE
-**FQN**: `HeytingLean.BountyHunter.Solc.YulObjectMini.Item`
-**Module**: `HeytingLean.BountyHunter.Solc.YulObjectMini.Types`
-**Kind**: `inductive`
-**Centrality**: 0.000628
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.eqVarConstraint.eq_1`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Item
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ (i j : HeytingLean.Crypto.ZK.Var), Eq (HeytingLean.Crypto.ZK.Plonk.eqVarConstraint i j) { A := HeytingLean.Crypto.ZK.LinComb.single i 1, B := HeytingLean.Crypto.ZK.LinComb.ofConst 1, C := HeytingLean.Crypto.ZK.LinComb.single j 1 }`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.bountyhunter.solc.yulobjectmini.item
+heytinglean.crypto.zk.plonk.eqvarconstraint.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [NodeId [similarity]](cell_R7_C9.md)
-- ⬅️ **W**: [Node [similarity]](cell_R7_C7.md)
+- ↗️ **NE**: [eqVarConstraint [dependency]](cell_R3_C15.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [ofConst [dependency]](cell_R2_C5.md)

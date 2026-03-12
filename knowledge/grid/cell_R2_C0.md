@@ -1,20 +1,24 @@
 # Cell [2,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Noneism.Formula`
-**Module**: `HeytingLean.Noneism.Syntax`
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
 **Kind**: `inductive`
-**Centrality**: 0.001397
+**Centrality**: 0.000385
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Formula
-**Signature**: `Type → Type`
+**Declaration**: Model
+**Signature**: `{α : Type u} → [HeytingLean.LoF.PrimaryAlgebra α] → Type u`
 
-Object-language formulas over a parameter type `σ` of predicate symbols.
+Intensity-aware tensor model: remembers the legacy tensor bridge together with the target profile, ensuring the upgrade data stays in sync with the existing round-trip contract.
 
 ## Keywords
-a, formulas, heytinglean.noneism.formula, object-language, of, over, parameter, type
+Bridges, Contract, Data, Intensity, Legacy, Model, Profile, Round-trip, Sync, Target, Tensor, Upgrade
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [ULevel [similarity]](cell_R1_C15.md)
-- ➡️ **E**: [FinDist [similarity]](cell_R2_C1.md)
-- ↘️ **SE**: [Coalg [similarity]](cell_R6_C6.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [intensityPoint [dependency]](cell_R7_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R11_C11.md)
+- ↘️ **SE**: [fromOmega [dependency]](cell_R6_C11.md)
+- ↘️ **SE**: [tensorIntensityModel [dependency]](cell_R6_C12.md)
+- ↘️ **SE**: [inj [dependency]](cell_R6_C13.md)

@@ -1,21 +1,22 @@
 # Cell [13,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Noneism.LP.Atom`
-**Module**: `HeytingLean.Noneism.Semantics.LP`
-**Kind**: `inductive`
-**Centrality**: 0.000451
+**FQN**: `HeytingLean.Logic.Modal.DialParam.expandAt_birth`
+**Module**: `HeytingLean.Logic.ModalDial`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Atom
-**Signature**: `Type`
+**Declaration**: expandAt_birth
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat), Eq (HeytingLean.Logic.Modal.DialParam.expandAt R n (HeytingLean.Logic.Modal.DialParam.birth R)) (HeytingLean.Logic.Modal.DialParam.birth R)`
 
-A simple countervaluation: A is both-true, B is false-only.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, b, both-true, countervaluation, heytinglean.noneism.lp.atom, is, simple
+heytinglean.logic.modal.dialparam.expandat_birth
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ⬆️ **N**: [Attribute [similarity]](cell_R8_C0.md)
-- ↗️ **NE**: [CertifiedNucleus [similarity]](cell_R12_C3.md)
-- ➡️ **E**: [RuleType [similarity]](cell_R12_C15.md)
-- ↘️ **SE**: [Basis [similarity]](cell_R13_C1.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [expandAt [dependency]](cell_R5_C12.md)
+- ↗️ **NE**: [birth [dependency]](cell_R6_C9.md)

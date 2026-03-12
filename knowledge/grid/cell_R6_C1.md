@@ -1,19 +1,23 @@
 # Cell [6,1] — KNOWLEDGE
-**FQN**: `HeytingLean.Computational.Tensor.EmbVec`
-**Module**: `HeytingLean.Computational.Tensor.Core`
-**Kind**: `inductive`
-**Centrality**: 0.000697
+**FQN**: `HeytingLean.Logic.Stage.DialParam.effectCompatible`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `def`
+**Centrality**: 0.000078
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: EmbVec
-**Signature**: `Type`
+**Declaration**: effectCompatible
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (P : HeytingLean.Logic.Modal.DialParam α) → P.dial.core.Omega → P.dial.core.Omega → Prop`
 
-No docstring available; inspect the Lean declaration directly.
+Effect-compatibility predicate (disjointness).
 
 ## Keywords
-heytinglean.computational.tensor.embvec
+categorical_logic, category_theory, intuitionistic_logic, logic, proof_assistants
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [FlatLayout [similarity]](cell_R6_C2.md)
-- ⬅️ **W**: [HaltSys [similarity]](cell_R6_C0.md)
+- ↗️ **NE**: [DialParam [dependency]](cell_R1_C11.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R11_C2.md)
+- ↘️ **SE**: [stageEffectCompatible_encode [dependency]](cell_R11_C3.md)
+- ↘️ **SE**: [ladder_orthomodular_disjoint [dependency]](cell_R13_C13.md)

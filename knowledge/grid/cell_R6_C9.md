@@ -1,20 +1,22 @@
 # Cell [6,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Noneism.LP.TV`
-**Module**: `HeytingLean.Noneism.Semantics.LP`
-**Kind**: `inductive`
-**Centrality**: 0.000676
+**FQN**: `HeytingLean.Logic.Modal.DialParam.birth`
+**Module**: `HeytingLean.Logic.ModalDial`
+**Kind**: `def`
+**Centrality**: 0.000038
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: TV
-**Signature**: `structure TV where T : Bool; F : Bool`
+**Declaration**: birth
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → α`
 
-Truth values as 'is true' and 'is false' flags.
+The primordial oscillation as a canonical birth element.
 
 ## Keywords
-F flag, T flag, TV, four-valued, truth value
+a, as, birth, canonical, heytinglean.logic.modal.dialparam.birth, oscillation, primordial, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Partition [similarity]](cell_R6_C10.md)
-- ⬅️ **W**: [KEM [similarity]](cell_R6_C8.md)
-- ↖️ **NW**: [Tri [similarity]](cell_R5_C1.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C12.md)
+- ↘️ **SE**: [collapseAt_birth [dependency]](cell_R12_C14.md)
+- ↙️ **SW**: [expandAt_birth [dependency]](cell_R13_C0.md)

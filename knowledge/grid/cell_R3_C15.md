@@ -1,19 +1,21 @@
 # Cell [3,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Logic.Stage.Bridge`
-**Module**: `HeytingLean.Logic.StageSemantics`
-**Kind**: `inductive`
-**Centrality**: 0.000924
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.eqVarConstraint`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `def`
+**Centrality**: 0.000035
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Bridge
-**Signature**: `(α Ω : Type u) → [LE α] → [LE Ω] → Type u`
+**Declaration**: eqVarConstraint
+**Signature**: `HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Constraint`
 
-Bridges expose shadow/lift data satisfying a round-trip contract.
+Equality constraint between variables `i` and `j`.
 
 ## Keywords
-Bridge, HeytingLean.Logic.Stage.Bridge
+and, between, constraint, equality, heytinglean.crypto.zk.plonk.eqvarconstraint, i, j, variables
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [TrapdoorParams [similarity]](cell_R4_C0.md)
-- ⬅️ **W**: [SISParams [similarity]](cell_R3_C14.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R7_C8.md)
+- ↙️ **SW**: [eqVarConstraint_refl_satisfied [dependency]](cell_R7_C9.md)

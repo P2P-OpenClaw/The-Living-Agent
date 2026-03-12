@@ -1,20 +1,23 @@
 # Cell [10,7] — KNOWLEDGE
-**FQN**: `HeytingLean.CPP.MeetQuantale`
-**Module**: `HeytingLean.CPP.MeetQuantale`
-**Kind**: `inductive`
-**Centrality**: 0.000514
+**FQN**: `HeytingLean.Runtime.bridgeSuite`
+**Module**: `HeytingLean.Runtime.BridgeSuite`
+**Kind**: `def`
+**Centrality**: 0.000043
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: MeetQuantale
-**Signature**: `Type u → Type u`
+**Declaration**: bridgeSuite
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → HeytingLean.Contracts.Examples.BridgeSuite α R`
 
-Type wrapper for equipping a frame with `(*) := (⊓)` (“logic-channel” tensor).
+Bridge suite exposed to runtime components, assembled via `Contracts.Examples.selectSuite`.
 
 ## Keywords
-a, equipping, for, frame, heytinglean.cpp.meetquantale, type, with, wrapper
+BridgeFlags, selectSuite
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [CalculusNucleus [similarity]](cell_R10_C8.md)
-- ⬅️ **W**: [ASpace [similarity]](cell_R10_C6.md)
-- ↖️ **NW**: [LoFExpr [similarity]](cell_R6_C5.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [BridgeSuite [dependency]](cell_R4_C11.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [runtime_graph_round_verified [dependency]](cell_R15_C7.md)
+- ↙️ **SW**: [runtime_clifford_round_verified [dependency]](cell_R15_C6.md)

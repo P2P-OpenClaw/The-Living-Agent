@@ -1,22 +1,23 @@
 # Cell [0,6] — ENTRY
-**FQN**: `HeytingLean.LoF.CryptoSheaf.PosetSite`
-**Module**: `HeytingLean.LoF.CryptoSheaf.Site`
+**FQN**: `HeytingLean.Contracts.Examples.BridgeFlags`
+**Module**: `HeytingLean.Contracts.Examples`
 **Kind**: `inductive`
-**Centrality**: 0.002739
+**Centrality**: 0.000580
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: PosetSite
-**Signature**: `(C : Type u_1) → [PartialOrder C] → Type (max u_1 (u_2 + 1))`
+**Declaration**: BridgeFlags
+**Signature**: `Type`
 
-A simplified site whose objects form a poset of contexts.
+Feature toggles controlling which enriched bridge carriers are selected.
 
 ## Keywords
-a, form, heytinglean.lof.cryptosheaf.posetsite, objects, simplified, site, whose
+bridge, carriers, controlling, enriched, feature, heytinglean.contracts.examples.bridgeflags, toggles, which
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Expr [similarity]](cell_R0_C7.md)
-- ↘️ **SE**: [CompPresheaf [dependency]](cell_R15_C14.md)
-- ⬇️ **S**: [ASpace [similarity]](cell_R10_C6.md)
-- ↙️ **SW**: [Obj [similarity]](cell_R2_C3.md)
-- ⬅️ **W**: [MWObj [similarity]](cell_R0_C5.md)
+- ↘️ **SE**: [selectSuite [dependency]](cell_R10_C9.md)
+- ↘️ **SE**: [bridge_graph_clifford_commute [dependency]](cell_R15_C11.md)
+- ↘️ **SE**: [runtime [dependency]](cell_R3_C13.md)
+- ↙️ **SW**: [default [dependency]](cell_R3_C3.md)
+- ↙️ **SW**: [alexandroffFlags [dependency]](cell_R4_C1.md)

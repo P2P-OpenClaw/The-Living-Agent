@@ -1,19 +1,22 @@
 # Cell [14,11] — KNOWLEDGE
-**FQN**: `HeytingLean.Topos.LocalOperator`
-**Module**: `HeytingLean.Topos.LocalOperator`
-**Kind**: `inductive`
-**Centrality**: 0.000423
+**FQN**: `HeytingLean.Contracts.Examples.tensorPack.eq_1`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: LocalOperator
-**Signature**: `(C : Type u) → [inst : CategoryTheory.Category C] → [CategoryTheory.Limits.HasPullbacks C] → Type (max u v)`
+**Declaration**: eq_1
+**Signature**: `∀ (α : Type u) [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (flags : HeytingLean.Contracts.Examples.BridgeFlags), Eq (HeytingLean.Contracts.Examples.tensorPack α R flags) (if h : Eq flags.useTensorIntensity Bool.true then let model := HeytingLean.Contracts.Examples.tensorIntensityModel α R; have hR := ⋯; have hcontr := model.contract; { Carrier := model.Carrier, contract := ⋯.mp hcontr } else { Carrier := (HeytingLean.Contracts.Examples.tensor α R 0).Carrier, contract := (HeytingLean.Contracts.Examples.tensor α R 0).contract })`
 
-`LocalOperator C` is a **universal closure operator** on subobjects: it consists of a closure operator on each `Subobject X`, stable under pullback. This is the “subobject-lattice” presentation of a Lawvere–Tierney modality. A full classifier-based presentation (endomorphism `j : Ω ⟶ Ω` plus axioms) lives separately in `HeytingLean.Topos.LTfromNucleus`.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-closure, pullback_stable
+1., eq, goal, heytinglean.contracts.examples.tensorpack.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [ClosedSieve [similarity]](cell_R14_C12.md)
-- ⬅️ **W**: [E91Substrate [similarity]](cell_R14_C10.md)
+- ↗️ **NE**: [tensorPack [dependency]](cell_R10_C12.md)
+- ↗️ **NE**: [tensorIntensityModel [dependency]](cell_R6_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [tensor [dependency]](cell_R5_C6.md)

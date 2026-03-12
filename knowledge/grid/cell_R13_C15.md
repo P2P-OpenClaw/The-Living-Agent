@@ -1,19 +1,20 @@
 # Cell [13,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Physics.String.Generator`
-**Module**: `HeytingLean.Physics.String.WorldsheetCobordism`
-**Kind**: `inductive`
-**Centrality**: 0.000434
+**FQN**: `HeytingLean.Visual.Clifford.Diagram.comp.elim`
+**Module**: `HeytingLean.Visual.OperatorDiagram`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Generator
-**Signature**: `Type`
+**Declaration**: elim
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {M : HeytingLean.Bridges.Clifford.Model α} → {motive : HeytingLean.Visual.Clifford.Diagram M → Sort u_1} → (t : HeytingLean.Visual.Clifford.Diagram M) → Eq t.ctorIdx 6 → ((f g : HeytingLean.Visual.Clifford.Diagram M) → motive (f.comp g)) → motive t`
 
-No docstring available; inspect the Lean declaration directly.
+Defines/computes elim. Use to construct or compute the corresponding value in proofs or definitions.
 
 ## Keywords
-heytinglean.physics.string.generator
+computes, construct, defines, elim., heytinglean.visual.clifford.diagram.comp.elim, or, to, use
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [Subshell [similarity]](cell_R14_C0.md)
-- ⬅️ **W**: [TotalStore [similarity]](cell_R13_C14.md)
+- ⬆️ **N**: [Diagram [dependency]](cell_R4_C15.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

@@ -1,23 +1,20 @@
 # Cell [4,7] — KNOWLEDGE
-**FQN**: `HeytingLean.MiniC.Fun`
-**Module**: `HeytingLean.MiniC.Syntax`
-**Kind**: `inductive`
-**Centrality**: 0.000833
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.Gate.B`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Fun
-**Signature**: `Type`
+**Declaration**: B
+**Signature**: `HeytingLean.Crypto.ZK.Plonk.Gate → HeytingLean.Crypto.ZK.Plonk.LinComb`
 
-Inductive type Fun. Use when performing case analysis or recursion over this type.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-case, fun., heytinglean.minic.fun, inductive, performing, type, use, when
+heytinglean.crypto.zk.plonk.gate.b
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LWEParams [similarity]](cell_R4_C8.md)
-- ↘️ **SE**: [Rule [similarity]](cell_R12_C10.md)
-- ⬇️ **S**: [W [similarity]](cell_R12_C7.md)
-- ↙️ **SW**: [Atom [similarity]](cell_R12_C2.md)
-- ⬅️ **W**: [Cap [similarity]](cell_R4_C6.md)
-- ↖️ **NW**: [Comb [similarity]](cell_R0_C1.md)
+- ↖️ **NW**: [Gate [dependency]](cell_R1_C4.md)
+- ↖️ **NW**: [LinComb [dependency]](cell_R1_C5.md)

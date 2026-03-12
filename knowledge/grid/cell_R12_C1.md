@@ -1,19 +1,21 @@
 # Cell [12,1] — KNOWLEDGE
-**FQN**: `HeytingLean.ClosingTheLoop.Semantics.Kernel`
-**Module**: `HeytingLean.ClosingTheLoop.Semantics.KernelLaws`
-**Kind**: `inductive`
-**Centrality**: 0.000477
+**FQN**: `HeytingLean.Bridges.Tensor.Model.logicalShadow_stageOrthocomplement_encode`
+**Module**: `HeytingLean.Bridges.Tensor`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Kernel
-**Signature**: `{α : Type u} → [SemilatticeInf α] → Type u`
+**Declaration**: logicalShadow_stageOrthocomplement_encode
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (M : HeytingLean.Bridges.Tensor.Model α) (a : M.R.Omega), Eq (M.logicalShadow (M.stageOrthocomplement (M.contract.encode a))) (Nucleus.instFunLike.coe M.R.nucleus (HeytingLean.Logic.Stage.DialParam.orthocomplement (HeytingLean.Logic.Modal.DialParam.base M.R) a).val)`
 
-A contractive, meet-preserving, idempotent endomorphism (an “interior/kernel” operator).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, an, contractive, endomorphism, heytinglean.closingtheloop.semantics.kernel, idempotent, interior, meet-preserving
+heytinglean.bridges.tensor.model.logicalshadow_stageorthocomplement_encode
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Atom [similarity]](cell_R12_C2.md)
-- ⬅️ **W**: [MolGraph [similarity]](cell_R12_C0.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C12.md)
+- ↗️ **NE**: [base [dependency]](cell_R4_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

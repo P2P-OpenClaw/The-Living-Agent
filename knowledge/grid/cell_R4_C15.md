@@ -1,19 +1,22 @@
 # Cell [4,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.TWA.LindbladSpec`
-**Module**: `HeytingLean.Quantum.TWA.Core`
+**FQN**: `HeytingLean.Visual.Clifford.Diagram`
+**Module**: `HeytingLean.Visual.OperatorDiagram`
 **Kind**: `inductive`
-**Centrality**: 0.000790
+**Centrality**: 0.000174
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: LindbladSpec
-**Signature**: `Type`
+**Declaration**: Diagram
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.Bridges.Clifford.Model α → Type u`
 
-A Lindblad/TWA specification: a Hamiltonian on spin configurations, a jump family, and a PSD rate/correlation matrix `Γ` (indexed by jump labels).
+Unary operator diagrams built from Clifford bridge primitives.
 
 ## Keywords
-lindblad_equation, open_quantum_systems, quantum_dynamics, quantum_information_theory, quantum_jump_master_equation, quantum_jump_process, quantum_jump_process_theory, quantum_jump_process_theory_lindblad_spec, quantum_jump_process_theory_lindblad_spec_hamiltonian_jumps_rate_matrix, quantum_master_equation, quantum_mechanics, quantum_stochastic_master_equation
+bridge, built, clifford, diagrams, from, heytinglean.visual.clifford.diagram, operator, unary
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [KEMScheme [similarity]](cell_R5_C0.md)
-- ⬅️ **W**: [Val [similarity]](cell_R4_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Model [dependency]](cell_R1_C9.md)
+- ⬇️ **S**: [elim [dependency]](cell_R13_C15.md)
+- ↙️ **SW**: [inj [dependency]](cell_R14_C0.md)

@@ -1,19 +1,20 @@
 # Cell [7,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Physics.String.QSeries`
-**Module**: `HeytingLean.Physics.String.QSeries`
-**Kind**: `inductive`
-**Centrality**: 0.000639
+**FQN**: `HeytingLean.Crypto.BoolLens.exec.eq_2`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: QSeries
-**Signature**: `Type`
+**Declaration**: eq_2
+**Signature**: `∀ {n : Nat} (ρ : HeytingLean.Crypto.BoolLens.Env n) (x : HeytingLean.Crypto.BoolLens.Stack) (instr : HeytingLean.Crypto.Instr n) (prog : List (HeytingLean.Crypto.Instr n)), Eq (HeytingLean.Crypto.BoolLens.exec ρ (List.cons instr prog) x) (HeytingLean.Crypto.BoolLens.exec ρ prog (HeytingLean.Crypto.BoolLens.step ρ instr x))`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.physics.string.qseries
+heytinglean.crypto.boollens.exec.eq_2
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Modality [similarity]](cell_R7_C3.md)
-- ⬅️ **W**: [Atom [similarity]](cell_R7_C1.md)
+- ↗️ **NE**: [Instr [dependency]](cell_R0_C7.md)
+- ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)

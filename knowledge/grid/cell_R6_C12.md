@@ -1,20 +1,22 @@
 # Cell [6,12] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.PeriodicTable.Orbital`
-**Module**: `HeytingLean.Chem.PeriodicTable.ElectronConfiguration`
-**Kind**: `inductive`
-**Centrality**: 0.000652
+**FQN**: `HeytingLean.Contracts.Examples.tensorIntensityModel`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `def`
+**Centrality**: 0.000031
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Orbital
-**Signature**: `Type`
+**Declaration**: tensorIntensityModel
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → HeytingLean.Bridges.Tensor.Intensity.Model`
 
-Orbital angular-momentum labels used in chemistry.
+Default intensity model used when promoting the tensor bridge.
 
 ## Keywords
-angular-momentum, chemistry, orbital
+default, heytinglean.contracts.examples.tensorintensitymodel, intensity, model, promoting, the, used, when
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [BB84State [similarity]](cell_R6_C13.md)
-- ↙️ **SW**: [Basis [similarity]](cell_R13_C1.md)
-- ⬅️ **W**: [Formula [similarity]](cell_R6_C11.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Model [dependency]](cell_R2_C0.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R12_C5.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R14_C11.md)

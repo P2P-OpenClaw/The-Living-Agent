@@ -1,19 +1,22 @@
 # Cell [3,12] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Lattice.NTTIterative.F`
-**Module**: `HeytingLean.Crypto.Lattice.NTTIterative`
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.Invariant`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
 **Kind**: `def`
-**Centrality**: 0.000947
+**Centrality**: 0.000044
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: F
-**Signature**: `Type`
+**Declaration**: Invariant
+**Signature**: `HeytingLean.Crypto.ZK.R1CSBool.Builder → HeytingLean.Crypto.BoolLens.Stack → List HeytingLean.Crypto.ZK.Var → Prop`
 
-No docstring available; inspect the Lean declaration directly.
+Convenience invariant bundling matches, bounds, and stack length.
 
 ## Keywords
-heytinglean.crypto.lattice.nttiterative.f
+and, bounds, bundling, convenience, heytinglean.crypto.zk.r1csbool.invariant, invariant, matches, stack
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LayoutAnnotation [similarity]](cell_R3_C13.md)
-- ⬅️ **W**: [MinEntropySpace [similarity]](cell_R3_C11.md)
+- ⬆️ **N**: [Stack [dependency]](cell_R0_C12.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↘️ **SE**: [compile_invariant [dependency]](cell_R8_C14.md)
+- ↙️ **SW**: [applyAnd_invariant [dependency]](cell_R8_C3.md)

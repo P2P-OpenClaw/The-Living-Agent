@@ -1,20 +1,20 @@
 # Cell [6,14] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.ZK.LinComb`
-**Module**: `HeytingLean.Crypto.ZK.R1CS`
-**Kind**: `inductive`
-**Centrality**: 0.000648
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model.Carrier.profile`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: LinComb
-**Signature**: `structure LinComb where const : Q; terms : List (Var * Q)`
+**Declaration**: profile
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {M : HeytingLean.Bridges.Tensor.Intensity.Model} → M.Carrier → HeytingLean.Bridges.Tensor.Intensity.Profile α`
 
-Linear combinations over Q as a constant plus explicit terms.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-coefficient, combination, constraint, linear, variable
+heytinglean.bridges.tensor.intensity.model.carrier.profile
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Ciphertext [similarity]](cell_R6_C15.md)
-- ↙️ **SW**: [LaurentPoly [similarity]](cell_R9_C11.md)
-- ⬅️ **W**: [BB84State [similarity]](cell_R6_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Profile [dependency]](cell_R1_C0.md)

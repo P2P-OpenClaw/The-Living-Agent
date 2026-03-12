@@ -1,20 +1,24 @@
 # Cell [5,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.Builder`
-**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
-**Kind**: `inductive`
-**Centrality**: 0.000739
+**FQN**: `HeytingLean.Logic.Dialectic.synth`
+**Module**: `HeytingLean.Logic.Dialectic`
+**Kind**: `def`
+**Centrality**: 0.000118
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Builder
-**Signature**: `Type`
+**Declaration**: synth
+**Signature**: `def synth (R : Reentry α) (T A : α) : α := R (T ⊔ A)`
 
-Builder state used while translating a boolean trace to R1CS.
+Dialectic synthesis of thesis/antithesis under a re-entry nucleus.
 
 ## Keywords
-a, boolean, builder, heytinglean.crypto.zk.r1csbool.builder, state, translating, used, while
+synth
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [RadialGraph [similarity]](cell_R0_C9.md)
-- ➡️ **E**: [System [similarity]](cell_R5_C9.md)
-- ⬅️ **W**: [Constraint [similarity]](cell_R5_C7.md)
+- ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C10.md)
+- ↘️ **SE**: [synthOmega_coe [dependency]](cell_R12_C11.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C12.md)
+- ↘️ **SE**: [oscillationOmega_coe [dependency]](cell_R12_C9.md)

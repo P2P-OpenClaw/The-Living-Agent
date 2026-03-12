@@ -1,19 +1,20 @@
 # Cell [10,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Calculus.RModal`
-**Module**: `HeytingLean.Calculus.RModalCalculus`
-**Kind**: `inductive`
-**Centrality**: 0.000529
+**FQN**: `HeytingLean.Crypto.ZK.System.satisfied_iff_cons`
+**Module**: `HeytingLean.Crypto.ZK.Support`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: RModal
-**Signature**: `(α : Type u) → [LE α] → Type u`
+**Declaration**: satisfied_iff_cons
+**Signature**: `∀ {a : HeytingLean.Crypto.ZK.Var → Rat} {sys : HeytingLean.Crypto.ZK.System}, Iff (HeytingLean.Crypto.ZK.System.satisfied a sys) (HeytingLean.Crypto.ZK.System.satisfied_cons a sys)`
 
-No docstring available; inspect the Lean declaration directly.
+States satisfied iff cons. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-heytinglean.calculus.rmodal
+cons., heytinglean.crypto.zk.system.satisfied_iff_cons, iff, satisfied, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Word32 [similarity]](cell_R9_C15.md)
-- ➡️ **E**: [TNorm [similarity]](cell_R10_C1.md)
+- ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
+- ↗️ **NE**: [satisfied_cons [dependency]](cell_R4_C4.md)

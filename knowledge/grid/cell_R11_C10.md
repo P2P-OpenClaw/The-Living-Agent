@@ -1,21 +1,21 @@
 # Cell [11,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Numbers.Surreal.LoFProgram.Op`
-**Module**: `HeytingLean.Numbers.Surreal.LoFProgram`
-**Kind**: `inductive`
-**Centrality**: 0.000485
+**FQN**: `HeytingLean.Bridges.Graph.Alexandroff.Model.contract`
+**Module**: `HeytingLean.Bridges.Graph.Alexandroff`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Op
-**Signature**: `Type`
+**Declaration**: contract
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (M : HeytingLean.Bridges.Graph.Alexandroff.Model) → HeytingLean.Contracts.RoundTrip M.core.R M.Carrier`
 
-A flat instruction set for constructing pre-games.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, constructing, flat, for, heytinglean.numbers.surreal.lofprogram.op, instruction, pre-games., set
+heytinglean.bridges.graph.alexandroff.model.contract
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Brane [similarity]](cell_R11_C11.md)
-- ↘️ **SE**: [SpinVector [similarity]](cell_R12_C14.md)
-- ⬅️ **W**: [PDGraph [similarity]](cell_R11_C9.md)
-- ↖️ **NW**: [MeetQuantale [similarity]](cell_R10_C7.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C15.md)
+- ↗️ **NE**: [RoundTrip [dependency]](cell_R4_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

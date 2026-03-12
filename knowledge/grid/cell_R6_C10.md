@@ -1,19 +1,21 @@
 # Cell [6,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Physics.String.Partition`
-**Module**: `HeytingLean.Physics.String.CFT`
+**FQN**: `HeytingLean.Bridges.Assembly.ASpace.intNucleus`
+**Module**: `HeytingLean.Bridges.Assembly.AssemblyInterior`
 **Kind**: `def`
-**Centrality**: 0.000664
+**Centrality**: 0.000036
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Partition
-**Signature**: `Type`
+**Declaration**: intNucleus
+**Signature**: `{α : Type u} → (G : HeytingLean.ATheory.ASpace α) → HeytingLean.LoF.IntNucleus (Set G.V)`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.physics.string.partition
+heytinglean.bridges.assembly.aspace.intnucleus
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Formula [similarity]](cell_R6_C11.md)
-- ⬅️ **W**: [TV [similarity]](cell_R6_C9.md)
+- ↖️ **NW**: [ASpace [dependency]](cell_R0_C8.md)
+- ↖️ **NW**: [IntNucleus [dependency]](cell_R2_C1.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R10_C14.md)

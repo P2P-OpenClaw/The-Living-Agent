@@ -1,7 +1,7 @@
 # The Living Agent 🧬
 ### Autonomous Research & Discovery Engine (P2PCLAW Silicon Layer)
 
-Welcome to **The Living Agent v3.0**, a fully autonomous research AI that navigates a **Chess-Grid** of knowledge — a 16×16 board of interconnected research cells — evolving its own skills and understanding with every cycle.
+Welcome to **The Living Agent v3.0**, a fully autonomous research AI that navigates a **verified 16×16 knowledge grid** — a board of interconnected research cells grounded in real Heyting declarations, semantic overlay metadata, and dependency edges — evolving its own skills and understanding with every cycle.
 
 ---
 
@@ -14,7 +14,7 @@ Welcome to **The Living Agent v3.0**, a fully autonomous research AI that naviga
    - [KoboldCPP](https://github.com/LostRuins/koboldcpp/releases/latest) (`koboldcpp.exe`)
 4. **Run**:
    - Launch `koboldcpp.exe`, load the Qwen model on port **5001**.
-   - Double-click **`start.bat`** — the grid auto-generates if needed.
+   - Double-click **`start.bat`** — the verified grid is used if present; if the grid is missing and `HEYTING_ROOT` is configured, the bridge rebuilds it from Heyting before launch.
 
 ---
 
@@ -37,8 +37,8 @@ R15│📝SYNTH│📝SYNTH│📝SYNTH│ ... │📝SYNTH│  ← Paper synthe
   └───────┴───────┴───────┴─────┴───────┘
 ```
 
-- **256 cells**, each with a unique research topic.
-- **8 directions** per cell (N, NE, E, SE, S, SW, W, NW).
+- **256 cells**, each backed by a real `HeytingLean.*` declaration.
+- **Dependency-aware navigation** across real dependency and reverse-dependency edges.
 - Agent synthesizes a paper at **Row 15** or when **75% context** is consumed.
 
 ---
@@ -73,13 +73,29 @@ The engine patch in `agent_v2_production.py` shells out to Heyting-side scripts 
 `$HEYTING_ROOT/scripts/`. Default publication mode is dry-run; set
 `LIVING_AGENT_LIVE_PUBLISH=true` only after reviewing the local AgentHALO configuration.
 
+The verified grid builder lives at:
+
+```bash
+$HEYTING_ROOT/scripts/living_agent_grid_builder.py
+```
+
+It emits:
+- `artifacts/living_agent/verified_grid/grid/*.md`
+- `artifacts/living_agent/verified_grid/grid_index.md`
+- `artifacts/living_agent/verified_grid/verified_grid_index.json`
+- `artifacts/living_agent/verified_grid/install_verified_grid.sh`
+
+The vendored fallback copy under `heyting_bridge/living_agent_grid_builder.py` stays in sync
+with the upstream Heyting script for standalone deployments.
+
 ## 📁 Repository Structure
 ```
-agent_v2_production.py   ← Chess-Grid execution engine (v3.0)
-grid_generator.py        ← Generates the 16×16 knowledge board
+agent_v2_production.py   ← Verified-grid execution engine (v3.0)
+grid_generator.py        ← Legacy placeholder grid generator (offline fallback only)
 soul.md                  ← Agent's persistent identity
-knowledge/grid/          ← 256 interconnected research cells
-knowledge/grid_index.md  ← Visual grid map
+knowledge/grid/          ← Installed verified research cells + grid metadata
+knowledge/grid_index.md  ← Visual verified grid map
+heyting_bridge/living_agent_grid_builder.py ← Bundled verified-grid builder
 memories/                ← Episodic + Semantic + Hive memory
 skills/                  ← Executable skill nodes
 ```

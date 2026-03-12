@@ -1,19 +1,20 @@
 # Cell [4,1] — KNOWLEDGE
-**FQN**: `HeytingLean.CCI.Expr`
-**Module**: `HeytingLean.CCI.Core`
-**Kind**: `inductive`
-**Centrality**: 0.000889
+**FQN**: `HeytingLean.Contracts.Examples.alexandroffFlags`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `def`
+**Centrality**: 0.000028
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Expr
-**Signature**: `Type`
+**Declaration**: alexandroffFlags
+**Signature**: `HeytingLean.Contracts.Examples.BridgeFlags`
 
-No docstring available; inspect the Lean declaration directly.
+Toggle enabling only the Alexandroff graph carrier.
 
 ## Keywords
-heytinglean.cci.expr
+alexandroff, carrier., enabling, graph, heytinglean.contracts.examples.alexandroffflags, only, the, toggle
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Ctx [similarity]](cell_R4_C2.md)
-- ⬅️ **W**: [TrapdoorParams [similarity]](cell_R4_C0.md)
+- ↗️ **NE**: [BridgeFlags [dependency]](cell_R0_C6.md)
+- ↘️ **SE**: [graph_pack_alexandroff_round_verified [dependency]](cell_R15_C4.md)

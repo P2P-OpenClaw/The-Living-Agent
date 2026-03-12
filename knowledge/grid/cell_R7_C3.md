@@ -1,19 +1,21 @@
 # Cell [7,3] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.Translate.Modality`
-**Module**: `HeytingLean.Quantum.Translate.Modality`
-**Kind**: `inductive`
-**Centrality**: 0.000638
+**FQN**: `HeytingLean.Crypto.BoolLens.exec_compile_aux`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Modality
-**Signature**: `(α : Type u_1) → [CompleteLattice α] → Type u_1`
+**Declaration**: exec_compile_aux
+**Signature**: `∀ {n : Nat} (ρ : HeytingLean.Crypto.BoolLens.Env n) (φ : HeytingLean.Crypto.Form n) (stk : HeytingLean.Crypto.BoolLens.Stack), Eq (HeytingLean.Crypto.BoolLens.exec ρ φ.compile stk) (List.cons (HeytingLean.Crypto.BoolLens.eval φ ρ) stk)`
 
-Packages the nucleus used to Bohrify OML propositions into a Heyting frame, together with the requirement that the closure fixes ⊤.
+Executing the compiled form pushes its boolean evaluation on the stack.
 
 ## Keywords
-J : Nucleus α, preserves_top
+boolean, compiled, executing, form, heytinglean.crypto.boollens.exec_compile_aux, its, pushes, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [BinderInfo [similarity]](cell_R7_C4.md)
-- ⬅️ **W**: [QSeries [similarity]](cell_R7_C2.md)
+- ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
+- ↗️ **NE**: [eval [dependency]](cell_R2_C9.md)
+- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)

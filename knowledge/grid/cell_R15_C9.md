@@ -1,21 +1,21 @@
 # Cell [15,9] — SYNTHESIS
-**FQN**: `HeytingLean.Bridges.Tensor.Model`
-**Module**: `HeytingLean.Bridges.Tensor`
-**Kind**: `inductive`
-**Centrality**: 0.000632
+**FQN**: `HeytingLean.Tests.TraceConcurrency.bridgeActWord.eq_2`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 5
 
 ## Topic
-**Declaration**: Model
-**Signature**: `(α : Type u) → [HeytingLean.LoF.PrimaryAlgebra α] → Type u`
+**Declaration**: eq_2
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (suite : HeytingLean.Contracts.Examples.BridgeSuite α R) (x : HeytingLean.Tests.TraceConcurrency.BridgeState R suite) (op : HeytingLean.Tests.TraceConcurrency.BridgeOp) (ops : List HeytingLean.Tests.TraceConcurrency.BridgeOp), Eq (HeytingLean.Tests.TraceConcurrency.bridgeActWord R suite (List.cons op ops) x) (HeytingLean.Tests.TraceConcurrency.bridgeActWord R suite ops (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite op x))`
 
-Tensor bridge data: dimension together with the core nucleus.
+States eq 2. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-bridge, categorical logic, category theory, computer science, core nucleus, data, dimension, fhe, program verification, tensor, topos theory, type theory
+2., eq, goal, heytinglean.tests.traceconcurrency.bridgeactword.eq_2, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [CompSpec [similarity]](cell_R1_C11.md)
-- ➡️ **E**: [Selector [similarity]](cell_R15_C10.md)
-- ⬅️ **W**: [RightInverseAt [similarity]](cell_R15_C8.md)
-- ↖️ **NW**: [StrongHyp [similarity]](cell_R14_C5.md)
+- ↗️ **NE**: [BridgeOp [dependency]](cell_R0_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [bridgeStep [dependency]](cell_R14_C6.md)

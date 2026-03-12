@@ -1,20 +1,21 @@
 # Cell [15,1] — SYNTHESIS
-**FQN**: `HeytingLean.Chem.PeriodicTable.name`
-**Module**: `HeytingLean.Chem.PeriodicTable.CIAAW2024`
-**Kind**: `def`
-**Centrality**: 0.001191
+**FQN**: `HeytingLean.Crypto.Lens.Form.evalL.eq_4`
+**Module**: `HeytingLean.Crypto.Lens.Transport`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: name
-**Signature**: `HeytingLean.Chem.PeriodicTable.Element → String`
+**Declaration**: eq_4
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] {R : HeytingLean.LoF.Reentry α} {n : Nat} (L : HeytingLean.Crypto.Lens R) (x : L.EnvL n) (φ ψ : HeytingLean.Crypto.Form n), Eq (HeytingLean.Crypto.Lens.Form.evalL L (φ.and ψ) x) (L.and (HeytingLean.Crypto.Lens.Form.evalL L φ x) (HeytingLean.Crypto.Lens.Form.evalL L ψ x))`
 
-No docstring available; inspect the Lean declaration directly.
+States eq 4. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-heytinglean.chem.periodictable.name
+4., eq, goal, heytinglean.crypto.lens.form.evall.eq_4, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Element [dependency]](cell_R0_C2.md)
-- ➡️ **E**: [symbol [similarity]](cell_R15_C2.md)
-- ⬅️ **W**: [atomicNumber [similarity]](cell_R15_C0.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [Lens [dependency]](cell_R4_C10.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

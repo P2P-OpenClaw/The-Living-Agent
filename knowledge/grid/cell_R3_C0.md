@@ -1,19 +1,22 @@
 # Cell [3,0] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Bauer.OmegaCPPO`
-**Module**: `HeytingLean.LoF.Bauer.DomainTheory`
-**Kind**: `inductive`
-**Centrality**: 0.001129
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.boolConstraint`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000059
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: OmegaCPPO
-**Signature**: `(D : Type u) → [inst : PartialOrder D] → [OrderBot D] → Type u`
+**Declaration**: boolConstraint
+**Signature**: `HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Constraint`
 
-An ω-chain complete pointed partial order (ωCPPO). We package: * a preorder `≤`, * a least element `⊥`, * and a supremum operation for ω-chains (monotone sequences).
+Booleanity constraint ensuring `v ∈ {0,1}`.
 
 ## Keywords
-an, chain, complete, cppo, heytinglean.lof.bauer.omegacppo, order, partial, pointed
+Booleanity, constraint, v, {0,1}
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [CExpr [similarity]](cell_R2_C15.md)
-- ➡️ **E**: [Proc [similarity]](cell_R3_C1.md)
+- ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
+- ↗️ **NE**: [Constraint [dependency]](cell_R0_C3.md)
+- ↘️ **SE**: [system_recordBoolean [dependency]](cell_R7_C14.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R8_C7.md)

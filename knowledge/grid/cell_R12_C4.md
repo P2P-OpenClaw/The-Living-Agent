@@ -1,19 +1,21 @@
 # Cell [12,4] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.Contracts.LeanYulDSL.ContractTemplate`
-**Module**: `HeytingLean.Blockchain.Contracts.LeanYulDSL.Spec`
-**Kind**: `inductive`
-**Centrality**: 0.000474
+**FQN**: `HeytingLean.Contracts.Examples.projectorModel.eq_1`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: ContractTemplate
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ (α : Type u) [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α), Eq (HeytingLean.Contracts.Examples.projectorModel α R) { core := HeytingLean.Contracts.Examples.clifford α R, projector := { axis := 0, idempotent := HeytingLean.Contracts.Examples.projectorModel._proof_1, selfAdjoint := HeytingLean.Contracts.Examples.projectorModel._proof_2 } }`
 
-No docstring available; inspect the Lean declaration directly.
+States eq 1. Use when reasoning about idempotence or rewriting goals that match this pattern.
 
 ## Keywords
-heytinglean.blockchain.contracts.leanyuldsl.contracttemplate
+1., about, eq, heytinglean.contracts.examples.projectormodel.eq_1, reasoning, states, use, when
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Backend [similarity]](cell_R12_C5.md)
-- ⬅️ **W**: [CertifiedNucleus [similarity]](cell_R12_C3.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [projectorModel [dependency]](cell_R6_C2.md)

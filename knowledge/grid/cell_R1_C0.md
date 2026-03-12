@@ -1,20 +1,21 @@
 # Cell [1,0] — KNOWLEDGE
-**FQN**: `HeytingLean.LambdaIR.Ctx`
-**Module**: `HeytingLean.LambdaIR.Syntax`
-**Kind**: `def`
-**Centrality**: 0.001970
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Profile`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
+**Kind**: `inductive`
+**Centrality**: 0.000323
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Ctx
-**Signature**: `Type`
+**Declaration**: Profile
+**Signature**: `Type u → Type u`
 
-No docstring available; inspect the Lean declaration directly.
+Raw intensity profile: coordinates living over a fixed dimension together with their bounds. The `normalised` field is an abstract predicate (no default) so that concrete instances can record ℓ¹/ℓ²-style constraints without forcing any particular numeric structure at this level.
 
 ## Keywords
-heytinglean.lambdair.ctx
+a, coordinates, heytinglean.bridges.tensor.intensity.profile, intensity, living, over, profile, raw
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Context [similarity]](cell_R0_C15.md)
-- ➡️ **E**: [AssemblySpace [similarity]](cell_R1_C1.md)
-- ↘️ **SE**: [Term [dependency]](cell_R14_C14.md)
+- ↘️ **SE**: [ofPoint [dependency]](cell_R3_C7.md)
+- ↘️ **SE**: [inj [dependency]](cell_R6_C13.md)
+- ↘️ **SE**: [profile [dependency]](cell_R6_C14.md)

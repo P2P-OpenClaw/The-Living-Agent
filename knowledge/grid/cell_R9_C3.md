@@ -1,21 +1,20 @@
 # Cell [9,3] — KNOWLEDGE
-**FQN**: `HeytingLean.Numbers.Surreal.TransfinitePreGame.OptionSet`
-**Module**: `HeytingLean.Numbers.Surreal.TransfinitePreGame`
-**Kind**: `inductive`
-**Centrality**: 0.000552
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.linhead_imp.eq_1`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: OptionSet
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ (vz _vx vy vmul : HeytingLean.Crypto.ZK.Var), Eq (HeytingLean.Crypto.ZK.R1CSBool.linhead_imp vz _vx vy vmul) { const := -1, terms := List.cons { fst := vz, snd := 1 } (List.cons { fst := vy, snd := 1 } (List.cons { fst := vmul, snd := -1 } List.nil)) }`
 
-A compact presentation of (possibly infinite) option sets.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-a, compact, heytinglean.numbers.surreal.transfinitepregame.optionset, infinite, of, option, possibly, presentation
+1., eq, goal, heytinglean.crypto.zk.r1csbool.linhead_imp.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [System [similarity]](cell_R5_C9.md)
-- ➡️ **E**: [ChainView [similarity]](cell_R9_C4.md)
-- ↘️ **SE**: [PreGame [similarity]](cell_R10_C14.md)
-- ⬅️ **W**: [ReachSystem [similarity]](cell_R9_C2.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [linhead_imp [dependency]](cell_R3_C1.md)

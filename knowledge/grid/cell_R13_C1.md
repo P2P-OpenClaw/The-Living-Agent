@@ -1,21 +1,22 @@
 # Cell [13,1] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.BB84.Basis`
-**Module**: `HeytingLean.Crypto.QKD.BB84.States`
-**Kind**: `inductive`
-**Centrality**: 0.000451
+**FQN**: `HeytingLean.Logic.Stage.DialParam.collapseAtOmega.eq_1`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Basis
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat) (a : R.Omega), Eq (HeytingLean.Logic.Stage.DialParam.collapseAtOmega R n a) (HeytingLean.LoF.Reentry.Omega.mk R (HeytingLean.Logic.Modal.DialParam.collapseAt R n a.val) ⋯)`
 
-The two bases used in BB84.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-bases, bb84., heytinglean.crypto.qkd.bb84.basis, in, the, two, used
+1., eq, goal, heytinglean.logic.stage.dialparam.collapseatomega.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [CalculusNucleus [similarity]](cell_R10_C8.md)
-- ➡️ **E**: [Context [similarity]](cell_R13_C2.md)
-- ↘️ **SE**: [Completion2Path [similarity]](cell_R15_C3.md)
-- ⬅️ **W**: [Atom [similarity]](cell_R13_C0.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [collapseAt [dependency]](cell_R5_C11.md)
+- ↗️ **NE**: [collapseAtOmega [dependency]](cell_R5_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

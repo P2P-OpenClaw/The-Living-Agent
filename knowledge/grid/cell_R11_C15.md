@@ -1,19 +1,21 @@
 # Cell [11,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.PaymentChannels.EVMAdapter.EVMState`
-**Module**: `HeytingLean.Blockchain.PaymentChannels.EVMAdapter.State`
-**Kind**: `inductive`
-**Centrality**: 0.000482
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model.stageOccam_encode`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: EVMState
-**Signature**: `Type`
+**Declaration**: stageOccam_encode
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (M : HeytingLean.Bridges.Tensor.Intensity.Model) (bounds : optParam HeytingLean.Bridges.Tensor.Intensity.Bounds M.profile.bounds) (normalised : optParam Prop True) (a : M.core.R.Omega), Eq (M.stageOccam bounds normalised (M.encode bounds normalised a)) (M.encode bounds normalised (HeytingLean.LoF.Reentry.Omega.mk M.core.R (HeytingLean.Epistemic.occam M.core.R a.val) ⋯))`
 
-No docstring available; inspect the Lean declaration directly.
+Occam reduction on the intensity carrier reduces to the core Occam operation on Ω.
 
 ## Keywords
-heytinglean.blockchain.paymentchannels.evmadapter.evmstate
+carrier, heytinglean.bridges.tensor.intensity.model.stageoccam_encode, intensity, occam, on, reduces, reduction, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [MolGraph [similarity]](cell_R12_C0.md)
-- ⬅️ **W**: [Scalar [similarity]](cell_R11_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Bounds [dependency]](cell_R0_C10.md)
+- ↖️ **NW**: [mk [dependency]](cell_R5_C4.md)

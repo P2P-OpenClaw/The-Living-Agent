@@ -1,20 +1,22 @@
 # Cell [0,8] — ENTRY
-**FQN**: `HeytingLean.Crypto.KEM.FIPS203.MLKEM203Params`
-**Module**: `HeytingLean.Crypto.KEM.MLKEM203Params`
+**FQN**: `HeytingLean.ATheory.ASpace`
+**Module**: `HeytingLean.ATheory.AssemblySpace`
 **Kind**: `inductive`
-**Centrality**: 0.002677
+**Centrality**: 0.000516
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: MLKEM203Params
-**Signature**: `Type`
+**Declaration**: ASpace
+**Signature**: `structure ASpace (α : Type u) where V : Type u; E : V → V → Prop`
 
-FIPS 203 (ML-KEM) parameter set bundle.
+Directed assembly space over objects with edges capturing allowed transitions.
 
 ## Keywords
-203, bundle., fips, heytinglean.crypto.kem.fips203.mlkem203params, ml-kem, parameter, set
+a, assembly, directed, heytinglean.atheory.aspace, objects, of, over, space
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [RadialGraph [similarity]](cell_R0_C9.md)
-- ↘️ **SE**: [MLDSA204Params [similarity]](cell_R1_C13.md)
-- ⬅️ **W**: [Expr [similarity]](cell_R0_C7.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R10_C15.md)
+- ↘️ **SE**: [setBirth [dependency]](cell_R3_C11.md)
+- ↘️ **SE**: [intNucleus [dependency]](cell_R6_C10.md)
+- ↙️ **SW**: [opens [dependency]](cell_R3_C6.md)

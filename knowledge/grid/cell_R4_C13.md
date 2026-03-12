@@ -1,22 +1,24 @@
 # Cell [4,13] — KNOWLEDGE
-**FQN**: `HeytingLean.IteratedVirtual.NGlobularSet`
-**Module**: `HeytingLean.IteratedVirtual.NGlobular`
-**Kind**: `inductive`
-**Centrality**: 0.000819
+**FQN**: `HeytingLean.Logic.Modal.DialParam.base`
+**Module**: `HeytingLean.Logic.ModalDial`
+**Kind**: `def`
+**Centrality**: 0.000265
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: NGlobularSet
-**Signature**: `Nat → Type (u + 1)`
+**Declaration**: base
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → HeytingLean.Logic.Modal.DialParam α`
 
-A globular set truncated to dimensions `0..n` (only the structure maps up to `< n` are required).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-0..n, a, dimensions, globular, heytinglean.iteratedvirtual.nglobularset, set, to, truncated
+heytinglean.logic.modal.dialparam.base
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [PropertyId [similarity]](cell_R4_C12.md)
-- ↘️ **SE**: [TotalStore [similarity]](cell_R13_C14.md)
-- ⬇️ **S**: [Val [similarity]](cell_R4_C14.md)
-- ↙️ **SW**: [CertifiedLens [similarity]](cell_R7_C5.md)
-- ⬅️ **W**: [GlobularSet [similarity]](cell_R4_C4.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [DialParam [dependency]](cell_R1_C11.md)
+- ↘️ **SE**: [stageMvAdd_encode [dependency]](cell_R11_C14.md)
+- ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R11_C0.md)
+- ↙️ **SW**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R11_C1.md)
+- ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R12_C0.md)

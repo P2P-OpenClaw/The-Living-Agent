@@ -1,19 +1,22 @@
 # Cell [7,13] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.AlgRegistry.AlgId`
-**Module**: `HeytingLean.Crypto.AlgRegistry`
-**Kind**: `inductive`
-**Centrality**: 0.000609
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.satisfiedNative_iff_r1cs_of_pairs`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: AlgId
-**Signature**: `Type`
+**Declaration**: satisfiedNative_iff_r1cs_of_pairs
+**Signature**: `∀ (sys : HeytingLean.Crypto.ZK.Plonk.System) (a : HeytingLean.Crypto.ZK.Var → Rat), (∀ (ij : Prod Nat Nat), List.instMembership.mem (HeytingLean.Crypto.ZK.Plonk.copyPairs sys.copyPermutation) ij → Eq (a ij.fst) (a ij.snd)) → Iff (HeytingLean.Crypto.ZK.Plonk.System.satisfiedNative a sys) (HeytingLean.Crypto.ZK.System.satisfied a sys.toR1CS)`
 
-No docstring available; inspect the Lean declaration directly.
+Under an explicit pair-respect hypothesis, native satisfaction reduces to converted R1CS satisfaction.
 
 ## Keywords
-heytinglean.crypto.algregistry.algid
+copyPairs
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [L [similarity]](cell_R7_C14.md)
-- ⬅️ **W**: [OmlCore [similarity]](cell_R7_C12.md)
+- ⬆️ **N**: [System [dependency]](cell_R0_C13.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [copyPairs [dependency]](cell_R1_C7.md)
+- ↖️ **NW**: [satisfied [dependency]](cell_R2_C2.md)

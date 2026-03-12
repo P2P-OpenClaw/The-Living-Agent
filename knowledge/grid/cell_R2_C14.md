@@ -1,21 +1,21 @@
 # Cell [2,14] — KNOWLEDGE
-**FQN**: `HeytingLean.CDL.Para.ParaHom`
-**Module**: `HeytingLean.CDL.Para.Type`
-**Kind**: `inductive`
-**Centrality**: 0.001154
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.SupportOK`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000075
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: ParaHom
-**Signature**: `structure ParaHom (X Y : Type u) where P : Type u; f : P × X → Y`
+**Declaration**: SupportOK
+**Signature**: `HeytingLean.Crypto.ZK.R1CSBool.Builder → Prop`
 
-Parametric 1‑cell in Para(Type): parameter object and action P × X → Y.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, heytinglean.cdl.para.parahom, map, parameter, parametric, with, x, y
+heytinglean.crypto.zk.r1csbool.supportok
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LoFTerm [similarity]](cell_R2_C13.md)
-- ↘️ **SE**: [CExpr [similarity]](cell_R2_C15.md)
-- ↙️ **SW**: [IteratedCellOver [similarity]](cell_R3_C5.md)
-- ⬅️ **W**: [Formula [similarity]](cell_R2_C0.md)
+- ↖️ **NW**: [Builder [dependency]](cell_R0_C4.md)
+- ↙️ **SW**: [support_ [dependency]](cell_R8_C1.md)
+- ↙️ **SW**: [compileTraceToR1CSFromEmpty_supportOK [dependency]](cell_R8_C13.md)

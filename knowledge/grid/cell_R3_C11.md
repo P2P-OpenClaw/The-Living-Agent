@@ -1,19 +1,20 @@
 # Cell [3,11] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Information.Entropy.MinEntropySpace`
-**Module**: `HeytingLean.Crypto.Information.Entropy.MinEntropy`
-**Kind**: `inductive`
-**Centrality**: 0.000978
+**FQN**: `HeytingLean.Bridges.Assembly.ASpace.setBirth`
+**Module**: `HeytingLean.Bridges.Assembly.AssemblyBirth`
+**Kind**: `def`
+**Centrality**: 0.000045
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: MinEntropySpace
-**Signature**: `Type u_1 → Type (u_2 + 1)`
+**Declaration**: setBirth
+**Signature**: `{α : Type u} → (G : HeytingLean.ATheory.ASpace α) → Set G.V → Nat`
 
-Abstract min-entropy interface.
+Birth of a vertex-set under the canonical Alexandroff-style interior.
 
 ## Keywords
-abstract, heytinglean.crypto.information.entropy.minentropyspace, interface., min-entropy
+a, birth, canonical, heytinglean.bridges.assembly.aspace.setbirth, of, the, under, vertex-set
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [F [similarity]](cell_R3_C12.md)
-- ⬅️ **W**: [Interval [similarity]](cell_R3_C10.md)
+- ↖️ **NW**: [ASpace [dependency]](cell_R0_C8.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R10_C15.md)

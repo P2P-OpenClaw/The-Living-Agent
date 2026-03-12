@@ -1,21 +1,20 @@
 # Cell [6,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.FHE.Ciphertext`
-**Module**: `HeytingLean.Crypto.FHE.Ciphertext`
-**Kind**: `inductive`
-**Centrality**: 0.000646
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model.Carrier.toPoint`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Ciphertext
-**Signature**: `Type`
+**Declaration**: toPoint
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {M : HeytingLean.Bridges.Tensor.Intensity.Model} → M.Carrier → HeytingLean.Bridges.Tensor.Point α M.core.dim`
 
-Inductive type Ciphertext. Use when performing case analysis or recursion over this type.
+View the carrier as a point in the core tensor model.
 
 ## Keywords
-case, ciphertext., heytinglean.crypto.fhe.ciphertext, inductive, performing, type, use, when
+a, as, carrier, heytinglean.bridges.tensor.intensity.model.carrier.topoint, in, point, the, view
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [RuleTag [similarity]](cell_R7_C0.md)
-- ↙️ **SW**: [Rule [similarity]](cell_R12_C10.md)
-- ⬅️ **W**: [LinComb [similarity]](cell_R6_C14.md)
-- ↖️ **NW**: [Fun [similarity]](cell_R4_C7.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Point [dependency]](cell_R1_C3.md)

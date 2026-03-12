@@ -1,19 +1,21 @@
 # Cell [11,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.Contracts.LeanYulDSL.YulParts`
-**Module**: `HeytingLean.Blockchain.Contracts.LeanYulDSL.Emit`
-**Kind**: `inductive`
-**Centrality**: 0.000497
+**FQN**: `HeytingLean.Bridges.Clifford.Model.stageEffectCompatible.eq_1`
+**Module**: `HeytingLean.Bridges.Clifford`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: YulParts
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (M : HeytingLean.Bridges.Clifford.Model α) (p q : M.Carrier), Eq (M.stageEffectCompatible p q) (HeytingLean.Logic.Stage.DialParam.effectCompatible (HeytingLean.Logic.Modal.DialParam.base M.R) (M.decode p) (M.decode q))`
 
-No docstring available; inspect the Lean declaration directly.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-heytinglean.blockchain.contracts.leanyuldsl.yulparts
+1., eq, goal, heytinglean.bridges.clifford.model.stageeffectcompatible.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Density [similarity]](cell_R11_C3.md)
-- ⬅️ **W**: [CycloParams [similarity]](cell_R11_C1.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [effectCompatible [dependency]](cell_R6_C1.md)

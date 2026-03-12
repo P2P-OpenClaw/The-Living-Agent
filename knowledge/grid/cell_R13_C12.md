@@ -1,20 +1,21 @@
 # Cell [13,12] — KNOWLEDGE
-**FQN**: `HeytingLean.Tests.Assembly.Part`
-**Module**: `HeytingLean.Tests.Assembly.AssemblyCompliance`
-**Kind**: `inductive`
-**Centrality**: 0.000435
+**FQN**: `HeytingLean.Tests.ladder_effect_add_orthocomplement`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Part
-**Signature**: `Type`
+**Declaration**: ladder_effect_add_orthocomplement
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : (HeytingLean.Logic.Modal.DialParam.ladder R 3).dial.core.Omega), Eq (HeytingLean.Logic.Stage.DialParam.effectAdd? (HeytingLean.Logic.Modal.DialParam.ladder R 3) a (HeytingLean.Logic.Stage.DialParam.orthocomplement (HeytingLean.Logic.Modal.DialParam.ladder R 3) a)) (Option.some (HeytingLean.Logic.Stage.DialParam.mvAdd (HeytingLean.Logic.Modal.DialParam.ladder R 3) a (HeytingLean.Logic.Stage.DialParam.orthocomplement (HeytingLean.Logic.Modal.DialParam.ladder R 3) a)))`
 
-Tiny alphabet of primitive parts for tests.
+Effect-stage exemplar: adding an element to its orthocomplement is defined.
 
 ## Keywords
-alphabet, for, heytinglean.tests.assembly.part, of, parts, primitive, tests., tiny
+adding, an, effect-stage, element, exemplar, heytinglean.tests.ladder_effect_add_orthocomplement, its, to
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LensData [similarity]](cell_R13_C13.md)
-- ⬅️ **W**: [Rules [similarity]](cell_R13_C11.md)
-- ↖️ **NW**: [Obj [similarity]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [ladder [dependency]](cell_R5_C0.md)
+- ↖️ **NW**: [mvAdd [dependency]](cell_R5_C3.md)

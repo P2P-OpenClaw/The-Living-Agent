@@ -1,19 +1,20 @@
 # Cell [4,3] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LeanKernel.WHNFSKY.L`
-**Module**: `HeytingLean.LoF.LeanKernel.WHNFSKY`
+**FQN**: `HeytingLean.Contracts.Examples.projectorFlags`
+**Module**: `HeytingLean.Contracts.Examples`
 **Kind**: `def`
-**Centrality**: 0.000865
+**Centrality**: 0.000028
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: L
-**Signature**: `Type`
+**Declaration**: projectorFlags
+**Signature**: `HeytingLean.Contracts.Examples.BridgeFlags`
 
-No docstring available; inspect the Lean declaration directly.
+Convenience flag enabling the projector carrier.
 
 ## Keywords
-heytinglean.lof.leankernel.whnfsky.l
+carrier., convenience, enabling, flag, heytinglean.contracts.examples.projectorflags, projector, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [GlobularSet [similarity]](cell_R4_C4.md)
-- ⬅️ **W**: [Ctx [similarity]](cell_R4_C2.md)
+- ↗️ **NE**: [BridgeFlags [dependency]](cell_R0_C6.md)
+- ⬇️ **S**: [clifford_pack_projector_round_verified [dependency]](cell_R15_C3.md)

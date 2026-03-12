@@ -1,21 +1,22 @@
 # Cell [5,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Compilation.LambdaIR.LExpr`
-**Module**: `HeytingLean.Compilation.LambdaIR.Layout`
-**Kind**: `inductive`
-**Centrality**: 0.000733
+**FQN**: `HeytingLean.Logic.Stage.DialParam.expandAtOmega`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `def`
+**Centrality**: 0.000115
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: LExpr
-**Signature**: `Type`
+**Declaration**: expandAtOmega
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → Nat → R.Omega → R.Omega`
 
-A minimal layout-aware expression language.
+Ladder-level expansion promoted to the Heyting core `Ω_R`.
 
 ## Keywords
-a, expression, heytinglean.compilation.lambdair.lexpr, language., layout-aware, minimal
+core, expansion, heyting, heytinglean.logic.stage.dialparam.expandatomega, ladder-level, promoted, the, to
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [LoFTerm [similarity]](cell_R2_C13.md)
-- ➡️ **E**: [InfoState [similarity]](cell_R5_C11.md)
-- ↙️ **SW**: [LType [similarity]](cell_R8_C6.md)
-- ⬅️ **W**: [System [similarity]](cell_R5_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↙️ **SW**: [effectExpand_self [dependency]](cell_R13_C4.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R13_C5.md)
+- ↙️ **SW**: [expandAtOmega_coe [dependency]](cell_R13_C6.md)

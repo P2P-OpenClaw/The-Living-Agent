@@ -1,20 +1,20 @@
 # Cell [12,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Representations.Radial.LoFRules.RuleType`
-**Module**: `HeytingLean.Representations.Radial.LoFRules`
-**Kind**: `inductive`
-**Centrality**: 0.000454
+**FQN**: `HeytingLean.Logic.Modal.DialParam.expandAt.eq_1`
+**Module**: `HeytingLean.Logic.ModalDial`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: RuleType
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat), Eq (HeytingLean.Logic.Modal.DialParam.expandAt R n) (HeytingLean.Logic.Modal.DialParam.ladder R n).expand`
 
-LoF rule types with their ring effect.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-effect., heytinglean.representations.radial.lofrules.ruletype, lof, ring, rule, their, types, with
+1., eq, goal, heytinglean.logic.modal.dialparam.expandat.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [Atom [similarity]](cell_R13_C0.md)
-- ⬅️ **W**: [SpinVector [similarity]](cell_R12_C14.md)
-- ↖️ **NW**: [Expr [similarity]](cell_R3_C6.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [expandAt [dependency]](cell_R5_C12.md)

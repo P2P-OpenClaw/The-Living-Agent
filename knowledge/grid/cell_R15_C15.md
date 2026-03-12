@@ -1,19 +1,20 @@
 # Cell [15,15] — SYNTHESIS
-**FQN**: `HeytingLean.Crypto.Lens`
-**Module**: `HeytingLean.Crypto.Lens.Class`
-**Kind**: `inductive`
-**Centrality**: 0.000607
+**FQN**: `HeytingLean.Tests.bridge_occam_swap_tensor_graph`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 5
 
 ## Topic
-**Declaration**: Lens
-**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → Type (max u (v + 1))`
+**Declaration**: bridge_occam_swap_tensor_graph
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] {R : HeytingLean.LoF.Reentry α} (flags : optParam HeytingLean.Contracts.Examples.BridgeFlags HeytingLean.Contracts.Examples.BridgeFlags.default) (suite : optParam (HeytingLean.Contracts.Examples.BridgeSuite α R) (HeytingLean.Contracts.Examples.selectSuite α R flags)) (st : HeytingLean.Tests.TraceConcurrency.BridgeState R suite), Eq (HeytingLean.Tests.TraceConcurrency.bridgeActWord R suite (List.cons HeytingLean.Tests.TraceConcurrency.BridgeOp.tensor (List.cons HeytingLean.Tests.TraceConcurrency.BridgeOp.graph List.nil)) st) (HeytingLean.Tests.TraceConcurrency.bridgeActWord R suite (List.cons HeytingLean.Tests.TraceConcurrency.BridgeOp.graph (List.cons HeytingLean.Tests.TraceConcurrency.BridgeOp.tensor List.nil)) st)`
 
-Uniform interface bundling a bridge carrier together with its certified round-trip.
+States bridge occam swap tensor graph. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-Carrier, Contracts.RoundTrip
+bridge, graph., heytinglean.tests.bridge_occam_swap_tensor_graph, occam, states, swap, tensor, use
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ⬅️ **W**: [CompPresheaf [similarity]](cell_R15_C14.md)
-- ↖️ **NW**: [Reentry [dependency]](cell_R14_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [bridgeActWord [dependency]](cell_R14_C5.md)

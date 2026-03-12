@@ -1,21 +1,24 @@
 # Cell [0,9] — ENTRY
-**FQN**: `HeytingLean.Representations.Radial.RadialGraph`
-**Module**: `HeytingLean.Representations.Radial.Core`
-**Kind**: `inductive`
-**Centrality**: 0.002510
+**FQN**: `HeytingLean.Crypto.BoolLens.Env`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `def`
+**Centrality**: 0.000492
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: RadialGraph
-**Signature**: `Type`
+**Declaration**: Env
+**Signature**: `Nat → Type`
 
-A ring-indexed finite state space.
+Boolean environments for formulas over `Fin n`.
 
 ## Keywords
-a, finite, heytinglean.representations.radial.radialgraph, ring-indexed, space., state
+boolean, environments, fin, for, formulas, heytinglean.crypto.boollens.env, n, over
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [OrthocomplementedLattice [similarity]](cell_R0_C10.md)
-- ↘️ **SE**: [HGraph [similarity]](cell_R5_C12.md)
-- ↙️ **SW**: [Builder [similarity]](cell_R5_C8.md)
-- ⬅️ **W**: [MLKEM203Params [similarity]](cell_R0_C8.md)
+- ⬇️ **S**: [eval [dependency]](cell_R2_C9.md)
+- ⬇️ **S**: [compileStep_strong [dependency]](cell_R8_C9.md)
+- ↘️ **SE**: [exec [dependency]](cell_R2_C12.md)
+- ↘️ **SE**: [step [dependency]](cell_R2_C13.md)
+- ↙️ **SW**: [traceFrom [dependency]](cell_R2_C8.md)
+- ↙️ **SW**: [compile [dependency]](cell_R3_C4.md)

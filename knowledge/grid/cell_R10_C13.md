@@ -1,19 +1,22 @@
 # Cell [10,13] — KNOWLEDGE
-**FQN**: `HeytingLean.Compiler.TensorLogic.Mode`
-**Module**: `HeytingLean.Compiler.TensorLogic.Eval`
-**Kind**: `inductive`
-**Centrality**: 0.000504
+**FQN**: `HeytingLean.Contracts.interiorizedInt`
+**Module**: `HeytingLean.Contracts.RoundTripInt`
+**Kind**: `def`
+**Centrality**: 0.000028
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Mode
-**Signature**: `Type`
+**Declaration**: interiorizedInt
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.IntReentry α) → {β : Type v} → HeytingLean.Contracts.IntRoundTrip R β → β → α`
 
-No docstring available; inspect the Lean declaration directly.
+Interiorized representative for the interior variant, obtained by decoding and viewing the core element back in the ambient carrier.
 
 ## Keywords
-heytinglean.compiler.tensorlogic.mode
+for, heytinglean.contracts.interiorizedint, interior, interiorized, obtained, representative, the, variant
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [PreGame [similarity]](cell_R10_C14.md)
-- ⬅️ **W**: [SelectorObj [similarity]](cell_R10_C12.md)
+- ⬆️ **N**: [IntReentry [dependency]](cell_R1_C13.md)
+- ↗️ **NE**: [IntRoundTrip [dependency]](cell_R5_C15.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [interiorizedInt_id [dependency]](cell_R14_C13.md)

@@ -1,19 +1,22 @@
 # Cell [11,6] — KNOWLEDGE
-**FQN**: `HeytingLean.Physics.String.ModMatrices`
-**Module**: `HeytingLean.Physics.String.ModularQ`
-**Kind**: `inductive`
-**Centrality**: 0.000488
+**FQN**: `HeytingLean.Bridges.Clifford.Projector.Model.Carrier.fromPair.eq_1`
+**Module**: `HeytingLean.Bridges.Clifford.Projector`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: ModMatrices
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type v} [inst : HeytingLean.LoF.PrimaryAlgebra α] {β : Type u} [inst_1 : Mul β] [inst_2 : Star β] {M : HeytingLean.Bridges.Clifford.Projector.Model} (p : HeytingLean.Bridges.Clifford.Pair α), Eq (HeytingLean.Bridges.Clifford.Projector.Model.Carrier.fromPair p) { bivector := p }`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.physics.string.modmatrices
+heytinglean.bridges.clifford.projector.model.carrier.frompair.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [F2Matrix [similarity]](cell_R11_C7.md)
-- ⬅️ **W**: [Env [similarity]](cell_R11_C5.md)
+- ⬆️ **N**: [fromPair [dependency]](cell_R6_C6.md)
+- ↗️ **NE**: [Pair [dependency]](cell_R0_C15.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

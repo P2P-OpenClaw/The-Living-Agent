@@ -1,19 +1,21 @@
 # Cell [10,1] — KNOWLEDGE
-**FQN**: `HeytingLean.Compiler.TensorLogic.TNorm`
-**Module**: `HeytingLean.Compiler.TensorLogic.Eval`
-**Kind**: `inductive`
-**Centrality**: 0.000527
+**FQN**: `HeytingLean.LoF.IntReentry.nucleus`
+**Module**: `HeytingLean.LoF.IntReentry`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: TNorm
-**Signature**: `Type`
+**Declaration**: nucleus
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.IntReentry α → HeytingLean.LoF.IntNucleus α`
 
-No docstring available; inspect the Lean declaration directly.
+Defines/computes nucleus. Use when reasoning about nucleus property or rewriting goals that match this pattern.
 
 ## Keywords
-heytinglean.compiler.tensorlogic.tnorm
+about, computes, defines, heytinglean.lof.intreentry.nucleus, nucleus., reasoning, use, when
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LiquidityFn [similarity]](cell_R10_C2.md)
-- ⬅️ **W**: [RModal [similarity]](cell_R10_C0.md)
+- ⬆️ **N**: [IntNucleus [dependency]](cell_R2_C1.md)
+- ↗️ **NE**: [IntReentry [dependency]](cell_R1_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

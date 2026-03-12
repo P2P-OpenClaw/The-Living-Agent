@@ -1,19 +1,24 @@
 # Cell [2,5] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Lattice.BlockSIS.Params`
-**Module**: `HeytingLean.Crypto.Lattice.FaithfulReductions`
-**Kind**: `inductive`
-**Centrality**: 0.001281
+**FQN**: `HeytingLean.Crypto.ZK.LinComb.ofConst`
+**Module**: `HeytingLean.Crypto.ZK.R1CS`
+**Kind**: `def`
+**Centrality**: 0.000107
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Params
-**Signature**: `Type`
+**Declaration**: ofConst
+**Signature**: `Rat → HeytingLean.Crypto.ZK.LinComb`
 
-No docstring available; inspect the Lean declaration directly.
+Constant linear combination.
 
 ## Keywords
-heytinglean.crypto.lattice.blocksis.params
+combination., constant, heytinglean.crypto.zk.lincomb.ofconst, linear
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [CExp [similarity]](cell_R2_C6.md)
-- ⬅️ **W**: [NestedTuple [similarity]](cell_R2_C4.md)
+- ⬆️ **N**: [LinComb [dependency]](cell_R0_C5.md)
+- ⬇️ **S**: [applyImp_strong [dependency]](cell_R8_C5.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R7_C8.md)
+- ↘️ **SE**: [applyOr_strong [dependency]](cell_R8_C6.md)
+- ↙️ **SW**: [head_satisfied_imp [dependency]](cell_R9_C1.md)
+- ↙️ **SW**: [head_satisfied_or [dependency]](cell_R9_C2.md)

@@ -1,19 +1,20 @@
 # Cell [7,9] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.SKYGraph.NodeId`
-**Module**: `HeytingLean.LoF.Combinators.GraphReduction`
-**Kind**: `def`
-**Centrality**: 0.000627
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.eqVarConstraint_refl_satisfied`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: NodeId
-**Signature**: `Type`
+**Declaration**: eqVarConstraint_refl_satisfied
+**Signature**: `∀ (a : HeytingLean.Crypto.ZK.Var → Rat) (i : Nat), HeytingLean.Crypto.ZK.Constraint.satisfied a (HeytingLean.Crypto.ZK.Plonk.eqVarConstraint i i)`
 
-No docstring available; inspect the Lean declaration directly.
+Reflexive equality constraints are always satisfied.
 
 ## Keywords
-heytinglean.lof.combinators.skygraph.nodeid
+Reflexive, always, constraints, equality, satisfied
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [E91State [similarity]](cell_R7_C10.md)
-- ⬅️ **W**: [Item [similarity]](cell_R7_C8.md)
+- ↗️ **NE**: [eqVarConstraint [dependency]](cell_R3_C15.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

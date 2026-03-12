@@ -1,20 +1,23 @@
 # Cell [6,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Games.KEM`
-**Module**: `HeytingLean.Crypto.Games.INDCCA`
-**Kind**: `inductive`
-**Centrality**: 0.000678
+**FQN**: `HeytingLean.Logic.Dialectic.oscillationOmega`
+**Module**: `HeytingLean.Logic.Dialectic`
+**Kind**: `def`
+**Centrality**: 0.000040
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: KEM
-**Signature**: `Type 1`
+**Declaration**: oscillationOmega
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → R.Omega`
 
-KEM interface suitable for defining IND-CCA games via `PMF`.
+Synthesis specialised to the primordial poles (process/counter-process).
 
 ## Keywords
-defining, for, games, heytinglean.crypto.games.kem, ind-cca, interface, kem, suitable
+heytinglean.logic.dialectic.oscillationomega, poles, primordial, process, specialised, synthesis, the, to
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [TV [similarity]](cell_R6_C9.md)
-- ⬅️ **W**: [HRel [similarity]](cell_R6_C7.md)
-- ↖️ **NW**: [KEMScheme [similarity]](cell_R5_C0.md)
+- ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [eq_1 [dependency]](cell_R12_C8.md)
+- ↘️ **SE**: [oscillationOmega_coe [dependency]](cell_R12_C9.md)
+- ↙️ **SW**: [eulerBoundary_le_oscillation [dependency]](cell_R12_C7.md)

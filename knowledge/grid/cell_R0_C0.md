@@ -3,6 +3,7 @@
 **Module**: `HeytingLean.LoF.PrimaryAlgebra`
 **Kind**: `inductive`
 **Centrality**: 0.026679
+**Dependency Depth**: 0
 
 ## Topic
 **Declaration**: PrimaryAlgebra
@@ -15,5 +16,9 @@ as, assumptions, base, heytinglean.lof.primaryalgebra, lof, packages, primaryalg
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Comb [similarity]](cell_R0_C1.md)
-- ↘️ **SE**: [Model [dependency]](cell_R15_C4.md)
+- ⬇️ **S**: [Model [dependency]](cell_R2_C0.md)
+- ↘️ **SE**: [Model [dependency]](cell_R1_C10.md)
+- ↘️ **SE**: [DialParam [dependency]](cell_R1_C11.md)
+- ↘️ **SE**: [IntReentry [dependency]](cell_R1_C13.md)
+- ↘️ **SE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↘️ **SE**: [Model [dependency]](cell_R1_C9.md)

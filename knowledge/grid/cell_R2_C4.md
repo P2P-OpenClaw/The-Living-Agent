@@ -1,20 +1,24 @@
 # Cell [2,4] — KNOWLEDGE
-**FQN**: `HeytingLean.Layouts.Nested.NestedTuple`
-**Module**: `HeytingLean.Layouts.Nested.Profile`
-**Kind**: `inductive`
-**Centrality**: 0.001325
+**FQN**: `HeytingLean.Crypto.ZK.Constraint.satisfied`
+**Module**: `HeytingLean.Crypto.ZK.R1CS`
+**Kind**: `def`
+**Centrality**: 0.000107
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: NestedTuple
-**Signature**: `Type`
+**Declaration**: satisfied
+**Signature**: `def Constraint.satisfied (assign : Var -> Q) (c : Constraint) : Prop := c.A.eval assign * c.B.eval assign = c.C.eval assign`
 
-Nested tuples of positive integers.
+Satisfaction of a constraint by an assignment.
 
 ## Keywords
-heytinglean.layouts.nested.nestedtuple, integers., nested, of, positive, tuples
+assignment, satisfied, valid, witness
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Obj [similarity]](cell_R2_C3.md)
-- ↘️ **SE**: [Params [similarity]](cell_R2_C5.md)
-- ⬅️ **W**: [Obj [similarity]](cell_R2_C3.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [Constraint [dependency]](cell_R0_C3.md)
+- ↘️ **SE**: [satisfied_ext [dependency]](cell_R7_C6.md)
+- ↘️ **SE**: [satisfied_cons_cons [dependency]](cell_R9_C14.md)
+- ↙️ **SW**: [eqConstraint_head_satisfied_of_eval [dependency]](cell_R9_C0.md)
+- ↙️ **SW**: [head_satisfied_imp [dependency]](cell_R9_C1.md)

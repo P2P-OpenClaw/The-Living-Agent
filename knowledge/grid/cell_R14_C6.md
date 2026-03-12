@@ -1,19 +1,24 @@
 # Cell [14,6] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.Bonding.BondType`
-**Module**: `HeytingLean.Chem.Bonding.BondTypes`
-**Kind**: `inductive`
-**Centrality**: 0.000428
+**FQN**: `HeytingLean.Tests.TraceConcurrency.bridgeStep`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `def`
+**Centrality**: 0.000050
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: BondType
-**Signature**: `Type`
+**Declaration**: bridgeStep
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → (suite : HeytingLean.Contracts.Examples.BridgeSuite α R) → HeytingLean.Tests.TraceConcurrency.BridgeOp → HeytingLean.Tests.TraceConcurrency.BridgeState R suite → HeytingLean.Tests.TraceConcurrency.BridgeState R suite`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.chem.bonding.bondtype
+heytinglean.tests.traceconcurrency.bridgestep
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Backend [similarity]](cell_R14_C7.md)
-- ⬅️ **W**: [StrongHyp [similarity]](cell_R14_C5.md)
+- ↗️ **NE**: [BridgeOp [dependency]](cell_R0_C14.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R15_C10.md)
+- ↘️ **SE**: [bridge_graph_clifford_commute [dependency]](cell_R15_C11.md)
+- ↘️ **SE**: [eq_2 [dependency]](cell_R15_C9.md)

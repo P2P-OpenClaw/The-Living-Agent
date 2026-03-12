@@ -1,21 +1,22 @@
 # Cell [3,5] — KNOWLEDGE
-**FQN**: `HeytingLean.IteratedVirtual.IteratedCellOver`
-**Module**: `HeytingLean.IteratedVirtual.IteratedHom`
-**Kind**: `inductive`
-**Centrality**: 0.001064
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.copyConstraintSystem`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `def`
+**Centrality**: 0.000054
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: IteratedCellOver
-**Signature**: `{C : Type u} → [CategoryTheory.Category C] → C → C → Nat → Type (max u v)`
+**Declaration**: copyConstraintSystem
+**Signature**: `List Nat → HeytingLean.Crypto.ZK.System`
 
-An `n`-step chain from a fixed source `X` to a fixed target `Y`.
+Copy-constraint system generated from a permutation.
 
 ## Keywords
-Heyting algebra, categorical logic, category theory, iterated cell over, iterated virtual object, n-step chain, virtual object
+permutation
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [ParaHom [similarity]](cell_R2_C14.md)
-- ➡️ **E**: [Expr [similarity]](cell_R3_C6.md)
-- ↙️ **SW**: [GlobularSet [similarity]](cell_R4_C4.md)
-- ⬅️ **W**: [Val [similarity]](cell_R3_C4.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C11.md)
+- ↘️ **SE**: [native_iff_renamed_sigma_of_gateBounds [dependency]](cell_R7_C11.md)
+- ↘️ **SE**: [copySatisfied_of_pairs [dependency]](cell_R7_C7.md)
+- ↘️ **SE**: [Rel_iff_r1cs_of_copySatisfied [dependency]](cell_R9_C11.md)

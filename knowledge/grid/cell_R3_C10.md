@@ -1,19 +1,23 @@
 # Cell [3,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Analysis.RZ.Interval`
-**Module**: `HeytingLean.Analysis.RZ.Interval`
-**Kind**: `inductive`
-**Centrality**: 0.000982
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.compileTraceToR1CSFromEmpty`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000046
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Interval
-**Signature**: `Type`
+**Declaration**: compileTraceToR1CSFromEmpty
+**Signature**: `{n : Nat} → HeytingLean.Crypto.BoolLens.Env n → HeytingLean.Crypto.Program n → Prod HeytingLean.Crypto.ZK.R1CSBool.Builder (List HeytingLean.Crypto.ZK.Var)`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.analysis.rz.interval
+heytinglean.crypto.zk.r1csbool.compiletracetor1csfromempty
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [MinEntropySpace [similarity]](cell_R3_C11.md)
-- ⬅️ **W**: [Params [similarity]](cell_R3_C9.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [Program [dependency]](cell_R1_C1.md)
+- ↘️ **SE**: [compileTraceToR1CSFromEmpty_matches [dependency]](cell_R8_C11.md)
+- ↘️ **SE**: [compileTraceToR1CSFromEmpty_strong [dependency]](cell_R8_C12.md)
+- ↘️ **SE**: [compileTraceToR1CSFromEmpty_supportOK [dependency]](cell_R8_C13.md)

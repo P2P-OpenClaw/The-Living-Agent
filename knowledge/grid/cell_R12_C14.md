@@ -1,20 +1,21 @@
 # Cell [12,14] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.TWA.SpinVector`
-**Module**: `HeytingLean.Quantum.TWA.Core`
-**Kind**: `inductive`
-**Centrality**: 0.000456
+**FQN**: `HeytingLean.Logic.Modal.DialParam.collapseAt_birth`
+**Module**: `HeytingLean.Logic.ModalDial`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: SpinVector
-**Signature**: `Type`
+**Declaration**: collapseAt_birth
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat), Eq (HeytingLean.Logic.Modal.DialParam.collapseAt R n (HeytingLean.Logic.Modal.DialParam.birth R)) (HeytingLean.Logic.Modal.DialParam.birth R)`
 
-A real 3-vector used for classical spins / Bloch vectors.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-3-vector, a, classical, for, heytinglean.quantum.twa.spinvector, real, spins, used
+heytinglean.logic.modal.dialparam.collapseat_birth
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [RuleType [similarity]](cell_R12_C15.md)
-- ⬅️ **W**: [CoqOp [similarity]](cell_R12_C13.md)
-- ↖️ **NW**: [Op [similarity]](cell_R11_C10.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [collapseAt [dependency]](cell_R5_C11.md)
+- ↖️ **NW**: [birth [dependency]](cell_R6_C9.md)

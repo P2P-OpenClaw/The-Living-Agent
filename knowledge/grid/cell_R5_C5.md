@@ -1,21 +1,23 @@
 # Cell [5,5] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Comb.EventData`
-**Module**: `HeytingLean.LoF.Combinators.SKYMultiway`
+**FQN**: `HeytingLean.Contracts.Examples.BridgePack`
+**Module**: `HeytingLean.Contracts.Examples`
 **Kind**: `inductive`
-**Centrality**: 0.000753
+**Centrality**: 0.000131
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: EventData
-**Signature**: `Type`
+**Declaration**: BridgePack
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → Type (u + 1)`
 
-Inductive type Event Data. Use when performing case analysis or recursion over this type.
+Bridge execution pack: a carrier together with its round-trip contract.
 
 ## Keywords
-data., event, heytinglean.lof.comb.eventdata, inductive, performing, type, use, when
+a, bridge, carrier, execution, heytinglean.contracts.examples.bridgepack, pack, together, with
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Relation [similarity]](cell_R5_C6.md)
-- ↘️ **SE**: [W [similarity]](cell_R12_C7.md)
-- ↙️ **SW**: [Atom [similarity]](cell_R12_C2.md)
-- ⬅️ **W**: [LTCore [similarity]](cell_R5_C4.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [cliffordPack [dependency]](cell_R10_C10.md)
+- ↘️ **SE**: [graphPack [dependency]](cell_R10_C11.md)
+- ↘️ **SE**: [tensorPack [dependency]](cell_R10_C12.md)

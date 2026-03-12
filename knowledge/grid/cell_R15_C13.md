@@ -1,21 +1,20 @@
 # Cell [15,13] — SYNTHESIS
-**FQN**: `HeytingLean.Bridges.Clifford.Projector.Model`
-**Module**: `HeytingLean.Bridges.Clifford.Projector`
-**Kind**: `inductive`
-**Centrality**: 0.000544
+**FQN**: `HeytingLean.Tests.TraceConcurrency.bridge_tensor_graph_commute`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 5
 
 ## Topic
-**Declaration**: Model
-**Signature**: `{"HeytingLean.LoF.PrimaryAlgebra \u03b1": "[]", "Mul \u03b2": "[]", "Star \u03b2": "[]", "\u03b1": "Type v", "\u03b2": "Type u"}`
+**Declaration**: bridge_tensor_graph_commute
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (flags : optParam HeytingLean.Contracts.Examples.BridgeFlags HeytingLean.Contracts.Examples.BridgeFlags.default) (suite : optParam (HeytingLean.Contracts.Examples.BridgeSuite α R) (HeytingLean.Contracts.Examples.selectSuite α R flags)) (st : HeytingLean.Tests.TraceConcurrency.BridgeState R suite), Eq (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.tensor (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.graph st)) (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.graph (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.tensor st))`
 
-Clifford projector model couples the legacy bridge with a target projector carrier.
+Applying tensor then graph steps equals the graph-then-tensor sequence.
 
 ## Keywords
-Algebraic geometry, Algebraic structure, Clifford algebra, Linear algebra, Mathematical model, Mathematical structure, Projective geometry, Projector
+Algebraic Geometry, Category Theory, Computer Science, FHE, Intuitionistic Logic, Program Verification, Proof Assistants, Topos Theory, Type Theory, zkp
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Protocol [similarity]](cell_R15_C12.md)
-- ↘️ **SE**: [CompPresheaf [similarity]](cell_R15_C14.md)
-- ⬅️ **W**: [Model [similarity]](cell_R15_C4.md)
-- ↖️ **NW**: [GlobularSet [similarity]](cell_R4_C4.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [selectSuite [dependency]](cell_R10_C9.md)

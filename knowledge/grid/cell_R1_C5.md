@@ -1,20 +1,21 @@
 # Cell [1,5] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.ZK.Var`
-**Module**: `HeytingLean.Crypto.ZK.R1CS`
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.LinComb`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
 **Kind**: `def`
-**Centrality**: 0.001753
+**Centrality**: 0.000152
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Var
+**Declaration**: LinComb
 **Signature**: `Type`
 
-Variables are indexed by natural numbers.
+For the PLONK-style IR we reuse the existing linear-combination type.
 
 ## Keywords
-Nat
+for, heytinglean.crypto.zk.plonk.lincomb, ir, plonk-style, reuse, the, we
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Task [similarity]](cell_R1_C6.md)
-- ↙️ **SW**: [Var [similarity]](cell_R14_C3.md)
-- ⬅️ **W**: [Language [similarity]](cell_R1_C4.md)
+- ↘️ **SE**: [A [dependency]](cell_R4_C6.md)
+- ↘️ **SE**: [B [dependency]](cell_R4_C7.md)
+- ↘️ **SE**: [C [dependency]](cell_R4_C8.md)

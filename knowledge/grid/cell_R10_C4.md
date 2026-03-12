@@ -1,22 +1,24 @@
 # Cell [10,4] — KNOWLEDGE
-**FQN**: `HeytingLean.Physics.Photoemission.Stage`
-**Module**: `HeytingLean.Physics.Photoemission.CTBridge`
-**Kind**: `inductive`
-**Centrality**: 0.000516
+**FQN**: `HeytingLean.Crypto.Lens.Form.evalL`
+**Module**: `HeytingLean.Crypto.Lens.Semantics`
+**Kind**: `def`
+**Centrality**: 0.000097
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Stage
-**Signature**: `Type`
+**Declaration**: evalL
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {R : HeytingLean.LoF.Reentry α} → {n : Nat} → (L : HeytingLean.Crypto.Lens R) → HeytingLean.Crypto.Form n → L.EnvL n → L.Carrier`
 
-Abstract “stage” substrate for the three-step photoemission pipeline.
+Evaluate a `Form` using the operations induced by a given lens.
 
 ## Keywords
-abstract, for, heytinglean.physics.photoemission.stage, photoemission, stage, substrate, the, three-step
+a, evaluate, form, heytinglean.crypto.lens.form.evall, induced, operations, the, using
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [BB84Substrate [similarity]](cell_R9_C9.md)
-- ➡️ **E**: [Store [similarity]](cell_R10_C5.md)
-- ↘️ **SE**: [E91Substrate [similarity]](cell_R14_C10.md)
-- ⬅️ **W**: [Instr [similarity]](cell_R10_C3.md)
-- ↖️ **NW**: [Obj [similarity]](cell_R6_C3.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [Lens [dependency]](cell_R4_C10.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
+- ↙️ **SW**: [eq_4 [dependency]](cell_R15_C1.md)
+- ↙️ **SW**: [eq_5 [dependency]](cell_R15_C2.md)

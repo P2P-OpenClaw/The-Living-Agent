@@ -1,19 +1,22 @@
 # Cell [8,11] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.Interactions.Analytic.Scalar`
-**Module**: `HeytingLean.Chem.Interactions.Analytic.Geometry`
-**Kind**: `def`
-**Centrality**: 0.000567
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.compileTraceToR1CSFromEmpty_matches`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Scalar
-**Signature**: `Type`
+**Declaration**: compileTraceToR1CSFromEmpty_matches
+**Signature**: `∀ {n : Nat} (ρ : HeytingLean.Crypto.BoolLens.Env n) {prog : HeytingLean.Crypto.Program n}, HeytingLean.Crypto.ZK.R1CSBool.Matches (HeytingLean.Crypto.ZK.R1CSBool.compileTraceToR1CSFromEmpty ρ prog).fst (HeytingLean.Crypto.BoolLens.exec ρ prog List.nil) (HeytingLean.Crypto.ZK.R1CSBool.compileTraceToR1CSFromEmpty ρ prog).snd`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.chem.interactions.analytic.scalar
+heytinglean.crypto.zk.r1csbool.compiletracetor1csfromempty_matches
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [NestMorphism [similarity]](cell_R8_C12.md)
-- ⬅️ **W**: [DiscreteModel [similarity]](cell_R8_C10.md)
+- ⬆️ **N**: [Matches [dependency]](cell_R2_C11.md)
+- ↗️ **NE**: [exec [dependency]](cell_R2_C12.md)
+- ↖️ **NW**: [Env [dependency]](cell_R0_C9.md)
+- ↖️ **NW**: [compileTraceToR1CSFromEmpty [dependency]](cell_R3_C10.md)

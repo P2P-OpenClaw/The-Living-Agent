@@ -1,20 +1,24 @@
 # Cell [10,3] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Instr`
-**Module**: `HeytingLean.Crypto.Prog`
+**FQN**: `HeytingLean.Tests.TraceConcurrency.BridgeState`
+**Module**: `HeytingLean.Tests.Compliance`
 **Kind**: `inductive`
-**Centrality**: 0.000518
+**Centrality**: 0.000137
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Instr
-**Signature**: `Nat → Type`
+**Declaration**: BridgeState
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → HeytingLean.Contracts.Examples.BridgeSuite α R → Type u`
 
-Postfix instructions for the multi-lens VM.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-applyAnd, applyImp, push
+heytinglean.tests.traceconcurrency.bridgestate
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Stage [similarity]](cell_R10_C4.md)
-- ↘️ **SE**: [E91Substrate [similarity]](cell_R14_C10.md)
-- ⬅️ **W**: [LiquidityFn [similarity]](cell_R10_C2.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [BridgeSuite [dependency]](cell_R4_C11.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [bridgeActWord [dependency]](cell_R14_C5.md)
+- ↘️ **SE**: [bridgeStep [dependency]](cell_R14_C6.md)
+- ↘️ **SE**: [bridge_occam_rotate_tensor_graph_clifford [dependency]](cell_R15_C14.md)

@@ -1,21 +1,21 @@
 # Cell [11,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Topology.Knot.PDGraph`
-**Module**: `HeytingLean.Topology.Knot.PDGraph`
-**Kind**: `inductive`
-**Centrality**: 0.000487
+**FQN**: `HeytingLean.Bridges.Clifford.Projector.Model.stageOccam_encode`
+**Module**: `HeytingLean.Bridges.Clifford.Projector`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: PDGraph
-**Signature**: `Type`
+**Declaration**: stageOccam_encode
+**Signature**: `∀ {α : Type v} [inst : HeytingLean.LoF.PrimaryAlgebra α] {β : Type u} [inst_1 : Mul β] [inst_2 : Star β] (M : HeytingLean.Bridges.Clifford.Projector.Model) (a : M.core.R.Omega), Eq (M.stageOccam (M.contract.encode a)) (M.contract.encode (HeytingLean.LoF.Reentry.Omega.mk M.core.R (HeytingLean.Epistemic.occam M.core.R a.val) ⋯))`
 
-A label-free PD-style diagram: crossings + an arc-neighbor involution on half-edges.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, an, arc-neighbor, crossings, diagram, heytinglean.topology.knot.pdgraph, label-free, pd-style
+heytinglean.bridges.clifford.projector.model.stageoccam_encode
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [HasMetric [similarity]](cell_R9_C14.md)
-- ➡️ **E**: [Op [similarity]](cell_R11_C10.md)
-- ⬅️ **W**: [Crossing [similarity]](cell_R11_C8.md)
-- ↖️ **NW**: [Coalg [similarity]](cell_R6_C6.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
+- ↗️ **NE**: [occam [dependency]](cell_R5_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

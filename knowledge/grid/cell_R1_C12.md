@@ -1,22 +1,22 @@
 # Cell [1,12] — KNOWLEDGE
-**FQN**: `HeytingLean.Constructor.CT.TaskCT`
-**Module**: `HeytingLean.Constructor.CT.TaskExistence`
+**FQN**: `HeytingLean.Bridges.Tensor.Model`
+**Module**: `HeytingLean.Bridges.Tensor`
 **Kind**: `inductive`
-**Centrality**: 0.001525
+**Centrality**: 0.000632
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: TaskCT
-**Signature**: `Type u → Type (max u (v + 1))`
+**Declaration**: Model
+**Signature**: `(α : Type u) → [HeytingLean.LoF.PrimaryAlgebra α] → Type u`
 
-A minimal “constructor existence” interface for CT tasks over a substrate `σ`.
+Tensor bridge data: dimension together with the core nucleus.
 
 ## Keywords
-category theory, constructive, constructive substrate, constructive task, constructive type theory, inductive, inductive definition, inductive family, inductive hypothesis, inductive proof, inductive type, type theory
+bridge, categorical logic, category theory, computer science, core nucleus, data, dimension, fhe, program verification, tensor, topos theory, type theory
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [CompSpec [similarity]](cell_R1_C11.md)
-- ↘️ **SE**: [HasMetric [similarity]](cell_R9_C14.md)
-- ⬇️ **S**: [MLDSA204Params [similarity]](cell_R1_C13.md)
-- ↙️ **SW**: [BB84Substrate [similarity]](cell_R9_C9.md)
-- ⬅️ **W**: [Task [similarity]](cell_R1_C6.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R12_C0.md)
+- ↙️ **SW**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R12_C1.md)
+- ↙️ **SW**: [tensor [dependency]](cell_R5_C6.md)

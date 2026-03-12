@@ -1,20 +1,20 @@
 # Cell [8,14] — KNOWLEDGE
-**FQN**: `HeytingLean.MirandaDynamics.TKFT.ReachingRel`
-**Module**: `HeytingLean.MirandaDynamics.TKFT.Reaching`
-**Kind**: `inductive`
-**Centrality**: 0.000562
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.compile_invariant`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: ReachingRel
-**Signature**: `Type u → Type v → Type (max u v)`
+**Declaration**: compile_invariant
+**Signature**: `∀ {n : Nat} (φ : HeytingLean.Crypto.Form n) (ρ : HeytingLean.Crypto.BoolLens.Env n), HeytingLean.Crypto.ZK.R1CSBool.Invariant (HeytingLean.Crypto.ZK.R1CSBool.compileSteps✝ ρ φ.compile (HeytingLean.Crypto.BoolLens.traceFrom ρ φ.compile List.nil) List.nil { }).fst (HeytingLean.Crypto.BoolLens.exec ρ φ.compile List.nil) (HeytingLean.Crypto.ZK.R1CSBool.compileSteps✝¹ ρ φ.compile (HeytingLean.Crypto.BoolLens.traceFrom ρ φ.compile List.nil) List.nil { }).snd`
 
-A TKFT-style reaching relation between “input boundary” `α` and “output boundary” `β`.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, between, boundary, heytinglean.mirandadynamics.tkft.reachingrel, input, reaching, relation, tkft-style
+heytinglean.crypto.zk.r1csbool.compile_invariant
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Graph [similarity]](cell_R8_C15.md)
-- ⬅️ **W**: [Sym [similarity]](cell_R8_C13.md)
-- ↖️ **NW**: [SplitInput [similarity]](cell_R4_C5.md)
+- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
+- ↖️ **NW**: [Invariant [dependency]](cell_R3_C12.md)

@@ -1,20 +1,22 @@
 # Cell [5,9] — KNOWLEDGE
-**FQN**: `HeytingLean.WPP.Wolfram.System`
-**Module**: `HeytingLean.WPP.Wolfram.Rewrite`
-**Kind**: `inductive`
-**Centrality**: 0.000739
+**FQN**: `HeytingLean.Logic.Stage.DialParam.collapseAtOmega`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `def`
+**Centrality**: 0.000115
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: System
-**Signature**: `Type u → Type v → Type (max u v)`
+**Declaration**: collapseAtOmega
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → Nat → R.Omega → R.Omega`
 
-A Wolfram-model system with a list of rules (SetReplace-style).
+Ladder-level collapse promoted to the Heyting core `Ω_R`.
 
 ## Keywords
-a, heytinglean.wpp.wolfram.system, list, of, system, with, wolfram-model
+collapse, core, heyting, heytinglean.logic.stage.dialparam.collapseatomega, ladder-level, promoted, the, to
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LExpr [similarity]](cell_R5_C10.md)
-- ↙️ **SW**: [ASpace [similarity]](cell_R10_C6.md)
-- ⬅️ **W**: [Builder [similarity]](cell_R5_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R13_C1.md)
+- ↙️ **SW**: [collapseAtOmega_coe [dependency]](cell_R13_C2.md)
+- ↙️ **SW**: [effectCollapse_self [dependency]](cell_R13_C3.md)

@@ -1,19 +1,22 @@
 # Cell [1,10] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.Differential.FormalSum`
-**Module**: `HeytingLean.LoF.Combinators.Differential.VectorSpace`
-**Kind**: `def`
-**Centrality**: 0.001611
+**FQN**: `HeytingLean.Bridges.Graph.Model`
+**Module**: `HeytingLean.Bridges.Graph`
+**Kind**: `inductive`
+**Centrality**: 0.000910
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: FormalSum
-**Signature**: `(K : Type u_1) → [Zero K] → Type u_1`
+**Declaration**: Model
+**Signature**: `structure Model where R : Reentry α`
 
-No docstring available; inspect the Lean declaration directly.
+Graph bridge model: adjacency inherits the order on α.
 
 ## Keywords
-heytinglean.lof.combinators.differential.formalsum
+Model, adjacency, carrier, graph bridge
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [CompSpec [similarity]](cell_R1_C11.md)
-- ⬅️ **W**: [Ty [similarity]](cell_R1_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↙️ **SW**: [Diagram [dependency]](cell_R5_C1.md)
+- ↙️ **SW**: [graph [dependency]](cell_R5_C2.md)
+- ↙️ **SW**: [processUpper [dependency]](cell_R6_C5.md)

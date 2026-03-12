@@ -1,20 +1,22 @@
 # Cell [0,10] — ENTRY
-**FQN**: `HeytingLean.Quantum.OML.OrthocomplementedLattice`
-**Module**: `HeytingLean.Quantum.OML.Core`
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Bounds`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
 **Kind**: `inductive`
-**Centrality**: 0.002395
+**Centrality**: 0.000439
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: OrthocomplementedLattice
-**Signature**: `Type u_1 → Type u_1`
+**Declaration**: Bounds
+**Signature**: `Type`
 
-No docstring available; inspect the Lean declaration directly.
+Norm witnesses for intensity vectors. The bounds are stored for future proofs about collapse and expand operators respecting the intended ℓ¹/ℓ² controls.
 
 ## Keywords
-heytinglean.quantum.oml.orthocomplementedlattice
+bounds, for, heytinglean.bridges.tensor.intensity.bounds, intensity, norm, the, vectors., witnesses
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LensID [similarity]](cell_R0_C11.md)
-- ↙️ **SW**: [OrthomodularLattice [dependency]](cell_R15_C5.md)
-- ⬅️ **W**: [RadialGraph [similarity]](cell_R0_C9.md)
+- ↘️ **SE**: [stageMvAdd_encode [dependency]](cell_R11_C14.md)
+- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C15.md)
+- ↘️ **SE**: [fromOmega [dependency]](cell_R6_C11.md)
+- ↙️ **SW**: [ofPoint [dependency]](cell_R3_C7.md)

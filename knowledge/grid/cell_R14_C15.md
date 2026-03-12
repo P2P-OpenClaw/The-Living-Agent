@@ -1,20 +1,21 @@
 # Cell [14,15] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.Category.LSteps`
-**Module**: `HeytingLean.LoF.Combinators.Category.MultiwayCategory`
-**Kind**: `inductive`
-**Centrality**: 0.001484
+**FQN**: `HeytingLean.Contracts.stageOccam_encode`
+**Module**: `HeytingLean.Contracts.RoundTrip`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: LSteps
-**Signature**: `HeytingLean.LoF.Comb → HeytingLean.LoF.Comb → Type`
+**Declaration**: stageOccam_encode
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) {β : Type v} (C : HeytingLean.Contracts.RoundTrip R β) (a : R.Omega), Eq (HeytingLean.Contracts.stageOccam R C (C.encode a)) (C.encode (HeytingLean.LoF.Reentry.Omega.mk R (HeytingLean.Epistemic.occam R a.val) ⋯))`
 
-Labeled multi-step paths, as a `Type` (so distinct label sequences are distinct morphisms).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, as, heytinglean.lof.combinators.category.lsteps, labeled, multi-step, paths, so, type
+heytinglean.contracts.stageoccam_encode
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [atomicNumber [similarity]](cell_R15_C0.md)
-- ⬅️ **W**: [Term [similarity]](cell_R14_C14.md)
-- ↖️ **NW**: [Comb [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [stageOccam [dependency]](cell_R10_C5.md)
+- ↖️ **NW**: [occam [dependency]](cell_R5_C13.md)

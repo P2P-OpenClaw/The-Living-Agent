@@ -1,20 +1,21 @@
 # Cell [11,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Certified.Certified`
-**Module**: `HeytingLean.Certified.Basic`
-**Kind**: `inductive`
-**Centrality**: 0.000500
+**FQN**: `HeytingLean.Bridges.Clifford.Model.logicalShadow_stageMvAdd_encode`
+**Module**: `HeytingLean.Bridges.Clifford`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Certified
-**Signature**: `(α : Type u) → (α → Prop) → Type u`
+**Declaration**: logicalShadow_stageMvAdd_encode
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (M : HeytingLean.Bridges.Clifford.Model α) (a b : M.R.Omega), Eq (M.logicalShadow (M.stageMvAdd (M.contract.encode a) (M.contract.encode b))) (Nucleus.instFunLike.coe M.R.nucleus (HeytingLean.Logic.Stage.DialParam.mvAdd (HeytingLean.Logic.Modal.DialParam.base M.R) a b).val)`
 
-Core certified value: pairs a value with a proof it satisfies a spec.
+States logical Shadow stage Mv Add encode. Use when reasoning about nucleus property or rewriting goals that match this pattern.
 
 ## Keywords
-a, certified, core, heytinglean.certified.certified, pairs, value, with
+add, encode., heytinglean.bridges.clifford.model.logicalshadow_stagemvadd_encode, logical, mv, shadow, stage, states
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [LensId [similarity]](cell_R10_C15.md)
-- ➡️ **E**: [CycloParams [similarity]](cell_R11_C1.md)
-- ↘️ **SE**: [Lens [similarity]](cell_R15_C15.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
+- ↗️ **NE**: [base [dependency]](cell_R4_C13.md)

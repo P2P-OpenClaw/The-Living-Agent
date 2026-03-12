@@ -1,20 +1,21 @@
 # Cell [14,3] — KNOWLEDGE
-**FQN**: `HeytingLean.Noneism.Var`
-**Module**: `HeytingLean.Noneism.Syntax`
+**FQN**: `HeytingLean.Visual.Region.Expr.atom.elim`
+**Module**: `HeytingLean.Visual.RegionDiagram`
 **Kind**: `def`
-**Centrality**: 0.000432
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Var
-**Signature**: `Type`
+**Declaration**: elim
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {R : HeytingLean.LoF.Reentry α} → {motive : HeytingLean.Visual.Region.Expr R → Sort u_1} → (t : HeytingLean.Visual.Region.Expr R) → Eq t.ctorIdx 0 → ((a : R.Omega) → motive (HeytingLean.Visual.Region.Expr.atom a)) → motive t`
 
-Variables are de Bruijn-style indices.
+Defines/computes elim. Use to construct or compute the corresponding value in proofs or definitions.
 
 ## Keywords
-are, bruijn-style, de, heytinglean.noneism.var, indices., variables
+computes, construct, defines, elim., heytinglean.visual.region.expr.atom.elim, or, to, use
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Var [similarity]](cell_R1_C5.md)
-- ➡️ **E**: [FracCoord [similarity]](cell_R14_C4.md)
-- ⬅️ **W**: [InterceptionRate [similarity]](cell_R14_C2.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [Expr [dependency]](cell_R4_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

@@ -1,19 +1,23 @@
 # Cell [6,7] — KNOWLEDGE
-**FQN**: `HeytingLean.Rel.HRel`
-**Module**: `HeytingLean.Rel.Basic`
+**FQN**: `HeytingLean.Bridges.Graph.Alexandroff.Model.univ`
+**Module**: `HeytingLean.Bridges.Graph.Alexandroff`
 **Kind**: `def`
-**Centrality**: 0.000680
+**Centrality**: 0.000045
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: HRel
-**Signature**: `Type u₁ → Type v₁ → Type (max u₁ v₁)`
+**Declaration**: univ
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.Bridges.Graph.Model α → HeytingLean.Bridges.Graph.Alexandroff.Model`
 
-`Prop`-valued relations (discrete-category profunctors).
+Defines/computes univ. Use to construct or compute the corresponding value in proofs or definitions.
 
 ## Keywords
-discrete-category, heytinglean.rel.hrel, profunctors, prop, relations, valued
+computes, construct, defines, heytinglean.bridges.graph.alexandroff.model.univ, or, to, univ., use
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [KEM [similarity]](cell_R6_C8.md)
-- ⬅️ **W**: [Coalg [similarity]](cell_R6_C6.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C10.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C15.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [graph_alexandroff_round_verified [dependency]](cell_R13_C10.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C8.md)

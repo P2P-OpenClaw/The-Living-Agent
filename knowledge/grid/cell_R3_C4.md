@@ -1,20 +1,23 @@
 # Cell [3,4] — KNOWLEDGE
-**FQN**: `HeytingLean.MiniC.Val`
-**Module**: `HeytingLean.MiniC.Semantics`
-**Kind**: `inductive`
-**Centrality**: 0.001079
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.compile`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000056
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Val
-**Signature**: `Type`
+**Declaration**: compile
+**Signature**: `{n : Nat} → HeytingLean.Crypto.Form n → HeytingLean.Crypto.BoolLens.Env n → HeytingLean.Crypto.ZK.R1CSBool.Compiled`
 
-Runtime values for MiniC.
+Compile a Boolean form/environment pair into R1CS constraints and witness.
 
 ## Keywords
-for, heytinglean.minic.val, minic., runtime, values
+a, boolean, compile, environment, form, heytinglean.crypto.zk.r1csbool.compile, into, pair
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [IteratedCellOver [similarity]](cell_R3_C5.md)
-- ↘️ **SE**: [Val [similarity]](cell_R4_C14.md)
-- ⬅️ **W**: [Obj [similarity]](cell_R3_C3.md)
+- ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
+- ↗️ **NE**: [Compiled [dependency]](cell_R1_C6.md)
+- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R8_C8.md)
+- ↘️ **SE**: [compile_output_eval [dependency]](cell_R9_C8.md)

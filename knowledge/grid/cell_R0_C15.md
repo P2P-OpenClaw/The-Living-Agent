@@ -1,19 +1,21 @@
 # Cell [0,15] — ENTRY
-**FQN**: `HeytingLean.LoF.CryptoSheaf.Quantum.Context`
-**Module**: `HeytingLean.LoF.CryptoSheaf.Quantum.ContextualitySite`
-**Kind**: `def`
-**Centrality**: 0.001995
+**FQN**: `HeytingLean.Bridges.Clifford.Pair`
+**Module**: `HeytingLean.Bridges.Clifford`
+**Kind**: `inductive`
+**Centrality**: 0.000335
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Context
-**Signature**: `Type`
+**Declaration**: Pair
+**Signature**: `structure Pair (α : Type u) where fst : α; snd : α`
 
-No docstring available; inspect the Lean declaration directly.
+Bivector carrier for the Clifford bridge, storing two components of α.
 
 ## Keywords
-heytinglean.lof.cryptosheaf.quantum.context
+bivector, carrier, pair, two-component
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [Ctx [similarity]](cell_R1_C0.md)
-- ⬅️ **W**: [PhotoemissionSystem [similarity]](cell_R0_C14.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R11_C6.md)
+- ↙️ **SW**: [toPair_fromPair [dependency]](cell_R11_C7.md)
+- ↙️ **SW**: [fromPair [dependency]](cell_R6_C6.md)

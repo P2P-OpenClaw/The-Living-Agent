@@ -1,19 +1,20 @@
 # Cell [13,10] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.SKYModel`
-**Module**: `HeytingLean.LoF.Combinators.Denotational`
-**Kind**: `inductive`
-**Centrality**: 0.000437
+**FQN**: `HeytingLean.Tests.graph_alexandroff_round_verified`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: SKYModel
-**Signature**: `Type u → Type u`
+**Declaration**: graph_alexandroff_round_verified
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : R.Omega), let model := HeytingLean.Bridges.Graph.Alexandroff.Model.univ (HeytingLean.Contracts.Examples.graph α R); Eq (model.decode (model.contract.encode a)) a`
 
-No docstring available; inspect the Lean declaration directly.
+The Alexandroff graph model decodes an encoded state back to the original element.
 
 ## Keywords
-heytinglean.lof.combinators.skymodel
+alexandroff, an, decodes, encoded, graph, heytinglean.tests.graph_alexandroff_round_verified, model, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Rules [similarity]](cell_R13_C11.md)
-- ⬅️ **W**: [MLKEMParams [similarity]](cell_R13_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [univ [dependency]](cell_R6_C7.md)

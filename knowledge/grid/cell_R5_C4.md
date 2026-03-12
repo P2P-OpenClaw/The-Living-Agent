@@ -1,19 +1,25 @@
 # Cell [5,4] — KNOWLEDGE
-**FQN**: `HeytingLean.Logic.OmegaLT.LTCore`
-**Module**: `HeytingLean.Logic.OmegaLT`
-**Kind**: `inductive`
-**Centrality**: 0.000755
+**FQN**: `HeytingLean.LoF.Reentry.Omega.mk`
+**Module**: `HeytingLean.LoF.Nucleus`
+**Kind**: `def`
+**Centrality**: 0.000135
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: LTCore
-**Signature**: `Type u → Type u`
+**Declaration**: mk
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → (a : α) → Eq (Nucleus.instFunLike.coe R.nucleus a) a → R.Omega`
 
-Minimal LT core: an endomap `j : Ω → Ω` to lift connectives.
+Build an element of the fixed-point sublocale from an ambient element and a fixpoint proof.
 
 ## Keywords
-an, core, endomap, heytinglean.logic.omegalt.ltcore, j, lt, minimal, to
+an, build, element, fixed-point, heytinglean.lof.reentry.omega.mk, of, sublocale, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [EventData [similarity]](cell_R5_C5.md)
-- ⬅️ **W**: [Boundary [similarity]](cell_R5_C3.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C15.md)
+- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C5.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C10.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C14.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R13_C1.md)

@@ -1,20 +1,20 @@
 # Cell [7,0] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Comb.RuleTag`
-**Module**: `HeytingLean.LoF.Combinators.SKYMultiway`
-**Kind**: `inductive`
-**Centrality**: 0.000643
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model.intensityPoint`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: RuleTag
-**Signature**: `Type`
+**Declaration**: intensityPoint
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (M : HeytingLean.Bridges.Tensor.Intensity.Model) → HeytingLean.Bridges.Tensor.Point α M.core.dim`
 
-Inductive type Rule Tag. Use when performing case analysis or recursion over this type.
+Present the profile as a tensor point over the core model's dimension.
 
 ## Keywords
-heytinglean.lof.comb.ruletag, inductive, performing, rule, tag., type, use, when
+a, as, heytinglean.bridges.tensor.intensity.model.intensitypoint, point, present, profile, tensor, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Ciphertext [similarity]](cell_R6_C15.md)
-- ➡️ **E**: [Atom [similarity]](cell_R7_C1.md)
-- ↘️ **SE**: [Atom [similarity]](cell_R12_C2.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [Point [dependency]](cell_R1_C3.md)

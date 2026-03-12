@@ -1,20 +1,21 @@
 # Cell [10,14] — KNOWLEDGE
-**FQN**: `HeytingLean.Numbers.Surreal.TransfinitePreGame.PreGame`
-**Module**: `HeytingLean.Numbers.Surreal.TransfinitePreGame`
-**Kind**: `inductive`
-**Centrality**: 0.000503
+**FQN**: `HeytingLean.Bridges.Assembly.ASpace.intNucleus.eq_1`
+**Module**: `HeytingLean.Bridges.Assembly.AssemblyBirth`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: PreGame
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} (G : HeytingLean.ATheory.ASpace α), Eq (HeytingLean.Bridges.Assembly.ASpace.intNucleus G) { act := HeytingLean.Bridges.Assembly.ASpace.opens G, monotone := ⋯, idempotent := ⋯, apply_le := ⋯, map_inf := ⋯ }`
 
-A pre-game built from compact option sets.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, built, compact, from, heytinglean.numbers.surreal.transfinitepregame.pregame, option, pre-game, sets.
+heytinglean.bridges.assembly.aspace.intnucleus.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LensId [similarity]](cell_R10_C15.md)
-- ⬅️ **W**: [Mode [similarity]](cell_R10_C13.md)
-- ↖️ **NW**: [OptionSet [similarity]](cell_R9_C3.md)
+- ↖️ **NW**: [ASpace [dependency]](cell_R0_C8.md)
+- ↖️ **NW**: [opens [dependency]](cell_R3_C6.md)
+- ↖️ **NW**: [intNucleus [dependency]](cell_R6_C10.md)

@@ -1,20 +1,20 @@
 # Cell [3,13] — KNOWLEDGE
-**FQN**: `HeytingLean.Compilation.LambdaIR.LayoutAnnotation`
-**Module**: `HeytingLean.Compilation.LambdaIR.Layout`
-**Kind**: `inductive`
-**Centrality**: 0.000936
+**FQN**: `HeytingLean.Contracts.Examples.BridgeFlags.runtime`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `def`
+**Centrality**: 0.000043
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: LayoutAnnotation
-**Signature**: `Type`
+**Declaration**: runtime
+**Signature**: `HeytingLean.Contracts.Examples.BridgeFlags`
 
-Layout annotation for tensors (shape/stride + static-vs-runtime flag).
+Runtime bridge flags enabling every enriched carrier documented in `Docs/Semantics.md`.
 
 ## Keywords
-annotation, for, heytinglean.compilation.lambdair.layoutannotation, layout, shape, static-vs-runtime, stride, tensors
+bridge, carrier, enabling, enriched, every, flags, heytinglean.contracts.examples.bridgeflags.runtime, runtime
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [SISParams [similarity]](cell_R3_C14.md)
-- ↙️ **SW**: [FlatLayout [similarity]](cell_R6_C2.md)
-- ⬅️ **W**: [F [similarity]](cell_R3_C12.md)
+- ↖️ **NW**: [BridgeFlags [dependency]](cell_R0_C6.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R7_C1.md)

@@ -1,20 +1,23 @@
 # Cell [6,0] — KNOWLEDGE
-**FQN**: `HeytingLean.MirandaDynamics.Computation.HaltSys`
-**Module**: `HeytingLean.MirandaDynamics.Computation.TuringMachine`
-**Kind**: `inductive`
-**Centrality**: 0.000711
+**FQN**: `HeytingLean.Logic.Stage.DialParam.orthocomplement`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `def`
+**Centrality**: 0.000096
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: HaltSys
-**Signature**: `Type u → Type u`
+**Declaration**: orthocomplement
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (P : HeytingLean.Logic.Modal.DialParam α) → P.dial.core.Omega → P.dial.core.Omega`
 
-A deterministic system equipped with a halting predicate.
+Orthocomplement induced by Heyting negation.
 
 ## Keywords
-a, deterministic, equipped, halting, heytinglean.mirandadynamics.computation.haltsys, system, with
+by, heyting, heytinglean.logic.stage.dialparam.orthocomplement, induced, negation., orthocomplement
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [StrongMonad [similarity]](cell_R3_C2.md)
-- ➡️ **E**: [ValTy [similarity]](cell_R5_C15.md)
-- ↘️ **SE**: [EmbVec [similarity]](cell_R6_C1.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [DialParam [dependency]](cell_R1_C11.md)
+- ↘️ **SE**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R11_C1.md)
+- ↘️ **SE**: [logicalShadow_stageOrthocomplement_encode [dependency]](cell_R12_C1.md)
+- ↘️ **SE**: [ladder_orthomodular_disjoint [dependency]](cell_R13_C13.md)

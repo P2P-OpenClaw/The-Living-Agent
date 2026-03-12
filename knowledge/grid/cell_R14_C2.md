@@ -1,19 +1,21 @@
 # Cell [14,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.BB84.ErrorRate.InterceptionRate`
-**Module**: `HeytingLean.Crypto.QKD.BB84.ErrorRate.InterceptResend`
-**Kind**: `inductive`
-**Centrality**: 0.000433
+**FQN**: `HeytingLean.Visual.Graph.Diagram.comp.inj`
+**Module**: `HeytingLean.Visual.GraphDiagram`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: InterceptionRate
-**Signature**: `Type`
+**Declaration**: inj
+**Signature**: `∀ {α : Type u} {inst : HeytingLean.LoF.PrimaryAlgebra α} {M : HeytingLean.Bridges.Graph.Model α} {x y z : M.Carrier} {a : HeytingLean.Visual.Graph.Diagram M x y} {a_1 : HeytingLean.Visual.Graph.Diagram M y z} {y_1 : M.Carrier} {a_2 : HeytingLean.Visual.Graph.Diagram M x y_1} {a_3 : HeytingLean.Visual.Graph.Diagram M y_1 z}, Eq (a.comp a_1) (a_2.comp a_3) → And (Eq y y_1) (And (HEq a a_2) (HEq a_1 a_3))`
 
-Eve's interception rate `p ∈ [0,1]`.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-0, 1, eve, heytinglean.crypto.qkd.bb84.errorrate.interceptionrate, interception, p, rate, s
+heytinglean.visual.graph.diagram.comp.inj
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Var [similarity]](cell_R14_C3.md)
-- ⬅️ **W**: [System [similarity]](cell_R14_C1.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C10.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Diagram [dependency]](cell_R5_C1.md)

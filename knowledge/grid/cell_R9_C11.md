@@ -1,21 +1,21 @@
 # Cell [9,11] — KNOWLEDGE
-**FQN**: `HeytingLean.Topology.Knot.LaurentPoly`
-**Module**: `HeytingLean.Topology.Knot.LaurentPoly`
-**Kind**: `inductive`
-**Centrality**: 0.000536
+**FQN**: `HeytingLean.Crypto.ZK.Spec.Plonk.Rel_iff_r1cs_of_copySatisfied`
+**Module**: `HeytingLean.Crypto.ZK.Spec.Plonk`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: LaurentPoly
-**Signature**: `Type`
+**Declaration**: Rel_iff_r1cs_of_copySatisfied
+**Signature**: `∀ (sys : HeytingLean.Crypto.ZK.Plonk.System) (a : HeytingLean.Crypto.ZK.Var → Rat), HeytingLean.Crypto.ZK.System.satisfied a (HeytingLean.Crypto.ZK.Plonk.copyConstraintSystem sys.copyPermutation) → Iff (HeytingLean.Crypto.ZK.Spec.Plonk.Rel sys a) (HeytingLean.Crypto.ZK.System.satisfied a sys.toR1CS)`
 
-Laurent polynomials over `Int`, represented as a canonical sorted list `exp ↦ coeff`.
+If the copy-constraint system is satisfied, the native relation is equivalent to R1CS satisfaction of the converted system.
 
 ## Keywords
-a, as, heytinglean.topology.knot.laurentpoly, int, laurent, over, polynomials, represented
+copy-constraint, heytinglean.crypto.zk.spec.plonk.rel_iff_r1cs_of_copysatisfied, if, is, satisfied, system, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [LinComb [similarity]](cell_R6_C14.md)
-- ➡️ **E**: [AffineOpG [similarity]](cell_R9_C12.md)
-- ↙️ **SW**: [F2Matrix [similarity]](cell_R11_C7.md)
-- ⬅️ **W**: [E91Ctor [similarity]](cell_R9_C10.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [copyConstraintSystem [dependency]](cell_R3_C5.md)

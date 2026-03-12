@@ -1,19 +1,25 @@
 # Cell [2,6] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.Bracket.CExp`
-**Module**: `HeytingLean.LoF.Combinators.BracketAbstraction`
-**Kind**: `inductive`
-**Centrality**: 0.001269
+**FQN**: `HeytingLean.Crypto.ZK.LinComb.single`
+**Module**: `HeytingLean.Crypto.ZK.R1CS`
+**Kind**: `def`
+**Centrality**: 0.000105
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: CExp
-**Signature**: `Type → Type`
+**Declaration**: single
+**Signature**: `HeytingLean.Crypto.ZK.Var → Rat → HeytingLean.Crypto.ZK.LinComb`
 
-No docstring available; inspect the Lean declaration directly.
+Linear combination consisting of a single `(variable, coefficient)` entry.
 
 ## Keywords
-heytinglean.lof.combinators.bracket.cexp
+a, combination, consisting, heytinglean.crypto.zk.lincomb.single, linear, of, single, variable
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [VirtualDoubleCategory [similarity]](cell_R2_C7.md)
-- ⬅️ **W**: [Params [similarity]](cell_R2_C5.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [LinComb [dependency]](cell_R0_C5.md)
+- ⬇️ **S**: [applyOr_strong [dependency]](cell_R8_C6.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R7_C8.md)
+- ↙️ **SW**: [applyAnd_invariant [dependency]](cell_R8_C3.md)
+- ↙️ **SW**: [applyAnd_strong [dependency]](cell_R8_C4.md)
+- ↙️ **SW**: [applyImp_strong [dependency]](cell_R8_C5.md)

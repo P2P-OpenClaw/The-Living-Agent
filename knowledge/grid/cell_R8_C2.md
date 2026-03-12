@@ -1,19 +1,22 @@
 # Cell [8,2] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.Bracket.Lam`
-**Module**: `HeytingLean.LoF.Combinators.BracketAbstraction`
-**Kind**: `inductive`
-**Centrality**: 0.000593
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant.toInvariant`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Lam
-**Signature**: `Type → Type`
+**Declaration**: toInvariant
+**Signature**: `∀ {builder : HeytingLean.Crypto.ZK.R1CSBool.Builder} {stack : HeytingLean.Crypto.BoolLens.Stack} {vars : List HeytingLean.Crypto.ZK.Var}, HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant builder stack vars → And (HeytingLean.Crypto.ZK.R1CSBool.Matches builder stack vars) (HeytingLean.Crypto.ZK.R1CSBool.Bounded builder vars)`
 
-No docstring available; inspect the Lean declaration directly.
+States to Invariant. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-heytinglean.lof.combinators.bracket.lam
+goal, heytinglean.crypto.zk.r1csbool.stronginvariant.toinvariant, invariant., states, to, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [BDD [similarity]](cell_R8_C3.md)
-- ⬅️ **W**: [Stage [similarity]](cell_R8_C1.md)
+- ↗️ **NE**: [Builder [dependency]](cell_R0_C4.md)
+- ↗️ **NE**: [Matches [dependency]](cell_R2_C11.md)
+- ↗️ **NE**: [Bounded [dependency]](cell_R2_C15.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

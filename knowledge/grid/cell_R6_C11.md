@@ -1,19 +1,22 @@
 # Cell [6,11] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.Formula`
-**Module**: `HeytingLean.Chem.Bonding.Formula`
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model.Carrier.fromOmega`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
 **Kind**: `def`
-**Centrality**: 0.000664
+**Centrality**: 0.000032
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Formula
-**Signature**: `Type`
+**Declaration**: fromOmega
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {M : HeytingLean.Bridges.Tensor.Intensity.Model} → HeytingLean.Bridges.Tensor.Intensity.Bounds → Prop → M.core.R.Omega → M.Carrier`
 
-No docstring available; inspect the Lean declaration directly.
+Build a carrier by encoding an element of the fixed-point core.
 
 ## Keywords
-heytinglean.chem.formula
+a, an, build, by, carrier, element, encoding, heytinglean.bridges.tensor.intensity.model.carrier.fromomega
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Orbital [similarity]](cell_R6_C12.md)
-- ⬅️ **W**: [Partition [similarity]](cell_R6_C10.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Model [dependency]](cell_R2_C0.md)
+- ⬇️ **S**: [eq_1 [dependency]](cell_R11_C11.md)
+- ↘️ **SE**: [toPoint_fromOmega [dependency]](cell_R11_C12.md)

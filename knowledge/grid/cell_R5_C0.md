@@ -1,21 +1,24 @@
 # Cell [5,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.KEM.KEMScheme`
-**Module**: `HeytingLean.Crypto.KEM.HybridKEM`
-**Kind**: `inductive`
-**Centrality**: 0.000787
+**FQN**: `HeytingLean.Logic.Modal.DialParam.ladder`
+**Module**: `HeytingLean.Logic.ModalDial`
+**Kind**: `def`
+**Centrality**: 0.000165
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: KEMScheme
-**Signature**: `Type 1`
+**Declaration**: ladder
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → Nat → HeytingLean.Logic.Modal.DialParam α`
 
-Abstract KEM interface (shape only).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-abstract, heytinglean.crypto.kem.kemscheme, interface, kem, only, shape
+heytinglean.logic.modal.dialparam.ladder
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [MLDSA204Params [similarity]](cell_R1_C13.md)
-- ➡️ **E**: [LindbladSpec [similarity]](cell_R4_C15.md)
-- ↘️ **SE**: [KEM [similarity]](cell_R6_C8.md)
-- ⬇️ **S**: [Tri [similarity]](cell_R5_C1.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [DialParam [dependency]](cell_R1_C11.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C13.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C15.md)
+- ↘️ **SE**: [ladder_effect_add_orthocomplement [dependency]](cell_R13_C12.md)

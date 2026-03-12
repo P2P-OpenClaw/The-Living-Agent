@@ -1,22 +1,21 @@
 # Cell [12,3] — KNOWLEDGE
-**FQN**: `HeytingLean.Nucleus.CertifiedNucleus`
-**Module**: `HeytingLean.Nucleus.Certified`
-**Kind**: `def`
-**Centrality**: 0.000475
+**FQN**: `HeytingLean.Contracts.Examples.clifford_encode_synthOmega_snd`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: CertifiedNucleus
-**Signature**: `(X : Type u) → [SemilatticeInf X] → Type u`
+**Declaration**: clifford_encode_synthOmega_snd
+**Signature**: `∀ (α : Type u) [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (T A : R.Omega), Eq ((HeytingLean.Contracts.Examples.clifford α R).encode (HeytingLean.Logic.Dialectic.synthOmega R T A)).snd (Nucleus.instFunLike.coe R.nucleus (SemilatticeSup.toMax.max T.val A.val))`
 
-A "certified nucleus" is exactly Mathlib's `Nucleus`.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, certified, exactly, heytinglean.nucleus.certifiednucleus, is, mathlib, nucleus, s
+heytinglean.contracts.examples.clifford_encode_synthomega_snd
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [ShapeStridePair [similarity]](cell_R10_C10.md)
-- ➡️ **E**: [ContractTemplate [similarity]](cell_R12_C4.md)
-- ↙️ **SW**: [Atom [similarity]](cell_R13_C0.md)
-- ⬅️ **W**: [Atom [similarity]](cell_R12_C2.md)
-- ↖️ **NW**: [Attribute [similarity]](cell_R8_C0.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [synthOmega [dependency]](cell_R5_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

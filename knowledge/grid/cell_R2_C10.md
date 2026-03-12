@@ -1,19 +1,23 @@
 # Cell [2,10] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.Category.CatTower`
-**Module**: `HeytingLean.LoF.Combinators.Category.OmegaTowerLimit`
-**Kind**: `inductive`
-**Centrality**: 0.001202
+**FQN**: `HeytingLean.Crypto.ZK.Spec.Plonk.Rel`
+**Module**: `HeytingLean.Crypto.ZK.Spec.Plonk`
+**Kind**: `def`
+**Centrality**: 0.000085
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: CatTower
-**Signature**: `Type (max (u + 1) (v + 1))`
+**Declaration**: Rel
+**Signature**: `HeytingLean.Crypto.ZK.Plonk.System → (HeytingLean.Crypto.ZK.Var → Rat) → Prop`
 
-No docstring available; inspect the Lean declaration directly.
+Spec-level satisfaction relation for a PLONK system: we take the native semantics as the intended relation for now.
 
 ## Keywords
-heytinglean.lof.combinators.category.cattower
+cryptography, plonk, zero-knowledge proofs
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [RecoveryView [similarity]](cell_R2_C11.md)
-- ⬅️ **W**: [ChannelGraph [similarity]](cell_R2_C9.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ⬇️ **S**: [eq_1 [dependency]](cell_R9_C10.md)
+- ↘️ **SE**: [Rel_iff_r1cs_of_copySatisfied [dependency]](cell_R9_C11.md)
+- ↘️ **SE**: [Rel_iff_renamed_sigma_of_gateBounds [dependency]](cell_R9_C13.md)

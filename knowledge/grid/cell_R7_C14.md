@@ -1,19 +1,20 @@
 # Cell [7,14] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LeanKernel.WHNFIotaSKY.L`
-**Module**: `HeytingLean.LoF.LeanKernel.WHNFIotaSKY`
-**Kind**: `def`
-**Centrality**: 0.000604
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.Builder.system_recordBoolean`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: L
-**Signature**: `Type`
+**Declaration**: system_recordBoolean
+**Signature**: `∀ (st : HeytingLean.Crypto.ZK.R1CSBool.Builder) (v : HeytingLean.Crypto.ZK.Var), Eq (HeytingLean.Crypto.ZK.R1CSBool.recordBoolean✝ st v).system (have __src := st.system; { constraints := List.cons (HeytingLean.Crypto.ZK.R1CSBool.boolConstraint v) st.system.constraints })`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.lof.leankernel.whnfiotasky.l
+heytinglean.crypto.zk.r1csbool.builder.system_recordboolean
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Term [similarity]](cell_R7_C15.md)
-- ⬅️ **W**: [AlgId [similarity]](cell_R7_C13.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [boolConstraint [dependency]](cell_R3_C0.md)

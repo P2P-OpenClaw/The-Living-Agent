@@ -1,22 +1,23 @@
 # Cell [10,6] — KNOWLEDGE
-**FQN**: `HeytingLean.ATheory.ASpace`
-**Module**: `HeytingLean.ATheory.AssemblySpace`
-**Kind**: `inductive`
-**Centrality**: 0.000516
+**FQN**: `HeytingLean.Contracts.interiorized`
+**Module**: `HeytingLean.Contracts.RoundTrip`
+**Kind**: `def`
+**Centrality**: 0.000061
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: ASpace
-**Signature**: `structure ASpace (α : Type u) where V : Type u; E : V → V → Prop`
+**Declaration**: interiorized
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → {β : Type v} → HeytingLean.Contracts.RoundTrip R β → β → α`
 
-Directed assembly space over objects with edges capturing allowed transitions.
+The encoded representation is faithful up to the nucleus applied after decoding.
 
 ## Keywords
-a, assembly, directed, heytinglean.atheory.aspace, objects, of, over, space
+encoded, faithful, heytinglean.contracts.interiorized, is, representation, the, to, up
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [System [similarity]](cell_R5_C9.md)
-- ➡️ **E**: [MeetQuantale [similarity]](cell_R10_C7.md)
-- ↘️ **SE**: [CompPresheaf [similarity]](cell_R15_C14.md)
-- ⬅️ **W**: [Store [similarity]](cell_R10_C5.md)
-- ↖️ **NW**: [HilbertSubstrate [similarity]](cell_R2_C2.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [identity_shadow [dependency]](cell_R14_C10.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C12.md)
+- ↙️ **SW**: [stageOccam_spec [dependency]](cell_R15_C0.md)

@@ -1,19 +1,20 @@
 # Cell [4,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Erasure.FragmentId`
-**Module**: `HeytingLean.Erasure.Fragment`
-**Kind**: `inductive`
-**Centrality**: 0.000825
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.Compiled.assignment`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: FragmentId
-**Signature**: `Type`
+**Declaration**: assignment
+**Signature**: `HeytingLean.Crypto.ZK.R1CSBool.Compiled → HeytingLean.Crypto.ZK.Var → Rat`
 
-Fragment identifier.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-fragment, heytinglean.erasure.fragmentid, identifier.
+heytinglean.crypto.zk.r1csbool.compiled.assignment
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Stmt [similarity]](cell_R4_C10.md)
-- ⬅️ **W**: [LWEParams [similarity]](cell_R4_C8.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [Compiled [dependency]](cell_R1_C6.md)

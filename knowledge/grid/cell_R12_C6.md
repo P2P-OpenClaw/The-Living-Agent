@@ -1,19 +1,22 @@
 # Cell [12,6] — KNOWLEDGE
-**FQN**: `HeytingLean.Tests.LoF.DenseNontrivialClosedSievesExample.V3`
-**Module**: `HeytingLean.Tests.LoF.CorrespondenceTests`
-**Kind**: `inductive`
-**Centrality**: 0.000474
+**FQN**: `HeytingLean.Generative.IntNucleusKit.ibirth_min`
+**Module**: `HeytingLean.Generative.IntNucleusKit`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: V3
-**Signature**: `Type`
+**Declaration**: ibirth_min
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.IntReentry α) (a : α) {m : Nat}, Eq (HeytingLean.Generative.IntNucleusKit.ibreathe R (instHAdd.hAdd m 1) a) (HeytingLean.Generative.IntNucleusKit.ibreathe R m a) → instLENat.le (HeytingLean.Generative.IntNucleusKit.ibirth R a) m`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.tests.lof.densenontrivialclosedsievesexample.v3
+heytinglean.generative.intnucleuskit.ibirth_min
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [W [similarity]](cell_R12_C7.md)
-- ⬅️ **W**: [Backend [similarity]](cell_R12_C5.md)
+- ↗️ **NE**: [IntReentry [dependency]](cell_R1_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [ibreathe [dependency]](cell_R6_C3.md)
+- ↖️ **NW**: [ibirth [dependency]](cell_R6_C4.md)

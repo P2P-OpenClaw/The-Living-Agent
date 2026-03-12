@@ -1,20 +1,24 @@
 # Cell [0,12] — ENTRY
-**FQN**: `HeytingLean.MiniC.Expr`
-**Module**: `HeytingLean.MiniC.Syntax`
-**Kind**: `inductive`
-**Centrality**: 0.002326
+**FQN**: `HeytingLean.Crypto.BoolLens.Stack`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `def`
+**Centrality**: 0.000378
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Expr
+**Declaration**: Stack
 **Signature**: `Type`
 
-Expressions are pure computations over the store.
+Operand stack (head = top) for the boolean VM.
 
 ## Keywords
-are, computations, expressions, heytinglean.minic.expr, over, pure, store., the
+boolean_algebra, boolean_expression_evaluation, boolean_logic, boolean_program_execution, boolean_values, boolean_virtual_machine, data_structure, operand_stack, programming_language_theory, virtual_machine
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [PreGame [similarity]](cell_R0_C13.md)
-- ↘️ **SE**: [CompPresheaf [similarity]](cell_R15_C14.md)
-- ⬅️ **W**: [LensID [similarity]](cell_R0_C11.md)
+- ⬇️ **S**: [exec [dependency]](cell_R2_C12.md)
+- ⬇️ **S**: [Invariant [dependency]](cell_R3_C12.md)
+- ↘️ **SE**: [step [dependency]](cell_R2_C13.md)
+- ↙️ **SW**: [Matches [dependency]](cell_R2_C11.md)
+- ↙️ **SW**: [StrongInvariant [dependency]](cell_R2_C7.md)
+- ↙️ **SW**: [traceFrom [dependency]](cell_R2_C8.md)

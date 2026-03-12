@@ -1,19 +1,24 @@
 # Cell [5,7] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.ZK.Constraint`
-**Module**: `HeytingLean.Crypto.ZK.R1CS`
-**Kind**: `inductive`
-**Centrality**: 0.000748
+**FQN**: `HeytingLean.Contracts.Examples.clifford`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `def`
+**Centrality**: 0.000127
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Constraint
-**Signature**: `structure Constraint where A : LinComb; B : LinComb; C : LinComb`
+**Declaration**: clifford
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → HeytingLean.Bridges.Clifford.Model α`
 
-A single R1CS constraint (A, B, C) meaning (A*x) * (B*x) = (C*x).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-constraint, gate, multiplication, quadratic, r1cs
+heytinglean.contracts.examples.clifford
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Builder [similarity]](cell_R5_C8.md)
-- ⬅️ **W**: [Relation [similarity]](cell_R5_C6.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [clifford_shadow_mv_add [dependency]](cell_R13_C7.md)
+- ⬇️ **S**: [eq_1 [dependency]](cell_R14_C7.md)
+- ↙️ **SW**: [clifford_encode_synthOmega_fst [dependency]](cell_R12_C2.md)

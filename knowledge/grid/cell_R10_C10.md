@@ -1,21 +1,23 @@
 # Cell [10,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Layouts.Flat.ShapeStridePair`
-**Module**: `HeytingLean.Layouts.Flat.Basic`
-**Kind**: `inductive`
-**Centrality**: 0.000509
+**FQN**: `HeytingLean.Contracts.Examples.cliffordPack`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `def`
+**Centrality**: 0.000032
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: ShapeStridePair
-**Signature**: `Type`
+**Declaration**: cliffordPack
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → optParam HeytingLean.Contracts.Examples.BridgeFlags HeytingLean.Contracts.Examples.BridgeFlags.default → HeytingLean.Contracts.Examples.BridgePack α R`
 
-A shape/stride pair `(s, d)` where `s : ℕ+` is a positive shape and `d : ℕ` is a stride.
+Select the Clifford bridge based on feature flags, returning the appropriate pack.
 
 ## Keywords
-pair, positive, positive shape, shape, stride
+based, bridge, clifford, feature, heytinglean.contracts.examples.cliffordpack, on, select, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [VirtualChain [similarity]](cell_R10_C11.md)
-- ↙️ **SW**: [ParaMealy [similarity]](cell_R13_C6.md)
-- ⬅️ **W**: [CellularSheaf [similarity]](cell_R10_C9.md)
-- ↖️ **NW**: [FlatLayout [similarity]](cell_R6_C2.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [default [dependency]](cell_R3_C3.md)
+- ↖️ **NW**: [BridgePack [dependency]](cell_R5_C5.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R14_C7.md)
+- ↙️ **SW**: [clifford_pack_projector_round_verified [dependency]](cell_R15_C3.md)

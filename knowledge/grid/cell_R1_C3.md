@@ -1,20 +1,21 @@
 # Cell [1,3] — KNOWLEDGE
-**FQN**: `HeytingLean.Security.Composable.IdealFunctionality`
-**Module**: `HeytingLean.Security.Composable.IdealFunctionality`
+**FQN**: `HeytingLean.Bridges.Tensor.Point`
+**Module**: `HeytingLean.Bridges.Tensor`
 **Kind**: `inductive`
-**Centrality**: 0.001824
+**Centrality**: 0.000270
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: IdealFunctionality
-**Signature**: `Type (max (max (u + 1) (v + 1)) (w + 1))`
+**Declaration**: Point
+**Signature**: `Type u → Nat → Type u`
 
-An ideal functionality `F` takes an input and produces an output, plus some leakage.
+Finite tensor point with `n.succ` coordinates in `α`.
 
 ## Keywords
-an, f, functionality, heytinglean.security.composable.idealfunctionality, ideal, input, takes
+coordinates, finite, heytinglean.bridges.tensor.point, in, n.succ, point, tensor, with
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Language [similarity]](cell_R1_C4.md)
-- ↘️ **SE**: [SplitInput [similarity]](cell_R4_C5.md)
-- ⬅️ **W**: [Ty [similarity]](cell_R1_C2.md)
+- ↘️ **SE**: [ofPoint [dependency]](cell_R3_C7.md)
+- ↘️ **SE**: [toPoint [dependency]](cell_R6_C15.md)
+- ↙️ **SW**: [intensityPoint [dependency]](cell_R7_C0.md)

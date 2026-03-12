@@ -1,22 +1,21 @@
 # Cell [12,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Noneism.Tests.RMEx.Atom`
-**Module**: `HeytingLean.Noneism.Tests.Paraconsistent`
-**Kind**: `inductive`
-**Centrality**: 0.000477
+**FQN**: `HeytingLean.Contracts.Examples.clifford_encode_synthOmega_fst`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Atom
-**Signature**: `Type`
+**Declaration**: clifford_encode_synthOmega_fst
+**Signature**: `∀ (α : Type u) [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (T A : R.Omega), Eq ((HeytingLean.Contracts.Examples.clifford α R).encode (HeytingLean.Logic.Dialectic.synthOmega R T A)).fst (Nucleus.instFunLike.coe R.nucleus (SemilatticeSup.toMax.max T.val A.val))`
 
-Inductive type Atom. Use when performing case analysis or recursion over this type.
+Clifford: each coordinate of the encoded `synthOmega` reduces to the nucleus of the join.
 
 ## Keywords
-atom., case, heytinglean.noneism.tests.rmex.atom, inductive, performing, type, use, when
+clifford, coordinate, each, encoded, heytinglean.contracts.examples.clifford_encode_synthomega_fst, of, synthomega, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Fun [similarity]](cell_R4_C7.md)
-- ➡️ **E**: [W [similarity]](cell_R12_C7.md)
-- ↘️ **SE**: [CertifiedNucleus [similarity]](cell_R12_C3.md)
-- ⬅️ **W**: [Kernel [similarity]](cell_R12_C1.md)
-- ↖️ **NW**: [Comb [similarity]](cell_R0_C1.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [synthOmega [dependency]](cell_R5_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

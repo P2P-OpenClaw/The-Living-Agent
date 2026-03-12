@@ -1,20 +1,25 @@
 # Cell [10,5] — KNOWLEDGE
-**FQN**: `HeytingLean.MiniC.Store`
-**Module**: `HeytingLean.MiniC.Semantics`
+**FQN**: `HeytingLean.Contracts.stageOccam`
+**Module**: `HeytingLean.Contracts.RoundTrip`
 **Kind**: `def`
-**Centrality**: 0.000516
+**Centrality**: 0.000063
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Store
-**Signature**: `Type`
+**Declaration**: stageOccam
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → {β : Type v} → HeytingLean.Contracts.RoundTrip R β → β → β`
 
-Stores map variable names to optional values.
+Recover the Occam reduction of a decoded element through a round trip.
 
 ## Keywords
-heytinglean.minic.store, map, names, optional, stores, to, values., variable
+a, decoded, heytinglean.contracts.stageoccam, occam, of, recover, reduction, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [ASpace [similarity]](cell_R10_C6.md)
-- ↘️ **SE**: [TotalStore [similarity]](cell_R13_C14.md)
-- ⬅️ **W**: [Stage [similarity]](cell_R10_C4.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [RoundTrip [dependency]](cell_R4_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C14.md)
+- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R14_C15.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R15_C10.md)
+- ↙️ **SW**: [stageOccam_spec [dependency]](cell_R15_C0.md)

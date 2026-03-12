@@ -1,21 +1,20 @@
 # Cell [3,6] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LoFSecond.Expr`
-**Module**: `HeytingLean.LoF.LoFSecond.Syntax`
-**Kind**: `inductive`
-**Centrality**: 0.001026
+**FQN**: `HeytingLean.Bridges.Assembly.ASpace.opens`
+**Module**: `HeytingLean.Bridges.Assembly.AssemblyInterior`
+**Kind**: `def`
+**Centrality**: 0.000053
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Expr
-**Signature**: `Nat → Type`
+**Declaration**: opens
+**Signature**: `{α : Type u} → (G : HeytingLean.ATheory.ASpace α) → Set G.V → Set G.V`
 
-Second-degree LoF expressions with `n` free variables.
+Canonical Alexandroff-style interior ("opens") on `Set G.V`.
 
 ## Keywords
-expressions, free, heytinglean.lof.lofsecond.expr, lof, n, second-degree, variables., with
+Alexandroff-style interior, opens
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Expr [similarity]](cell_R0_C7.md)
-- ➡️ **E**: [M3 [similarity]](cell_R3_C7.md)
-- ↘️ **SE**: [RuleType [similarity]](cell_R12_C15.md)
-- ⬅️ **W**: [IteratedCellOver [similarity]](cell_R3_C5.md)
+- ↗️ **NE**: [ASpace [dependency]](cell_R0_C8.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R10_C14.md)

@@ -1,20 +1,21 @@
 # Cell [11,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Topology.Knot.Crossing`
-**Module**: `HeytingLean.Topology.Knot.PlanarDiagram`
-**Kind**: `inductive`
-**Centrality**: 0.000487
+**FQN**: `HeytingLean.Bridges.Clifford.Projector.Model.encode.eq_1`
+**Module**: `HeytingLean.Bridges.Clifford.Projector`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Crossing
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type v} {β : Type u} [inst : Mul β] [inst_1 : Star β] [inst_2 : HeytingLean.LoF.PrimaryAlgebra α] (M : HeytingLean.Bridges.Clifford.Projector.Model) (a : M.core.R.Omega), Eq (M.encode a) (HeytingLean.Bridges.Clifford.Projector.Model.Carrier.fromPair (M.core.encode a))`
 
-A single crossing in PD notation, with four incident arc labels.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, crossing, heytinglean.topology.knot.crossing, in, notation, pd, single, with
+heytinglean.bridges.clifford.projector.model.encode.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [PDGraph [similarity]](cell_R11_C9.md)
-- ⬅️ **W**: [F2Matrix [similarity]](cell_R11_C7.md)
-- ↖️ **NW**: [MRSystem [similarity]](cell_R0_C4.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [fromPair [dependency]](cell_R6_C6.md)

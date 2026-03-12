@@ -1,19 +1,21 @@
 # Cell [9,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.E91.E91Ctor`
-**Module**: `HeytingLean.Crypto.QKD.E91.Constructors`
-**Kind**: `inductive`
-**Centrality**: 0.000537
+**FQN**: `HeytingLean.Crypto.ZK.Spec.Plonk.Rel.eq_1`
+**Module**: `HeytingLean.Crypto.ZK.Spec.Plonk`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: E91Ctor
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ (sys : HeytingLean.Crypto.ZK.Plonk.System) (a : HeytingLean.Crypto.ZK.Var → Rat), Eq (HeytingLean.Crypto.ZK.Spec.Plonk.Rel sys a) (HeytingLean.Crypto.ZK.Plonk.System.satisfiedNative a sys)`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.crypto.qkd.e91.e91ctor
+heytinglean.crypto.zk.spec.plonk.rel.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LaurentPoly [similarity]](cell_R9_C11.md)
-- ⬅️ **W**: [BB84Substrate [similarity]](cell_R9_C9.md)
+- ⬆️ **N**: [Rel [dependency]](cell_R2_C10.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

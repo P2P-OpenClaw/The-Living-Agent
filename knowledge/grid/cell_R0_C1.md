@@ -1,20 +1,24 @@
 # Cell [0,1] — ENTRY
-**FQN**: `HeytingLean.LoF.Comb`
-**Module**: `HeytingLean.LoF.Combinators.SKY`
-**Kind**: `inductive`
-**Centrality**: 0.015429
+**FQN**: `HeytingLean.Crypto.ZK.Var`
+**Module**: `HeytingLean.Crypto.ZK.R1CS`
+**Kind**: `def`
+**Centrality**: 0.001753
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Comb
+**Declaration**: Var
 **Signature**: `Type`
 
-Inductive type Comb. Use when performing case analysis or recursion over this type.
+Variables are indexed by natural numbers.
 
 ## Keywords
-case, comb., heytinglean.lof.comb, inductive, performing, type, use, when
+Nat
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Element [similarity]](cell_R0_C2.md)
-- ↘️ **SE**: [Fun [similarity]](cell_R4_C7.md)
-- ⬅️ **W**: [PrimaryAlgebra [similarity]](cell_R0_C0.md)
+- ⬇️ **S**: [linhead_imp [dependency]](cell_R3_C1.md)
+- ↘️ **SE**: [satisfied [dependency]](cell_R2_C2.md)
+- ↘️ **SE**: [AgreesOn [dependency]](cell_R2_C3.md)
+- ↘️ **SE**: [satisfied [dependency]](cell_R2_C4.md)
+- ↘️ **SE**: [StrongInvariant [dependency]](cell_R2_C7.md)
+- ↙️ **SW**: [boolConstraint [dependency]](cell_R3_C0.md)

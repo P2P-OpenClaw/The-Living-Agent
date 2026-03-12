@@ -1,20 +1,21 @@
 # Cell [15,10] — SYNTHESIS
-**FQN**: `HeytingLean.ClosingTheLoop.MR.Selector`
-**Module**: `HeytingLean.ClosingTheLoop.MR.Basic`
-**Kind**: `def`
-**Centrality**: 0.000573
+**FQN**: `HeytingLean.Tests.TraceConcurrency.bridgeStep.eq_1`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 5
 
 ## Topic
-**Declaration**: Selector
-**Signature**: `HeytingLean.ClosingTheLoop.MR.MRSystem → Type (max u v)`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (suite : HeytingLean.Contracts.Examples.BridgeSuite α R) (x : HeytingLean.Tests.TraceConcurrency.BridgeState R suite), Eq (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.tensor x) { tensor := HeytingLean.Contracts.stageOccam R suite.tensor.contract x.tensor, graph := x.graph, clifford := x.clifford }`
 
-Replacement/repair selectors: admissible maps `B → H(A,B)` with their admissibility proof.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-admissible, b, h, heytinglean.closingtheloop.mr.selector, maps, repair, replacement, selectors
+heytinglean.tests.traceconcurrency.bridgestep.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [IntReentry [similarity]](cell_R15_C11.md)
-- ⬅️ **W**: [Model [similarity]](cell_R15_C9.md)
-- ↖️ **NW**: [MRSystem [dependency]](cell_R0_C4.md)
+- ↗️ **NE**: [BridgeSuite [dependency]](cell_R4_C11.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [stageOccam [dependency]](cell_R10_C5.md)

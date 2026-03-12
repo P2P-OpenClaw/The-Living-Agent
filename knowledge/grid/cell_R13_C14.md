@@ -1,20 +1,20 @@
 # Cell [13,14] — KNOWLEDGE
-**FQN**: `HeytingLean.MiniC.TotalStore`
-**Module**: `HeytingLean.MiniC.Semantics`
-**Kind**: `def`
-**Centrality**: 0.000434
+**FQN**: `HeytingLean.Tests.tensor_shadow_mv_add`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: TotalStore
-**Signature**: `Type`
+**Declaration**: tensor_shadow_mv_add
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat) (a b : R.Omega), Eq ((HeytingLean.Contracts.Examples.tensor α R n).logicalShadow ((HeytingLean.Contracts.Examples.tensor α R n).stageMvAdd ((HeytingLean.Contracts.Examples.tensor α R n).contract.encode a) ((HeytingLean.Contracts.Examples.tensor α R n).contract.encode b))) (Nucleus.instFunLike.coe R.nucleus (HeytingLean.Logic.Stage.DialParam.mvAdd (HeytingLean.Logic.Modal.DialParam.base R) a b).val)`
 
-A total store maps variable names to integers.
+States tensor shadow mv add. Use when reasoning about nucleus property or rewriting goals that match this pattern.
 
 ## Keywords
-a, heytinglean.minic.totalstore, maps, names, store, to, total, variable
+add., heytinglean.tests.tensor_shadow_mv_add, mv, shadow, states, tensor, use, when
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Generator [similarity]](cell_R13_C15.md)
-- ⬅️ **W**: [LensData [similarity]](cell_R13_C13.md)
-- ↖️ **NW**: [Sym [similarity]](cell_R8_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [tensor [dependency]](cell_R5_C6.md)

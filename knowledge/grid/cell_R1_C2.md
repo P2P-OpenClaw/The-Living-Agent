@@ -1,20 +1,22 @@
 # Cell [1,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Core.Ty`
-**Module**: `HeytingLean.Core.Types`
-**Kind**: `inductive`
-**Centrality**: 0.001875
+**FQN**: `HeytingLean.Crypto.ZK.boolToRat`
+**Module**: `HeytingLean.Crypto.ZK.BoolArith`
+**Kind**: `def`
+**Centrality**: 0.000272
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Ty
-**Signature**: `Type`
+**Declaration**: boolToRat
+**Signature**: `Bool → Rat`
 
-Shared type grammar for LeanCore-style calculi.
+Embed booleans into `ℚ` via `0/1`.
 
 ## Keywords
-calculi., for, grammar, heytinglean.core.ty, leancore-style, shared, type
+Bool, Q
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [IdealFunctionality [similarity]](cell_R1_C3.md)
-- ↘️ **SE**: [Obj [similarity]](cell_R6_C3.md)
-- ⬅️ **W**: [AssemblySpace [similarity]](cell_R1_C1.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R7_C15.md)
+- ↘️ **SE**: [applyImp_strong [dependency]](cell_R8_C5.md)
+- ↘️ **SE**: [applyOr_strong [dependency]](cell_R8_C6.md)
+- ↘️ **SE**: [matches_cons_head [dependency]](cell_R9_C6.md)

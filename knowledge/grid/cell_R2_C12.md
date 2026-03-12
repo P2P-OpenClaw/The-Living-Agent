@@ -1,19 +1,26 @@
 # Cell [2,12] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.OML.H2`
-**Module**: `HeytingLean.Quantum.OML.Examples.Hilbert2`
-**Kind**: `inductive`
-**Centrality**: 0.001165
+**FQN**: `HeytingLean.Crypto.BoolLens.exec`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `def`
+**Centrality**: 0.000083
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: H2
-**Signature**: `Type`
+**Declaration**: exec
+**Signature**: `{n : Nat} → HeytingLean.Crypto.BoolLens.Env n → HeytingLean.Crypto.Program n → HeytingLean.Crypto.BoolLens.Stack → HeytingLean.Crypto.BoolLens.Stack`
 
-Finite Hilbert 2D subspace lattice (Boolean): {⊥, X, Y, ⊤} with Xᶜ=Y, Yᶜ=X.
+Execute a program, threading the operand stack.
 
 ## Keywords
-2d, boolean, finite, heytinglean.quantum.oml.h2, hilbert, lattice, subspace, x
+a, execute, heytinglean.crypto.boollens.exec, operand, program, stack., the, threading
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LoFTerm [similarity]](cell_R2_C13.md)
-- ⬅️ **W**: [RecoveryView [similarity]](cell_R2_C11.md)
+- ⬆️ **N**: [Stack [dependency]](cell_R0_C12.md)
+- ↖️ **NW**: [Env [dependency]](cell_R0_C9.md)
+- ↖️ **NW**: [Program [dependency]](cell_R1_C1.md)
+- ⬇️ **S**: [compileTraceToR1CSFromEmpty_strong [dependency]](cell_R8_C12.md)
+- ↘️ **SE**: [compile_invariant [dependency]](cell_R8_C14.md)
+- ↙️ **SW**: [eq_2 [dependency]](cell_R7_C2.md)
+- ↙️ **SW**: [exec_cons [dependency]](cell_R7_C4.md)
+- ↙️ **SW**: [compileSteps_strong [dependency]](cell_R8_C10.md)

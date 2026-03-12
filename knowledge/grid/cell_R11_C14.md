@@ -1,19 +1,21 @@
 # Cell [11,14] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.Interactions.Scalar`
-**Module**: `HeytingLean.Chem.Interactions.Potentials`
-**Kind**: `def`
-**Centrality**: 0.000483
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model.stageMvAdd_encode`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Scalar
-**Signature**: `Type`
+**Declaration**: stageMvAdd_encode
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (M : HeytingLean.Bridges.Tensor.Intensity.Model) (bounds : optParam HeytingLean.Bridges.Tensor.Intensity.Bounds M.profile.bounds) (normalised : optParam Prop True) (a b : M.core.R.Omega), Eq (M.stageMvAdd bounds normalised (M.encode bounds normalised a) (M.encode bounds normalised b)) (M.encode bounds normalised (HeytingLean.Logic.Stage.DialParam.mvAdd (HeytingLean.Logic.Modal.DialParam.base M.core.R) a b))`
 
-No docstring available; inspect the Lean declaration directly.
+Stage-style MV addition on the intensity carrier agrees with the core MV addition on Ω.
 
 ## Keywords
-heytinglean.chem.interactions.scalar
+Algebraic geometry, Category theory, Computer science, FHE, Intuitionistic logic, Program verification, Proof assistants, Topos theory, Type theory, zkp
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [EVMState [similarity]](cell_R11_C15.md)
-- ⬅️ **W**: [BondOrder [similarity]](cell_R11_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Bounds [dependency]](cell_R0_C10.md)
+- ↖️ **NW**: [mvAdd [dependency]](cell_R5_C3.md)

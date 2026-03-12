@@ -1,21 +1,21 @@
 # Cell [12,13] — KNOWLEDGE
-**FQN**: `HeytingLean.Numbers.Surreal.IR.CoqOp`
-**Module**: `HeytingLean.Numbers.Surreal.IR.CoqExport`
-**Kind**: `inductive`
-**Centrality**: 0.000456
+**FQN**: `HeytingLean.Logic.Modal.DialParam.collapseAt.eq_1`
+**Module**: `HeytingLean.Logic.ModalDial`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: CoqOp
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat), Eq (HeytingLean.Logic.Modal.DialParam.collapseAt R n) (HeytingLean.Logic.Modal.DialParam.ladder R n).collapse`
 
-Inductive type Coq Op. Use when performing case analysis or recursion over this type.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-coq, heytinglean.numbers.surreal.ir.coqop, inductive, op., performing, type, use, when
+1., eq, goal, heytinglean.logic.modal.dialparam.collapseat.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [TemplateParams [similarity]](cell_R12_C12.md)
-- ↘️ **SE**: [SpinVector [similarity]](cell_R12_C14.md)
-- ⬅️ **W**: [Rule [similarity]](cell_R12_C10.md)
-- ↖️ **NW**: [Fun [similarity]](cell_R4_C7.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [ladder [dependency]](cell_R5_C0.md)
+- ↖️ **NW**: [collapseAt [dependency]](cell_R5_C11.md)

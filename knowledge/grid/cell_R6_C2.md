@@ -1,22 +1,23 @@
 # Cell [6,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Layouts.Flat.FlatLayout`
-**Module**: `HeytingLean.Layouts.Flat.Basic`
+**FQN**: `HeytingLean.Contracts.Examples.projectorModel`
+**Module**: `HeytingLean.Contracts.Examples`
 **Kind**: `def`
-**Centrality**: 0.000694
+**Centrality**: 0.000071
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: FlatLayout
-**Signature**: `Type`
+**Declaration**: projectorModel
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → HeytingLean.Bridges.Clifford.Projector.Model`
 
-A flat layout is a list of shape/stride pairs.
+Canonical projector model used when the projector feature flag is enabled.
 
 ## Keywords
-a, flat, heytinglean.layouts.flat.flatlayout, is, layout, list, of
+canonical, heytinglean.contracts.examples.projectormodel, model, projector, the, used, when
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [System [similarity]](cell_R5_C9.md)
-- ➡️ **E**: [Obj [similarity]](cell_R6_C3.md)
-- ↘️ **SE**: [ShapeStridePair [similarity]](cell_R10_C10.md)
-- ↙️ **SW**: [Attribute [similarity]](cell_R8_C0.md)
-- ⬅️ **W**: [EmbVec [similarity]](cell_R6_C1.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R12_C4.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R14_C7.md)

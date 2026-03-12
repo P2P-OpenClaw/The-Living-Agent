@@ -2,9 +2,9 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import math
-import re
 from collections import deque
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -20,6 +20,11 @@ from living_agent_common import (
     write_json,
     write_text,
 )
+
+try:
+    import numpy as np
+except ImportError:  # pragma: no cover - optional dependency
+    np = None
 
 
 DIRECTION_EMOJI = {
@@ -47,6 +52,32 @@ INTERNAL_PATTERNS = (
     ".sizeOf",
     ".induct",
 )
+SIMILARITY_THRESHOLD = 0.7
+PARENT_FANOUT_PENALTY = 0.0005
+
+
+@dataclass
+class Neighbor:
+    direction: str
+    target_cell: str
+    target_fqn: str
+    edge_type: str
+    label: str
+    provenance: str
+    score: float | None = None
+
+    def to_index(self) -> dict:
+        payload = {
+            "direction": self.direction,
+            "target_cell": self.target_cell,
+            "target_fqn": self.target_fqn,
+            "edge_type": self.edge_type,
+            "label": self.label,
+            "provenance": self.provenance,
+        }
+        if self.score is not None:
+            payload["score"] = round(self.score, 4)
+        return payload
 
 
 @dataclass
@@ -61,9 +92,12 @@ class Cell:
     docstring: str
     pagerank: float
     decl_file: str
+    dependency_depth: int
+    dependency_count: int
+    reverse_dependency_count: int
     keywords: list[str] = field(default_factory=list)
     overlay_summary: str = ""
-    neighbors: dict[str, dict] = field(default_factory=dict)
+    neighbors: list[Neighbor] = field(default_factory=list)
 
     @property
     def title(self) -> str:
@@ -85,48 +119,48 @@ class Cell:
             "docstring": self.docstring,
             "pagerank": self.pagerank,
             "decl_file": self.decl_file,
+            "dependency_depth": self.dependency_depth,
+            "dependency_count": self.dependency_count,
+            "reverse_dependency_count": self.reverse_dependency_count,
             "keywords": self.keywords,
             "overlay_summary": self.overlay_summary,
-            "neighbors": self.neighbors,
+            "neighbors": [neighbor.to_index() for neighbor in self.neighbors],
         }
+
+
+@dataclass
+class EmbeddingIndex:
+    vectors: "np.ndarray"
+    id_map: dict[str, str]
+    path: Path
+
+    def vector_for(self, fqn: str) -> "np.ndarray | None":
+        key = self.id_map.get(fqn)
+        if key is None:
+            return None
+        return self.vectors[int(key)]
 
 
 def now_utc() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def catalog_entries() -> dict[str, dict]:
-    catalog = load_json(REPO_ROOT / "lean_index" / "catalog.json")
-    pagerank = load_json(REPO_ROOT / "lean_index" / "tags" / "decl_pagerank.json")
-    deps = load_json(REPO_ROOT / "lean_index" / "dependencies.json")
-    overlay = load_overlay()
-    selected: dict[str, dict] = {}
-    for row in catalog:
-        module = row.get("module", "")
-        if not module.startswith("HeytingLean."):
-            continue
-        dep_key = dependency_key(row, deps["dependencies"])
-        if dep_key is None:
-            continue
-        fqn = dep_key.split("main::", 1)[1]
-        if any(pattern in fqn for pattern in INTERNAL_PATTERNS):
-            continue
-        selected[fqn] = {
-            "fqn": fqn,
-            "module": module,
-            "kind": row.get("kind", ""),
-            "signature": normalize_whitespace(row.get("type", "")),
-            "docstring": normalize_whitespace(row.get("docstring", "")),
-            "pagerank": float(pagerank.get(fqn, 0.0)),
-            "decl_file": f"lean/{module.replace('.', '/')}.lean",
-            "dependencies": [
-                dep.split("main::", 1)[1]
-                for dep in deps["dependencies"].get(dep_key, [])
-                if dep.startswith("main::HeytingLean.")
-            ],
-            "overlay": overlay.get(fqn, {}),
-        }
-    return selected
+def iso_mtime(path: Path) -> str:
+    return datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc).isoformat()
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def load_optional_json(path: Path) -> dict | list | None:
+    if not path.exists():
+        return None
+    return load_json(path)
 
 
 def dependency_key(row: dict, dep_map: dict[str, list[str]]) -> str | None:
@@ -142,6 +176,8 @@ def dependency_key(row: dict, dep_map: dict[str, list[str]]) -> str | None:
 
 def load_overlay() -> dict[str, dict]:
     overlay_root = REPO_ROOT / "semantic_overlay" / "declarations"
+    if not overlay_root.exists():
+        return {}
     out: dict[str, dict] = {}
     for path in overlay_root.glob("*.json"):
         payload = load_json(path)
@@ -160,6 +196,93 @@ def load_overlay() -> dict[str, dict]:
                 "docstring": normalize_whitespace(extracted.get("docstring", "")),
             }
     return out
+
+
+def load_decl_embeddings() -> EmbeddingIndex | None:
+    vectors_path = REPO_ROOT / "lean_index" / "embeddings.npy"
+    id_map_path = REPO_ROOT / "lean_index" / "id_map.json"
+    if np is None or not vectors_path.exists() or not id_map_path.exists():
+        return None
+    vectors = np.load(vectors_path)
+    raw_id_map = load_json(id_map_path)
+    if not isinstance(raw_id_map, dict):
+        return None
+    id_map = {value: key for key, value in raw_id_map.items() if isinstance(value, str)}
+    return EmbeddingIndex(vectors=vectors, id_map=id_map, path=vectors_path)
+
+
+def build_declaration_catalog() -> tuple[dict[str, dict], dict]:
+    catalog_path = REPO_ROOT / "lean_index" / "catalog.json"
+    dependencies_path = REPO_ROOT / "lean_index" / "dependencies.json"
+    pagerank_path = REPO_ROOT / "lean_index" / "tags" / "decl_pagerank.json"
+    catalog = load_json(catalog_path)
+    deps_payload = load_json(dependencies_path)
+    pagerank = load_optional_json(pagerank_path) or {}
+    overlay = load_overlay()
+    selected: dict[str, dict] = {}
+    reverse_map: dict[str, set[str]] = {}
+    dep_map = deps_payload["dependencies"]
+    for row in catalog:
+        module = row.get("module", "")
+        if not module.startswith("HeytingLean."):
+            continue
+        dep_key = dependency_key(row, dep_map)
+        if dep_key is None:
+            continue
+        fqn = dep_key.split("main::", 1)[1]
+        if any(pattern in fqn for pattern in INTERNAL_PATTERNS):
+            continue
+        dependencies = [
+            dep.split("main::", 1)[1]
+            for dep in dep_map.get(dep_key, [])
+            if dep.startswith("main::HeytingLean.")
+        ]
+        selected[fqn] = {
+            "fqn": fqn,
+            "module": module,
+            "kind": row.get("kind", ""),
+            "signature": normalize_whitespace(row.get("type", "")),
+            "docstring": normalize_whitespace(row.get("docstring", "")),
+            "pagerank": float(pagerank.get(fqn, 0.0)),
+            "decl_file": f"lean/{module.replace('.', '/')}.lean",
+            "dependencies": dependencies,
+            "overlay": overlay.get(fqn, {}),
+        }
+        reverse_map.setdefault(fqn, set())
+    for fqn, item in selected.items():
+        for dep in item["dependencies"]:
+            if dep in reverse_map:
+                reverse_map[dep].add(fqn)
+    for fqn, item in selected.items():
+        item["reverse_dependencies"] = sorted(reverse_map.get(fqn, set()))
+        item["all_neighbors"] = sorted(set(item["dependencies"]) | reverse_map.get(fqn, set()))
+    metadata = {
+        "catalog": {
+            "path": str(catalog_path.relative_to(REPO_ROOT)),
+            "sha256": sha256_file(catalog_path),
+            "generated_at": iso_mtime(catalog_path),
+            "declaration_count": len(catalog),
+        },
+        "dependencies": {
+            "path": str(dependencies_path.relative_to(REPO_ROOT)),
+            "sha256": sha256_file(dependencies_path),
+            "generated_at": iso_mtime(dependencies_path),
+        },
+        "pagerank": {
+            "available": pagerank_path.exists(),
+            "path": str(pagerank_path.relative_to(REPO_ROOT)),
+            "sha256": sha256_file(pagerank_path) if pagerank_path.exists() else None,
+            "generated_at": iso_mtime(pagerank_path) if pagerank_path.exists() else None,
+        },
+        "overlay": {
+            "available": bool(overlay),
+            "path": "semantic_overlay/declarations/",
+            "file_count": len(list((REPO_ROOT / "semantic_overlay" / "declarations").glob("*.json")))
+            if (REPO_ROOT / "semantic_overlay" / "declarations").exists()
+            else 0,
+        },
+    }
+    return selected, metadata
 
 
 def dependency_depths(selected: dict[str, dict]) -> dict[str, int]:
@@ -183,139 +306,111 @@ def dependency_depths(selected: dict[str, dict]) -> dict[str, int]:
     return memo
 
 
-def select_cells(selected: dict[str, dict], rows: int, cols: int, top_n: int) -> list[Cell]:
-    capacity = min(top_n, rows * cols)
-    depths = dependency_depths(selected)
-    ranked = sorted(
-        selected.values(),
-        key=lambda item: (-item["pagerank"], depths.get(item["fqn"], 0), item["fqn"]),
-    )[:capacity]
-    max_depth = max((depths[item["fqn"]] for item in ranked), default=0)
-    buckets: dict[int, list[dict]] = {idx: [] for idx in range(rows)}
-    for item in ranked:
-        raw_depth = depths[item["fqn"]]
+def largest_component(selected: dict[str, dict]) -> set[str]:
+    best: set[str] = set()
+    seen: set[str] = set()
+    for start in selected:
+        if start in seen:
+            continue
+        component: set[str] = set()
+        queue = deque([start])
+        while queue:
+            fqn = queue.popleft()
+            if fqn in component:
+                continue
+            component.add(fqn)
+            seen.add(fqn)
+            queue.extend(neighbor for neighbor in selected[fqn]["all_neighbors"] if neighbor in selected)
+        if len(component) > len(best):
+            best = component
+    return best
+
+
+def select_connected_fqns(selected: dict[str, dict], capacity: int) -> tuple[list[str], dict[str, str | None]]:
+    component = largest_component(selected)
+    if not component:
+        return [], {}
+    ranked_component = sorted(
+        component,
+        key=lambda fqn: (-selected[fqn]["pagerank"], fqn),
+    )
+    root = ranked_component[0]
+    chosen: list[str] = [root]
+    chosen_set = {root}
+    parent_map: dict[str, str | None] = {root: None}
+    child_count: dict[str, int] = {root: 0}
+    while len(chosen) < min(capacity, len(component)):
+        frontier: list[tuple[float, float, int, str, str]] = []
+        for parent in chosen:
+            for neighbor in selected[parent]["all_neighbors"]:
+                if neighbor not in component or neighbor in chosen_set:
+                    continue
+                frontier.append(
+                    (
+                        selected[neighbor]["pagerank"] - PARENT_FANOUT_PENALTY * child_count.get(parent, 0),
+                        selected[neighbor]["pagerank"],
+                        len(selected[neighbor]["all_neighbors"]),
+                        neighbor,
+                        parent,
+                    )
+                )
+        if not frontier:
+            break
+        frontier.sort(key=lambda item: (-item[0], -item[1], -item[2], item[3], item[4]))
+        _, _, _, chosen_fqn, parent = frontier[0]
+        chosen.append(chosen_fqn)
+        chosen_set.add(chosen_fqn)
+        parent_map[chosen_fqn] = parent
+        child_count[parent] = child_count.get(parent, 0) + 1
+        child_count.setdefault(chosen_fqn, 0)
+    return chosen, parent_map
+
+
+def instantiate_cells(selected: dict[str, dict], chosen_fqns: list[str], rows: int, cols: int) -> list[Cell]:
+    chosen_map = {fqn: selected[fqn] for fqn in chosen_fqns}
+    depths = dependency_depths(chosen_map)
+    max_depth = max((depths[fqn] for fqn in chosen_fqns), default=0)
+    buckets: dict[int, list[str]] = {idx: [] for idx in range(rows)}
+    for fqn in chosen_fqns:
+        raw_depth = depths.get(fqn, 0)
         bucket = 0 if max_depth == 0 else round(raw_depth * (rows - 1) / max_depth)
-        buckets[bucket].append(item)
-    ordered: list[dict] = []
+        buckets[bucket].append(fqn)
+    ordered: list[str] = []
     for row in range(rows):
-        bucket_items = sorted(
+        bucket_fqns = sorted(
             buckets[row],
-            key=lambda item: (-item["pagerank"], item["fqn"]),
+            key=lambda fqn: (-selected[fqn]["pagerank"], fqn),
         )
-        ordered.extend(bucket_items)
+        ordered.extend(bucket_fqns)
     cells: list[Cell] = []
-    for idx, item in enumerate(ordered):
+    for idx, fqn in enumerate(ordered):
         row = idx // cols
         col = idx % cols
+        item = selected[fqn]
         overlay = item["overlay"]
         keywords = overlay.get("keywords") or tokenize(
-            f"{item['fqn']} {item['docstring']} {overlay.get('summary', '')}"
+            f"{fqn} {item['docstring']} {overlay.get('summary', '')}"
         )[:8]
         cells.append(
             Cell(
                 cell_id=f"HL_{idx + 1:03d}",
                 row=row,
                 col=col,
-                fqn=item["fqn"],
+                fqn=fqn,
                 module=item["module"],
                 kind=item["kind"],
                 signature=overlay.get("signature") or item["signature"],
                 docstring=overlay.get("docstring") or item["docstring"],
                 pagerank=item["pagerank"],
                 decl_file=item["decl_file"],
+                dependency_depth=depths.get(fqn, 0),
+                dependency_count=len([dep for dep in item["dependencies"] if dep in chosen_map]),
+                reverse_dependency_count=len([dep for dep in item["reverse_dependencies"] if dep in chosen_map]),
                 keywords=sorted(set(keywords))[:12],
                 overlay_summary=overlay.get("summary", ""),
             )
         )
     return cells
-
-
-def add_neighbors(cells: list[Cell], selected: dict[str, dict]) -> None:
-    by_fqn = {cell.fqn: cell for cell in cells}
-    ordered_cells = sorted(cells, key=lambda cell: (cell.row, cell.col))
-    order_index = {cell.fqn: idx for idx, cell in enumerate(ordered_cells)}
-    reverse: dict[str, set[str]] = {cell.fqn: set() for cell in cells}
-    for cell in cells:
-        for dep in selected[cell.fqn]["dependencies"]:
-            if dep in reverse:
-                reverse[dep].add(cell.fqn)
-    token_sets = {
-        cell.fqn: set(tokenize(f"{cell.fqn} {cell.docstring} {' '.join(cell.keywords)}"))
-        for cell in cells
-    }
-    for cell in cells:
-        linked = set()
-        for dep in selected[cell.fqn]["dependencies"]:
-            if dep in by_fqn:
-                linked.add(dep)
-        linked |= reverse[cell.fqn]
-        if len(linked) < 4:
-            scores: list[tuple[float, str]] = []
-            base_tokens = token_sets[cell.fqn]
-            for other in cells:
-                if other.fqn == cell.fqn or other.fqn in linked:
-                    continue
-                other_tokens = token_sets[other.fqn]
-                if not base_tokens or not other_tokens:
-                    continue
-                score = len(base_tokens & other_tokens) / len(base_tokens | other_tokens)
-                if score >= 0.12:
-                    scores.append((score, other.fqn))
-            for _, other_fqn in sorted(scores, reverse=True)[:4]:
-                linked.add(other_fqn)
-        best_for_direction: dict[str, tuple[float, Cell, str, float]] = {}
-        for target_fqn in linked:
-            target = by_fqn[target_fqn]
-            direction = direction_from_delta(target.row - cell.row, target.col - cell.col)
-            if direction is None:
-                continue
-            distance = math.hypot(target.row - cell.row, target.col - cell.col)
-            edge_type = (
-                "dependency"
-                if target_fqn in selected[cell.fqn]["dependencies"] or cell.fqn in selected[target_fqn]["dependencies"]
-                else "similarity"
-            )
-            similarity = 0.0
-            if edge_type == "similarity":
-                base_tokens = token_sets[cell.fqn]
-                target_tokens = token_sets[target_fqn]
-                similarity = len(base_tokens & target_tokens) / max(1, len(base_tokens | target_tokens))
-            existing = best_for_direction.get(direction)
-            if existing is None or distance < existing[0]:
-                best_for_direction[direction] = (distance, target, edge_type, similarity)
-        for direction, (_, target, edge_type, similarity) in best_for_direction.items():
-            cell.neighbors[direction] = {
-                "target_cell": target.cell_filename,
-                "target_fqn": target.fqn,
-                "edge_type": edge_type,
-                "score": round(similarity, 4),
-                "label": target.title,
-            }
-        # Ensure the exported graph stays connected by chaining adjacent grid cells as
-        # low-priority similarity edges when the structural graph is sparse.
-        for offset in (-1, 1):
-            target_idx = order_index[cell.fqn] + offset
-            if not (0 <= target_idx < len(ordered_cells)):
-                continue
-            target = ordered_cells[target_idx]
-            direction = direction_from_delta(target.row - cell.row, target.col - cell.col)
-            if direction is None or direction in cell.neighbors:
-                direction = next(
-                    (candidate for candidate in ["E", "SE", "S", "NE", "W", "SW", "N", "NW"] if candidate not in cell.neighbors),
-                    None,
-                )
-            if direction is None:
-                continue
-            base_tokens = token_sets[cell.fqn]
-            target_tokens = token_sets[target.fqn]
-            similarity = len(base_tokens & target_tokens) / max(1, len(base_tokens | target_tokens))
-            cell.neighbors[direction] = {
-                "target_cell": target.cell_filename,
-                "target_fqn": target.fqn,
-                "edge_type": "similarity",
-                "score": round(similarity, 4),
-                "label": target.title,
-            }
 
 
 def direction_from_delta(dr: int, dc: int) -> str | None:
@@ -334,6 +429,116 @@ def direction_from_delta(dr: int, dc: int) -> str | None:
     return mapping.get((sr, sc))
 
 
+def dependency_edge_type(selected: dict[str, dict], source: str, target: str) -> tuple[str, str]:
+    if target in selected[source]["dependencies"]:
+        return "dependency", "dependency:imports"
+    if target in selected[source]["reverse_dependencies"]:
+        return "dependency", "dependency:reverse"
+    raise ValueError(f"{source} and {target} do not share a real dependency edge")
+
+
+def append_edge(
+    cell: Cell,
+    target: Cell,
+    *,
+    edge_type: str,
+    provenance: str,
+    score: float | None = None,
+) -> None:
+    if any(existing.target_fqn == target.fqn for existing in cell.neighbors):
+        return
+    direction = direction_from_delta(target.row - cell.row, target.col - cell.col) or "E"
+    cell.neighbors.append(
+        Neighbor(
+            direction=direction,
+            target_cell=target.cell_filename,
+            target_fqn=target.fqn,
+            edge_type=edge_type,
+            label=target.title,
+            provenance=provenance,
+            score=score,
+        )
+    )
+
+
+def add_neighbors(
+    cells: list[Cell],
+    selected: dict[str, dict],
+    parent_map: dict[str, str | None],
+    embeddings: EmbeddingIndex | None,
+) -> None:
+    by_fqn = {cell.fqn: cell for cell in cells}
+
+    # Seed a real spanning tree so connectivity never depends on synthetic fallback edges.
+    for child, parent in parent_map.items():
+        if parent is None or child not in by_fqn or parent not in by_fqn:
+            continue
+        child_edge_type, child_provenance = dependency_edge_type(selected, child, parent)
+        parent_edge_type, parent_provenance = dependency_edge_type(selected, parent, child)
+        append_edge(by_fqn[child], by_fqn[parent], edge_type=child_edge_type, provenance=child_provenance)
+        append_edge(by_fqn[parent], by_fqn[child], edge_type=parent_edge_type, provenance=parent_provenance)
+
+    for cell in cells:
+        real_neighbors = sorted(
+            {
+                neighbor
+                for neighbor in selected[cell.fqn]["all_neighbors"]
+                if neighbor in by_fqn and neighbor != cell.fqn
+            },
+            key=lambda fqn: (-selected[fqn]["pagerank"], fqn),
+        )
+        best_real_by_direction: dict[str, tuple[float, Cell, str, str]] = {}
+        for neighbor_fqn in real_neighbors:
+            if any(existing.target_fqn == neighbor_fqn for existing in cell.neighbors):
+                continue
+            target = by_fqn[neighbor_fqn]
+            direction = direction_from_delta(target.row - cell.row, target.col - cell.col) or "E"
+            edge_type, provenance = dependency_edge_type(selected, cell.fqn, neighbor_fqn)
+            score = selected[neighbor_fqn]["pagerank"]
+            existing = best_real_by_direction.get(direction)
+            if existing is None or score > existing[0]:
+                best_real_by_direction[direction] = (score, target, edge_type, provenance)
+        for _, target, edge_type, provenance in best_real_by_direction.values():
+            append_edge(cell, target, edge_type=edge_type, provenance=provenance)
+
+        if embeddings is None:
+            continue
+        base_vector = embeddings.vector_for(cell.fqn)
+        if base_vector is None:
+            continue
+        similarity_candidates: list[tuple[float, str, str]] = []
+        for other in cells:
+            if other.fqn == cell.fqn or any(existing.target_fqn == other.fqn for existing in cell.neighbors):
+                continue
+            other_vector = embeddings.vector_for(other.fqn)
+            if other_vector is None:
+                continue
+            score = float(base_vector @ other_vector)
+            if score >= SIMILARITY_THRESHOLD:
+                direction = direction_from_delta(other.row - cell.row, other.col - cell.col) or "E"
+                similarity_candidates.append((score, other.fqn, direction))
+        similarity_candidates.sort(key=lambda item: (-item[0], item[1], item[2]))
+        used_directions = {neighbor.direction for neighbor in cell.neighbors}
+        similarity_edges_added = 0
+        for score, target_fqn, direction in similarity_candidates:
+            if direction in used_directions:
+                continue
+            append_edge(
+                cell,
+                by_fqn[target_fqn],
+                edge_type="similarity",
+                provenance=f"embedding:cosine>={SIMILARITY_THRESHOLD}",
+                score=score,
+            )
+            used_directions.add(direction)
+            similarity_edges_added += 1
+            if similarity_edges_added >= 2:
+                break
+
+    for cell in cells:
+        cell.neighbors.sort(key=lambda neighbor: (neighbor.direction, neighbor.target_cell))
+
+
 def render_cell(cell: Cell, rows: int) -> str:
     cell_type = "ENTRY" if cell.row == 0 else "SYNTHESIS" if cell.row == rows - 1 else "KNOWLEDGE"
     lines = [
@@ -342,6 +547,7 @@ def render_cell(cell: Cell, rows: int) -> str:
         f"**Module**: `{cell.module}`",
         f"**Kind**: `{cell.kind}`",
         f"**Centrality**: {cell.pagerank:.6f}",
+        f"**Dependency Depth**: {cell.dependency_depth}",
         "",
         "## Topic",
         f"**Declaration**: {cell.title}",
@@ -355,16 +561,12 @@ def render_cell(cell: Cell, rows: int) -> str:
         "---",
         "## Navigation (real dependency / similarity edges)",
     ]
-    for direction in ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]:
-        neighbor = cell.neighbors.get(direction)
-        if neighbor is None:
-            continue
-        emoji = DIRECTION_EMOJI[direction]
-        label = neighbor["label"]
-        target = neighbor["target_cell"]
-        edge_type = neighbor["edge_type"]
-        suffix = f" [{edge_type}]"
-        lines.append(f"- {emoji} **{direction}**: [{label}{suffix}]({target})")
+    for neighbor in cell.neighbors:
+        emoji = DIRECTION_EMOJI.get(neighbor.direction, "➡️")
+        suffix = f" [{neighbor.edge_type}]"
+        if neighbor.score is not None:
+            suffix += f" {neighbor.score:.2f}"
+        lines.append(f"- {emoji} **{neighbor.direction}**: [{neighbor.label}{suffix}]({neighbor.target_cell})")
     return "\n".join(lines) + "\n"
 
 
@@ -386,6 +588,99 @@ def render_grid_index(cells: list[Cell], rows: int, cols: int) -> str:
     return "\n".join(lines) + "\n"
 
 
+def build_payload(
+    cells: list[Cell],
+    rows: int,
+    cols: int,
+    source_metadata: dict,
+    embeddings: EmbeddingIndex | None,
+    requested_top_n: int,
+) -> dict:
+    component_cells = len(cells)
+    return {
+        "generated_at": now_utc(),
+        "rows": rows,
+        "cols": cols,
+        "requested_top_n": requested_top_n,
+        "cell_count": component_cells,
+        "sources": {
+            **source_metadata,
+            "embeddings": {
+                "available": embeddings is not None,
+                "path": str(embeddings.path.relative_to(REPO_ROOT)) if embeddings is not None else None,
+                "sha256": sha256_file(embeddings.path) if embeddings is not None else None,
+                "generated_at": iso_mtime(embeddings.path) if embeddings is not None else None,
+                "similarity_threshold": SIMILARITY_THRESHOLD if embeddings is not None else None,
+            },
+        },
+        "cells": [cell.to_index() for cell in cells],
+    }
+
+
+def validate_payload(payload: dict, selected: dict[str, dict], embeddings: EmbeddingIndex | None) -> dict:
+    cells = payload["cells"]
+    if not cells:
+        raise AssertionError("grid builder produced zero cells")
+    cell_names = {f"cell_R{cell['row']}_C{cell['col']}.md" for cell in cells}
+    by_fqn = {cell["fqn"]: cell for cell in cells}
+    by_name = {f"cell_R{cell['row']}_C{cell['col']}.md": cell["fqn"] for cell in cells}
+    for cell in cells:
+        fqn = cell["fqn"]
+        if fqn not in selected:
+            raise AssertionError(f"missing FQN from lean_index: {fqn}")
+        if not cell["decl_file"].startswith("lean/"):
+            raise AssertionError(f"unexpected declaration path: {cell['decl_file']}")
+        for neighbor in cell["neighbors"]:
+            target_cell = neighbor["target_cell"]
+            target_fqn = neighbor["target_fqn"]
+            if target_cell not in cell_names:
+                raise AssertionError(f"neighbor target missing: {target_cell}")
+            if by_name[target_cell] != target_fqn:
+                raise AssertionError(f"neighbor FQN mismatch: {target_cell} != {target_fqn}")
+            if target_fqn not in selected:
+                raise AssertionError(f"neighbor FQN missing from lean_index: {target_fqn}")
+            if neighbor["edge_type"] == "dependency":
+                if target_fqn not in selected[fqn]["all_neighbors"]:
+                    raise AssertionError(f"fake dependency edge: {fqn} -> {target_fqn}")
+            elif neighbor["edge_type"] == "similarity":
+                if embeddings is None:
+                    raise AssertionError("similarity edge emitted without embeddings")
+                base_vector = embeddings.vector_for(fqn)
+                target_vector = embeddings.vector_for(target_fqn)
+                if base_vector is None or target_vector is None:
+                    raise AssertionError(f"similarity edge missing embeddings: {fqn} -> {target_fqn}")
+                score = float(base_vector @ target_vector)
+                if score < SIMILARITY_THRESHOLD:
+                    raise AssertionError(f"similarity score below threshold: {fqn} -> {target_fqn} ({score})")
+            else:
+                raise AssertionError(f"unknown edge_type: {neighbor['edge_type']}")
+
+    graph = {cell["fqn"]: set() for cell in cells}
+    for cell in cells:
+        for neighbor in cell["neighbors"]:
+            graph[cell["fqn"]].add(neighbor["target_fqn"])
+            graph[neighbor["target_fqn"]].add(cell["fqn"])
+    seen: set[str] = set()
+    queue = deque([cells[0]["fqn"]])
+    while queue:
+        fqn = queue.popleft()
+        if fqn in seen:
+            continue
+        seen.add(fqn)
+        queue.extend(graph[fqn] - seen)
+    return {
+        "cell_count": len(cells),
+        "connected": len(seen) == len(cells),
+        "embedding_edges_present": any(
+            neighbor["edge_type"] == "similarity"
+            for cell in cells
+            for neighbor in cell["neighbors"]
+        ),
+        "pagerank_available": bool(payload["sources"]["pagerank"]["available"]),
+        "overlay_available": bool(payload["sources"]["overlay"]["available"]),
+    }
+
+
 def write_install_script(out_root: Path) -> None:
     script = f"""#!/usr/bin/env bash
 set -euo pipefail
@@ -400,37 +695,12 @@ mkdir -p "$(dirname "$DEST")"
 mkdir -p "$DEST"
 cp -a "$SRC/grid/." "$DEST/"
 cp "$SRC/grid_index.md" "$DEST_INDEX"
+cp "$SRC/verified_grid_index.json" "$DEST/verified_grid_index.json"
 echo "Installed verified grid into {DEFAULT_LIVING_AGENT_ROOT}"
 """
     path = out_root / "install_verified_grid.sh"
     write_text(path, script)
     path.chmod(0o755)
-
-
-def validate_output(index_path: Path) -> dict:
-    payload = load_json(index_path)
-    cells = payload["cells"]
-    cell_names = {f"cell_R{cell['row']}_C{cell['col']}.md" for cell in cells}
-    for cell in cells:
-        assert cell["fqn"].startswith("HeytingLean."), cell["fqn"]
-        assert cell["decl_file"].startswith("lean/"), cell["decl_file"]
-        for neighbor in cell["neighbors"].values():
-            assert neighbor["target_cell"] in cell_names
-            assert neighbor["target_fqn"].startswith("HeytingLean.")
-    graph = {cell["cell_id"]: [] for cell in cells}
-    by_name = {f"cell_R{cell['row']}_C{cell['col']}.md": cell["cell_id"] for cell in cells}
-    for cell in cells:
-        for neighbor in cell["neighbors"].values():
-            graph[cell["cell_id"]].append(by_name[neighbor["target_cell"]])
-    seen = set()
-    queue = deque([cells[0]["cell_id"]]) if cells else deque()
-    while queue:
-        node = queue.popleft()
-        if node in seen:
-            continue
-        seen.add(node)
-        queue.extend(graph[node])
-    return {"cell_count": len(cells), "connected": len(seen) == len(cells)}
 
 
 def main() -> int:
@@ -444,22 +714,25 @@ def main() -> int:
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
 
-    selected = catalog_entries()
-    cells = select_cells(selected, args.rows, args.cols, args.top_n)
-    add_neighbors(cells, selected)
-    payload = {
-        "generated_at": now_utc(),
-        "rows": args.rows,
-        "cols": args.cols,
-        "cell_count": len(cells),
-        "cells": [cell.to_index() for cell in cells],
-    }
+    if args.rows <= 0 or args.cols <= 0:
+        raise SystemExit("--rows and --cols must be positive")
+
+    selected, source_metadata = build_declaration_catalog()
+    embeddings = load_decl_embeddings()
+    capacity = min(args.top_n, args.rows * args.cols)
+    chosen_fqns, parent_map = select_connected_fqns(selected, capacity)
+    cells = instantiate_cells(selected, chosen_fqns, args.rows, args.cols)
+    add_neighbors(cells, selected, parent_map, embeddings)
+    payload = build_payload(cells, args.rows, args.cols, source_metadata, embeddings, args.top_n)
+
     if args.dry_run:
         preview = {
             "cell_count": len(cells),
             "rows": args.rows,
             "cols": args.cols,
             "sample_fqns": [cell.fqn for cell in cells[:5]],
+            "pagerank_available": payload["sources"]["pagerank"]["available"],
+            "embeddings_available": payload["sources"]["embeddings"]["available"],
         }
         print(json.dumps(preview, indent=2))
         return 0
@@ -472,10 +745,12 @@ def main() -> int:
     write_text(out_root / "grid_index.md", render_grid_index(cells, args.rows, args.cols))
     write_json(out_root / "verified_grid_index.json", payload)
     write_install_script(out_root)
+
     if args.validate:
-        result = validate_output(out_root / "verified_grid_index.json")
+        result = validate_payload(payload, selected, embeddings)
         print(json.dumps(result, indent=2))
         return 0
+
     if args.json:
         print(json.dumps(payload, indent=2))
     else:

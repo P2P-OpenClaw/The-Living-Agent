@@ -1,20 +1,21 @@
 # Cell [13,4] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.BB84.ErrorRate.BitComparison`
-**Module**: `HeytingLean.Crypto.QKD.BB84.ErrorRate.QBER`
-**Kind**: `inductive`
-**Centrality**: 0.000444
+**FQN**: `HeytingLean.Logic.Stage.DialParam.effectExpand_self`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: BitComparison
-**Signature**: `Type`
+**Declaration**: effectExpand_self
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : (HeytingLean.Logic.Modal.DialParam.ladder R 3).dial.core.Omega), Eq (HeytingLean.Logic.Stage.DialParam.expandAtOmega R 3 a) a`
 
-A key-bit comparison result.
+Effect-stage expansion law on the Heyting core.
 
 ## Keywords
-a, comparison, heytinglean.crypto.qkd.bb84.errorrate.bitcomparison, key-bit, result.
+core., effect-stage, expansion, heyting, heytinglean.logic.stage.dialparam.effectexpand_self, law, on, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [CompSpec [similarity]](cell_R1_C11.md)
-- ➡️ **E**: [ChannelRecord [similarity]](cell_R13_C5.md)
-- ⬅️ **W**: [ChannelStatus [similarity]](cell_R13_C3.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [expandAtOmega [dependency]](cell_R5_C10.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

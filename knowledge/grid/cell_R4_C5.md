@@ -1,22 +1,20 @@
 # Cell [4,5] — KNOWLEDGE
-**FQN**: `HeytingLean.ProgramCalculus.SplitInput`
-**Module**: `HeytingLean.ProgramCalculus.Core`
-**Kind**: `inductive`
-**Centrality**: 0.000838
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.gateBound`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `def`
+**Centrality**: 0.000028
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: SplitInput
-**Signature**: `Type → Type 1`
+**Declaration**: gateBound
+**Signature**: `HeytingLean.Crypto.ZK.Plonk.Gate → Nat → Prop`
 
-Split an input into a static part and a dynamic part, with a packing function.
+Gate variable bound: each slot of the gate references only variables `< n`. The current development records this predicate but does not yet connect it to the σ-equivalence lemma.
 
 ## Keywords
-a, an, heytinglean.programcalculus.splitinput, input, into, part, split, static
+Gate, bound, lemma, n, references, slot, variable, variables, σ-equivalence
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Cap [similarity]](cell_R4_C6.md)
-- ↘️ **SE**: [ReachingRel [similarity]](cell_R8_C14.md)
-- ↙️ **SW**: [Subshell [similarity]](cell_R14_C0.md)
-- ⬅️ **W**: [GlobularSet [similarity]](cell_R4_C4.md)
-- ↖️ **NW**: [Language [similarity]](cell_R1_C4.md)
+- ↖️ **NW**: [Gate [dependency]](cell_R1_C4.md)
+- ↘️ **SE**: [native_iff_renamed_sigma_of_gateBounds [dependency]](cell_R7_C11.md)

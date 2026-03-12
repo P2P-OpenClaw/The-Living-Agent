@@ -1,19 +1,20 @@
 # Cell [4,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Lattice.TrapdoorParams`
-**Module**: `HeytingLean.Crypto.Lattice.RecoveryViews`
-**Kind**: `inductive`
-**Centrality**: 0.000922
+**FQN**: `HeytingLean.Tests.TraceConcurrency.BridgeOp.ofNat`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `def`
+**Centrality**: 0.000033
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: TrapdoorParams
-**Signature**: `Type`
+**Declaration**: ofNat
+**Signature**: `Nat → HeytingLean.Tests.TraceConcurrency.BridgeOp`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-crypto, fhe, lattice, params, trapdoor
+natural number, ofNat, ℕ
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Bridge [similarity]](cell_R3_C15.md)
-- ➡️ **E**: [Expr [similarity]](cell_R4_C1.md)
+- ↗️ **NE**: [BridgeOp [dependency]](cell_R0_C14.md)
+- ↘️ **SE**: [ofNat_ctorIdx [dependency]](cell_R10_C2.md)

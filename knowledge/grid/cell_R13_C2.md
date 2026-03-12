@@ -1,19 +1,21 @@
 # Cell [13,2] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.E91.Context`
-**Module**: `HeytingLean.Crypto.QKD.E91.States`
-**Kind**: `inductive`
-**Centrality**: 0.000451
+**FQN**: `HeytingLean.Logic.Stage.DialParam.collapseAtOmega_coe`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Context
-**Signature**: `Type`
+**Declaration**: collapseAtOmega_coe
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat) (a : R.Omega), Eq (HeytingLean.Logic.Stage.DialParam.collapseAtOmega R n a).val (HeytingLean.Logic.Modal.DialParam.collapseAt R n a.val)`
 
-Two disjoint contexts: key-generation vs CHSH-testing.
+States collapse At Omega coe. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-chsh-testing., contexts, disjoint, heytinglean.crypto.qkd.e91.context, key-generation, two, vs
+at, coe., collapse, heytinglean.logic.stage.dialparam.collapseatomega_coe, omega, states, use, when
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [ChannelStatus [similarity]](cell_R13_C3.md)
-- ⬅️ **W**: [Basis [similarity]](cell_R13_C1.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [collapseAtOmega [dependency]](cell_R5_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

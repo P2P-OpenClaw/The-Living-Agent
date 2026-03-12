@@ -1,20 +1,22 @@
 # Cell [7,11] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.ProofSystem.Instance`
-**Module**: `HeytingLean.Crypto.ProofSystem.NucleusZK`
-**Kind**: `inductive`
-**Centrality**: 0.000614
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.native_iff_renamed_sigma_of_gateBounds`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Instance
-**Signature**: `Type u_2 → Type (max u_2 (u_3 + 1))`
+**Declaration**: native_iff_renamed_sigma_of_gateBounds
+**Signature**: `∀ (sys : HeytingLean.Crypto.ZK.Plonk.System) (a : HeytingLean.Crypto.ZK.Var → Rat), HeytingLean.Crypto.ZK.System.satisfied a (HeytingLean.Crypto.ZK.Plonk.copyConstraintSystem sys.copyPermutation) → (∀ (g : HeytingLean.Crypto.ZK.Plonk.Gate), List.instMembership.mem sys.gates g → HeytingLean.Crypto.ZK.Plonk.gateBound g sys.copyPermutation.length) → Exists fun σ => Iff (HeytingLean.Crypto.ZK.Plonk.System.satisfiedNative a sys) (HeytingLean.Crypto.ZK.System.satisfied a (HeytingLean.Crypto.ZK.Rename.system σ sys.toR1CS))`
 
-Problem instance: witness encoding and a nucleus context.
+Convenience corollary: under gate-bounds we obtain the same σ-equivalence. In the current model the gate-bound hypothesis is recorded but not used.
 
 ## Keywords
-EncodableWitness, NucleusCtx
+convenience, corollary, gate-bounds, heytinglean.crypto.zk.plonk.native_iff_renamed_sigma_of_gatebounds, obtain, the, under, we
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [OmlCore [similarity]](cell_R7_C12.md)
-- ↙️ **SW**: [Atom [similarity]](cell_R9_C7.md)
-- ⬅️ **W**: [E91State [similarity]](cell_R7_C10.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
+- ↗️ **NE**: [system [dependency]](cell_R3_C14.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [copyConstraintSystem [dependency]](cell_R3_C5.md)

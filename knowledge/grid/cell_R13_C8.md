@@ -1,19 +1,21 @@
 # Cell [13,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.Contracts.LeanYulDSL.CompileResult`
-**Module**: `HeytingLean.Blockchain.Contracts.LeanYulDSL.Compiler`
-**Kind**: `inductive`
-**Centrality**: 0.000439
+**FQN**: `HeytingLean.Tests.graph_alexandroff_process_collapse`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: CompileResult
-**Signature**: `Type`
+**Declaration**: graph_alexandroff_process_collapse
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat) (x : α), (HeytingLean.Bridges.Graph.Alexandroff.Model.processUpper (HeytingLean.Contracts.Examples.graph α R)).memOpen x → (HeytingLean.Bridges.Graph.Alexandroff.Model.processUpper (HeytingLean.Contracts.Examples.graph α R)).memOpen ((HeytingLean.Contracts.Examples.graph α R).stageCollapseAt n x)`
 
-No docstring available; inspect the Lean declaration directly.
+Collapsing a stage in the Alexandroff process keeps the point inside the open process region.
 
 ## Keywords
-heytinglean.blockchain.contracts.leanyuldsl.compileresult
+a, alexandroff, collapsing, heytinglean.tests.graph_alexandroff_process_collapse, in, process, stage, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [MLKEMParams [similarity]](cell_R13_C9.md)
-- ⬅️ **W**: [Bounds [similarity]](cell_R13_C7.md)
+- ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [processUpper [dependency]](cell_R6_C5.md)

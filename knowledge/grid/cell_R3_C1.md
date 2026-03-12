@@ -1,19 +1,24 @@
 # Cell [3,1] — KNOWLEDGE
-**FQN**: `HeytingLean.Process.Proc`
-**Module**: `HeytingLean.Process.Syntax`
-**Kind**: `inductive`
-**Centrality**: 0.001092
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.linhead_imp`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000059
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Proc
-**Signature**: `Type`
+**Declaration**: linhead_imp
+**Signature**: `HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.LinComb`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.process.proc
+heytinglean.crypto.zk.r1csbool.linhead_imp
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [StrongMonad [similarity]](cell_R3_C2.md)
-- ⬅️ **W**: [OmegaCPPO [similarity]](cell_R3_C0.md)
+- ⬆️ **N**: [Var [dependency]](cell_R0_C1.md)
+- ↗️ **NE**: [LinComb [dependency]](cell_R0_C5.md)
+- ⬇️ **S**: [head_satisfied_imp [dependency]](cell_R9_C1.md)
+- ↘️ **SE**: [applyImp_strong [dependency]](cell_R8_C5.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R9_C3.md)
+- ↘️ **SE**: [linhead_imp_eval [dependency]](cell_R9_C4.md)

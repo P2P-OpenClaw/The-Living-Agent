@@ -1,20 +1,24 @@
 # Cell [5,13] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LoFPrimary.MuxNet.Net`
-**Module**: `HeytingLean.LoF.LoFPrimary.MuxNet`
-**Kind**: `inductive`
-**Centrality**: 0.000729
+**FQN**: `HeytingLean.Epistemic.occam`
+**Module**: `HeytingLean.Epistemic.Occam`
+**Kind**: `def`
+**Centrality**: 0.000113
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Net
-**Signature**: `Nat → Type`
+**Declaration**: occam
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → α → α`
 
-MUX/ITE networks over variables `Fin n`.
+The Occam reduction closes the minimal-birthday explanations back via `R`.
 
 ## Keywords
-fin, heytinglean.lof.lofprimary.muxnet.net, ite, mux, n, networks, over, variables
+closes, explanations, heytinglean.epistemic.occam, minimal-birthday, occam, reduction, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [VChain [similarity]](cell_R5_C14.md)
-- ↙️ **SW**: [Env [similarity]](cell_R11_C5.md)
-- ⬅️ **W**: [HGraph [similarity]](cell_R5_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R11_C15.md)
+- ↘️ **SE**: [stageOccam_encode [dependency]](cell_R14_C15.md)
+- ↙️ **SW**: [stageOccam_encode [dependency]](cell_R11_C5.md)
+- ↙️ **SW**: [stageOccam_encode [dependency]](cell_R11_C9.md)
+- ↙️ **SW**: [stageOccam_spec [dependency]](cell_R15_C0.md)

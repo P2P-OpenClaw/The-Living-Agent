@@ -1,19 +1,21 @@
 # Cell [13,13] — KNOWLEDGE
-**FQN**: `HeytingLean.Embeddings.LensData`
-**Module**: `HeytingLean.Embeddings.Adelic`
-**Kind**: `inductive`
-**Centrality**: 0.000434
+**FQN**: `HeytingLean.Tests.ladder_orthomodular_disjoint`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: LensData
-**Signature**: `Type 1`
+**Declaration**: ladder_orthomodular_disjoint
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : (HeytingLean.Logic.Modal.DialParam.ladder R 4).dial.core.Omega), HeytingLean.Logic.Stage.DialParam.effectCompatible (HeytingLean.Logic.Modal.DialParam.ladder R 4) a (HeytingLean.Logic.Stage.DialParam.orthocomplement (HeytingLean.Logic.Modal.DialParam.ladder R 4) a)`
 
-Per-lens completion/canonical-subset data, plus a truncation operator.
+Orthomodular-stage exemplar: elements are disjoint from their orthocomplements.
 
 ## Keywords
-a, canonical-subset, completion, data, heytinglean.embeddings.lensdata, per-lens, plus, truncation
+are, disjoint, elements, exemplar, from, heytinglean.tests.ladder_orthomodular_disjoint, orthomodular-stage, their
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [TotalStore [similarity]](cell_R13_C14.md)
-- ⬅️ **W**: [Part [similarity]](cell_R13_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [orthocomplement [dependency]](cell_R6_C0.md)
+- ↖️ **NW**: [effectCompatible [dependency]](cell_R6_C1.md)

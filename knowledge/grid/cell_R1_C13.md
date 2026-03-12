@@ -1,21 +1,23 @@
 # Cell [1,13] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.DSA.FIPS204.MLDSA204Params`
-**Module**: `HeytingLean.Crypto.DSA.MLDSA204Params`
+**FQN**: `HeytingLean.LoF.IntReentry`
+**Module**: `HeytingLean.LoF.IntReentry`
 **Kind**: `inductive`
-**Centrality**: 0.001496
+**Centrality**: 0.000571
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: MLDSA204Params
-**Signature**: `Type`
+**Declaration**: IntReentry
+**Signature**: `structure IntReentry (α : Type u) [PrimaryAlgebra α] where nucleus : IntNucleus α`
 
-FIPS 204 (ML-DSA) parameter bundle (shape only).
+Interior-style re-entry packaging.
 
 ## Keywords
-204, bundle, fips, heytinglean.crypto.dsa.fips204.mldsa204params, ml-dsa, only, parameter, shape
+interior, packaging, reentry, wrapper
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Address [similarity]](cell_R1_C14.md)
-- ↙️ **SW**: [KEMScheme [similarity]](cell_R5_C0.md)
-- ⬅️ **W**: [TaskCT [similarity]](cell_R1_C12.md)
-- ↖️ **NW**: [MLKEM203Params [similarity]](cell_R0_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [interiorizedInt [dependency]](cell_R10_C13.md)
+- ↘️ **SE**: [IntRoundTrip [dependency]](cell_R5_C15.md)
+- ↙️ **SW**: [ibreathe [dependency]](cell_R6_C3.md)
+- ↙️ **SW**: [ibirth [dependency]](cell_R6_C4.md)

@@ -1,19 +1,20 @@
 # Cell [13,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.KEM.MLKEMParams`
-**Module**: `HeytingLean.Crypto.KEM.MLKEM`
-**Kind**: `inductive`
-**Centrality**: 0.000439
+**FQN**: `HeytingLean.Tests.graph_alexandroff_process_expand`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: MLKEMParams
-**Signature**: `Type`
+**Declaration**: graph_alexandroff_process_expand
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat) (x : α), (HeytingLean.Bridges.Graph.Alexandroff.Model.processUpper (HeytingLean.Contracts.Examples.graph α R)).memOpen x → (HeytingLean.Bridges.Graph.Alexandroff.Model.processUpper (HeytingLean.Contracts.Examples.graph α R)).memOpen ((HeytingLean.Contracts.Examples.graph α R).stageExpandAt n x)`
 
-No docstring available; inspect the Lean declaration directly.
+Every expansion step of the Alexandroff process preserves membership in the open region.
 
 ## Keywords
-heytinglean.crypto.kem.mlkemparams
+alexandroff, every, expansion, heytinglean.tests.graph_alexandroff_process_expand, of, process, step, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [SKYModel [similarity]](cell_R13_C10.md)
-- ⬅️ **W**: [CompileResult [similarity]](cell_R13_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [processUpper [dependency]](cell_R6_C5.md)

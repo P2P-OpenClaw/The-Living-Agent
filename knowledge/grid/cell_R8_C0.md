@@ -1,21 +1,20 @@
 # Cell [8,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Constructor.CT.Attribute`
-**Module**: `HeytingLean.Constructor.CT.Core`
-**Kind**: `def`
-**Centrality**: 0.000597
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant.bounded_`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Attribute
-**Signature**: `Type u → Type u`
+**Declaration**: bounded_
+**Signature**: `∀ {builder : HeytingLean.Crypto.ZK.R1CSBool.Builder} {stack : HeytingLean.Crypto.BoolLens.Stack} {vars : List HeytingLean.Crypto.ZK.Var}, HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant builder stack vars → HeytingLean.Crypto.ZK.R1CSBool.Bounded builder vars`
 
-A CT attribute is a set of states of a substrate `σ`.
+States bounded. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-a, attribute, ct, heytinglean.constructor.ct.attribute, is, of, set
+bounded., goal, heytinglean.crypto.zk.r1csbool.stronginvariant.bounded_, matches, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [FlatLayout [similarity]](cell_R6_C2.md)
-- ➡️ **E**: [Term [similarity]](cell_R7_C15.md)
-- ↘️ **SE**: [System [similarity]](cell_R14_C1.md)
-- ⬇️ **S**: [Stage [similarity]](cell_R8_C1.md)
+- ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
+- ↗️ **NE**: [Bounded [dependency]](cell_R2_C15.md)

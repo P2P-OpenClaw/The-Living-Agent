@@ -1,19 +1,21 @@
 # Cell [8,1] — KNOWLEDGE
-**FQN**: `HeytingLean.Logic.Modal.DialParam.Stage`
-**Module**: `HeytingLean.Logic.ModalDial`
-**Kind**: `inductive`
-**Centrality**: 0.000596
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant.support_`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Stage
-**Signature**: `Type`
+**Declaration**: support_
+**Signature**: `∀ {builder : HeytingLean.Crypto.ZK.R1CSBool.Builder} {stack : HeytingLean.Crypto.BoolLens.Stack} {vars : List HeytingLean.Crypto.ZK.Var}, HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant builder stack vars → HeytingLean.Crypto.ZK.R1CSBool.SupportOK builder`
 
-No docstring available; inspect the Lean declaration directly.
+States support. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-heytinglean.logic.modal.dialparam.stage
+goal, heytinglean.crypto.zk.r1csbool.stronginvariant.support_, matches, states, support., use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Lam [similarity]](cell_R8_C2.md)
-- ⬅️ **W**: [Attribute [similarity]](cell_R8_C0.md)
+- ⬆️ **N**: [Var [dependency]](cell_R0_C1.md)
+- ↗️ **NE**: [Builder [dependency]](cell_R0_C4.md)
+- ↗️ **NE**: [SupportOK [dependency]](cell_R2_C14.md)

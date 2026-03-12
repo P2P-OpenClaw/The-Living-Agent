@@ -1,19 +1,21 @@
 # Cell [10,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Lens.LensId`
-**Module**: `HeytingLean.Lens.Certified`
-**Kind**: `inductive`
-**Centrality**: 0.000500
+**FQN**: `HeytingLean.Bridges.Assembly.ASpace.setBirth.eq_1`
+**Module**: `HeytingLean.Bridges.Assembly.AssemblyBirth`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: LensId
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} (G : HeytingLean.ATheory.ASpace α) (U : Set G.V), Eq (HeytingLean.Bridges.Assembly.ASpace.setBirth G U) (HeytingLean.Generative.IntNucleusKit.ibirth (HeytingLean.Bridges.Assembly.ASpace.intReentry G) U)`
 
-Lens identifier (broad “architecture” tags).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-architecture, broad, heytinglean.lens.lensid, identifier, lens, tags
+heytinglean.bridges.assembly.aspace.setbirth.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [Certified [similarity]](cell_R11_C0.md)
-- ⬅️ **W**: [PreGame [similarity]](cell_R10_C14.md)
+- ↖️ **NW**: [ASpace [dependency]](cell_R0_C8.md)
+- ↖️ **NW**: [setBirth [dependency]](cell_R3_C11.md)
+- ↖️ **NW**: [ibirth [dependency]](cell_R6_C4.md)

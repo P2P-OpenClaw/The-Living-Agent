@@ -1,21 +1,23 @@
 # Cell [3,2] — KNOWLEDGE
-**FQN**: `HeytingLean.CDL.StrongMonad`
-**Module**: `HeytingLean.CDL.StrongMonad`
-**Kind**: `inductive`
-**Centrality**: 0.001087
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.linhead_or`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000059
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: StrongMonad
-**Signature**: `(Type u → Type u) → Type (u + 1)`
+**Declaration**: linhead_or
+**Signature**: `HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.LinComb`
 
-A strong monad on `Type u`: a monad equipped with a strength for products.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, heytinglean.cdl.strongmonad, monad, on, strong, type, u
+heytinglean.crypto.zk.r1csbool.linhead_or
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Obj [similarity]](cell_R3_C3.md)
-- ↘️ **SE**: [LoFExpr [similarity]](cell_R6_C5.md)
-- ↙️ **SW**: [HaltSys [similarity]](cell_R6_C0.md)
-- ⬅️ **W**: [Proc [similarity]](cell_R3_C1.md)
+- ↗️ **NE**: [LinComb [dependency]](cell_R0_C5.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ⬇️ **S**: [head_satisfied_or [dependency]](cell_R9_C2.md)
+- ↘️ **SE**: [applyOr_strong [dependency]](cell_R8_C6.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R9_C5.md)

@@ -1,21 +1,22 @@
 # Cell [0,7] — ENTRY
-**FQN**: `HeytingLean.LoF.LoFPrimary.Expr`
-**Module**: `HeytingLean.LoF.LoFPrimary.Syntax`
+**FQN**: `HeytingLean.Crypto.Instr`
+**Module**: `HeytingLean.Crypto.Prog`
 **Kind**: `inductive`
-**Centrality**: 0.002731
+**Centrality**: 0.000518
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Expr
+**Declaration**: Instr
 **Signature**: `Nat → Type`
 
-Primary LoF expressions with `n` free variables.
+Postfix instructions for the multi-lens VM.
 
 ## Keywords
-expressions, free, heytinglean.lof.lofprimary.expr, lof, n, primary, variables., with
+applyAnd, applyImp, push
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [MLKEM203Params [similarity]](cell_R0_C8.md)
-- ↘️ **SE**: [CExpr [similarity]](cell_R2_C15.md)
-- ↙️ **SW**: [Expr [similarity]](cell_R3_C6.md)
-- ⬅️ **W**: [PosetSite [similarity]](cell_R0_C6.md)
+- ↘️ **SE**: [step [dependency]](cell_R2_C13.md)
+- ↘️ **SE**: [compileStep_strong [dependency]](cell_R8_C9.md)
+- ↙️ **SW**: [eq_2 [dependency]](cell_R7_C2.md)
+- ↙️ **SW**: [exec_cons [dependency]](cell_R7_C4.md)

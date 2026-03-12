@@ -1,21 +1,22 @@
 # Cell [15,3] — SYNTHESIS
-**FQN**: `HeytingLean.LoF.Combinators.Category.Completion2Path`
-**Module**: `HeytingLean.LoF.Combinators.Category.Completion2Path`
-**Kind**: `def`
-**Centrality**: 0.001147
+**FQN**: `HeytingLean.Tests.clifford_pack_projector_round_verified`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: Completion2Path
-**Signature**: `{a b : HeytingLean.LoF.Combinators.Category.MWObj} → HeytingLean.LoF.Combinators.Category.instCategoryMWObj.Hom a b → HeytingLean.LoF.Combinators.Category.instCategoryMWObj.Hom a b → Type`
+**Declaration**: clifford_pack_projector_round_verified
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : R.Omega), Eq ((HeytingLean.Contracts.Examples.cliffordPack α R HeytingLean.Contracts.Examples.projectorFlags).contract.decode ((HeytingLean.Contracts.Examples.cliffordPack α R HeytingLean.Contracts.Examples.projectorFlags).contract.encode a)) a`
 
-Non-thin 2-cells between parallel paths: paths in the completion-rule generator quiver.
+The packaged Clifford projector contract round-trips any state.
 
 ## Keywords
-2-cells, between, heytinglean.lof.combinators.category.completion2path, in, non-thin, parallel, paths
+any, clifford, contract, heytinglean.tests.clifford_pack_projector_round_verified, packaged, projector, round-trips, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [MWObj [dependency]](cell_R0_C5.md)
-- ➡️ **E**: [Model [similarity]](cell_R15_C4.md)
-- ⬅️ **W**: [symbol [similarity]](cell_R15_C2.md)
-- ↖️ **NW**: [Basis [similarity]](cell_R13_C1.md)
+- ⬆️ **N**: [projectorFlags [dependency]](cell_R4_C3.md)
+- ↗️ **NE**: [cliffordPack [dependency]](cell_R10_C10.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

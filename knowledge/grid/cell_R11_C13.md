@@ -1,19 +1,20 @@
 # Cell [11,13] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.Bonding.BondOrder`
-**Module**: `HeytingLean.Chem.Bonding.BondTypes`
-**Kind**: `inductive`
-**Centrality**: 0.000484
+**FQN**: `HeytingLean.Bridges.Tensor.Intensity.Model.contract`
+**Module**: `HeytingLean.Bridges.Tensor.Intensity`
+**Kind**: `def`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: BondOrder
-**Signature**: `Type`
+**Declaration**: contract
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (M : HeytingLean.Bridges.Tensor.Intensity.Model) → optParam HeytingLean.Bridges.Tensor.Intensity.Bounds M.profile.bounds → optParam Prop True → HeytingLean.Contracts.RoundTrip M.core.R M.Carrier`
 
-No docstring available; inspect the Lean declaration directly.
+Round-trip contract on the intensity carrier, powered by the core transport.
 
 ## Keywords
-heytinglean.chem.bonding.bondorder
+carrier, contract, heytinglean.bridges.tensor.intensity.model.contract, intensity, on, powered, round-trip, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Scalar [similarity]](cell_R11_C14.md)
-- ⬅️ **W**: [BondKind [similarity]](cell_R11_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [RoundTrip [dependency]](cell_R4_C12.md)

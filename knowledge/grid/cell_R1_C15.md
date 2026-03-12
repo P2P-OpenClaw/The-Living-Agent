@@ -1,19 +1,22 @@
 # Cell [1,15] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LeanKernel.ULevel`
-**Module**: `HeytingLean.LoF.LeanKernel.UniverseLevel`
+**FQN**: `HeytingLean.Bridges.Graph.Alexandroff.Model`
+**Module**: `HeytingLean.Bridges.Graph.Alexandroff`
 **Kind**: `inductive`
-**Centrality**: 0.001440
+**Centrality**: 0.000405
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: ULevel
-**Signature**: `Type u → Type u → Type u`
+**Declaration**: Model
+**Signature**: `structure Model where core : Graph.Model α; openSet : Set α; openUpper …`
 
-Universe level expressions (Lean-style).
+Alexandroff refinement of the graph bridge with an explicit open set satisfying upward-closure and stage stability.
 
 ## Keywords
-expressions, heytinglean.lof.leankernel.ulevel, lean-style, level, universe
+collapseClosed, expandClosed, occamClosed, openSet, openUpper
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [Formula [similarity]](cell_R2_C0.md)
-- ⬅️ **W**: [Address [similarity]](cell_R1_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↙️ **SW**: [contract [dependency]](cell_R11_C10.md)
+- ↙️ **SW**: [processUpper [dependency]](cell_R6_C5.md)
+- ↙️ **SW**: [univ [dependency]](cell_R6_C7.md)

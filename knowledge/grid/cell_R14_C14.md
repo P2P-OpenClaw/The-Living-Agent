@@ -1,20 +1,21 @@
 # Cell [14,14] — KNOWLEDGE
-**FQN**: `HeytingLean.LambdaIR.Term`
-**Module**: `HeytingLean.LambdaIR.Syntax`
-**Kind**: `inductive`
-**Centrality**: 0.002404
+**FQN**: `HeytingLean.Contracts.stageOccam.eq_1`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: Term
-**Signature**: `HeytingLean.LambdaIR.Ctx → HeytingLean.LambdaIR.Ty → Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) {β : Type v} (C : HeytingLean.Contracts.RoundTrip R β) (b : β), Eq (HeytingLean.Contracts.stageOccam R C b) (C.encode (HeytingLean.LoF.Reentry.Omega.mk R (HeytingLean.Epistemic.occam R (C.decode b).val) ⋯))`
 
-No docstring available; inspect the Lean declaration directly.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-heytinglean.lambdair.term
+1., eq, goal, heytinglean.contracts.stageoccam.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LSteps [similarity]](cell_R14_C15.md)
-- ⬅️ **W**: [Reentry [similarity]](cell_R14_C13.md)
-- ↖️ **NW**: [Ty [dependency]](cell_R1_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [RoundTrip [dependency]](cell_R4_C12.md)
+- ↖️ **NW**: [mk [dependency]](cell_R5_C4.md)

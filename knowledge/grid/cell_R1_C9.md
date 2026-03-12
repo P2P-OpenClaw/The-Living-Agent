@@ -1,20 +1,23 @@
 # Cell [1,9] — KNOWLEDGE
-**FQN**: `HeytingLean.LambdaIR.Ty`
-**Module**: `HeytingLean.LambdaIR.Syntax`
-**Kind**: `def`
-**Centrality**: 0.001675
+**FQN**: `HeytingLean.Bridges.Clifford.Model`
+**Module**: `HeytingLean.Bridges.Clifford`
+**Kind**: `inductive`
+**Centrality**: 0.001054
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Ty
-**Signature**: `Type`
+**Declaration**: Model
+**Signature**: `structure Model where R : Reentry α`
 
-No docstring available; inspect the Lean declaration directly.
+Clifford bridge model carrying pairs of α.
 
 ## Keywords
-heytinglean.lambdair.ty
+Clifford, bridge, model, reentry
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [FormalSum [similarity]](cell_R1_C10.md)
-- ↘️ **SE**: [Term [dependency]](cell_R14_C14.md)
-- ⬅️ **W**: [Obj [similarity]](cell_R1_C8.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [elim [dependency]](cell_R13_C15.md)
+- ↘️ **SE**: [Diagram [dependency]](cell_R4_C15.md)
+- ↙️ **SW**: [logicalShadow_stageMvAdd_encode [dependency]](cell_R11_C0.md)
+- ↙️ **SW**: [clifford [dependency]](cell_R5_C7.md)

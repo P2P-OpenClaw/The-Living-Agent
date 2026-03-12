@@ -1,20 +1,21 @@
 # Cell [9,8] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LeanKernel.Literal`
-**Module**: `HeytingLean.LoF.LeanKernel.Expression`
-**Kind**: `inductive`
-**Centrality**: 0.000549
+**FQN**: `HeytingLean.Crypto.ZK.R1CSSoundness.compile_output_eval`
+**Module**: `HeytingLean.Crypto.ZK.R1CSSoundness`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Literal
-**Signature**: `Type`
+**Declaration**: compile_output_eval
+**Signature**: `∀ {n : Nat} (φ : HeytingLean.Crypto.Form n) (ρ : HeytingLean.Crypto.BoolLens.Env n), Eq (HeytingLean.Crypto.ZK.boolToRat (HeytingLean.Crypto.BoolLens.eval φ ρ)) ((HeytingLean.Crypto.ZK.R1CSBool.compile φ ρ).assignment (HeytingLean.Crypto.ZK.R1CSBool.compile φ ρ).output)`
 
-Minimal literal payload (modeled on Lean's `Literal`).
+The compiled output variable encodes the boolean evaluation as a rational.
 
 ## Keywords
-heytinglean.lof.leankernel.literal, lean, literal, minimal, modeled, on, payload, s
+boolean, compiled, encodes, heytinglean.crypto.zk.r1cssoundness.compile_output_eval, output, the, variable
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [BB84Substrate [similarity]](cell_R9_C9.md)
-- ⬅️ **W**: [Atom [similarity]](cell_R9_C7.md)
-- ↖️ **NW**: [BinderInfo [similarity]](cell_R7_C4.md)
+- ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
+- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
+- ↖️ **NW**: [compile [dependency]](cell_R3_C4.md)

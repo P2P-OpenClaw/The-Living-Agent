@@ -1,22 +1,22 @@
 # Cell [10,11] — KNOWLEDGE
-**FQN**: `HeytingLean.Util.VirtualChain`
-**Module**: `HeytingLean.Util.VirtualChain`
-**Kind**: `inductive`
-**Centrality**: 0.000508
+**FQN**: `HeytingLean.Contracts.Examples.graphPack`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `def`
+**Centrality**: 0.000032
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: VirtualChain
-**Signature**: `{α : Type u} → (α → α → Sort v) → α → α → Type (max u v)`
+**Declaration**: graphPack
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → optParam HeytingLean.Contracts.Examples.BridgeFlags HeytingLean.Contracts.Examples.BridgeFlags.default → HeytingLean.Contracts.Examples.BridgePack α R`
 
-A formal composite of `Step`s from `a` to `b`. Always lives in `Type` (never `Prop`).
+Select the graph bridge based on feature flags.
 
 ## Keywords
-a, composite, formal, from, heytinglean.util.virtualchain, of, s, step
+based, bridge, feature, graph, heytinglean.contracts.examples.graphpack, on, select, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [VChain [similarity]](cell_R5_C14.md)
-- ➡️ **E**: [SelectorObj [similarity]](cell_R10_C12.md)
-- ↙️ **SW**: [ParaMealy [similarity]](cell_R13_C6.md)
-- ⬅️ **W**: [ShapeStridePair [similarity]](cell_R10_C10.md)
-- ↖️ **NW**: [Formula [similarity]](cell_R2_C0.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [BridgePack [dependency]](cell_R5_C5.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R14_C8.md)
+- ↙️ **SW**: [graph_pack_alexandroff_round_verified [dependency]](cell_R15_C4.md)

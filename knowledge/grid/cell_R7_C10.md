@@ -1,22 +1,22 @@
 # Cell [7,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.E91.E91State`
-**Module**: `HeytingLean.Crypto.QKD.E91.States`
-**Kind**: `inductive`
-**Centrality**: 0.000617
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.native_iff_renamed_sigma_of_bounds`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: E91State
-**Signature**: `Type`
+**Declaration**: native_iff_renamed_sigma_of_bounds
+**Signature**: `∀ (sys : HeytingLean.Crypto.ZK.Plonk.System) (a : HeytingLean.Crypto.ZK.Var → Rat), HeytingLean.Crypto.ZK.System.satisfied a (HeytingLean.Crypto.ZK.Plonk.copyConstraintSystem sys.copyPermutation) → (∀ (v : HeytingLean.Crypto.ZK.Var), Finset.instMembership.mem sys.toR1CS.support v → instLTNat.lt v sys.copyPermutation.length) → Exists fun σ => Iff (HeytingLean.Crypto.ZK.Plonk.System.satisfiedNative a sys) (HeytingLean.Crypto.ZK.System.satisfied a (HeytingLean.Crypto.ZK.Rename.system σ sys.toR1CS))`
 
-A toy E91 “state”, tagged by context and a bit.
+Combine copy-satisfaction and a bound on support to obtain a σ‑renamed view. At this abstraction level we simply choose `σ := id`. Using `satisfiedNative_iff_r1cs_of_copySatisfied` and the renaming lemma specialised to `σ = id`, we obtain the desired equivalence. The `hBound` hypothesis is recorded for future refinements but not used in the proof.
 
 ## Keywords
-a, by, context, e91, heytinglean.crypto.qkd.e91.e91state, state, tagged, toy
+a, and, bound, combine, copy-satisfaction, heytinglean.crypto.zk.plonk.native_iff_renamed_sigma_of_bounds, on, support
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [BB84State [similarity]](cell_R6_C13.md)
-- ➡️ **E**: [Instance [similarity]](cell_R7_C11.md)
-- ⬇️ **S**: [E91Substrate [similarity]](cell_R14_C10.md)
-- ⬅️ **W**: [NodeId [similarity]](cell_R7_C9.md)
-- ↖️ **NW**: [RadialGraph [similarity]](cell_R0_C9.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
+- ↗️ **NE**: [system [dependency]](cell_R3_C14.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [satisfiedNative [dependency]](cell_R3_C9.md)

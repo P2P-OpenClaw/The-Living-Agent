@@ -1,22 +1,21 @@
 # Cell [7,5] — KNOWLEDGE
-**FQN**: `HeytingLean.Lens.CertifiedLens`
-**Module**: `HeytingLean.Lens.Certified`
-**Kind**: `inductive`
-**Centrality**: 0.000634
+**FQN**: `HeytingLean.Crypto.BoolLens.traceFrom_cons`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: CertifiedLens
-**Signature**: `Type u → Type u → Type u`
+**Declaration**: traceFrom_cons
+**Signature**: `∀ {n : Nat} (ρ : HeytingLean.Crypto.BoolLens.Env n) (instr : HeytingLean.Crypto.Instr n) (prog : HeytingLean.Crypto.Program n) (stk : HeytingLean.Crypto.BoolLens.Stack), Eq (HeytingLean.Crypto.BoolLens.traceFrom ρ (List.cons instr prog) stk) (List.cons stk (HeytingLean.Crypto.BoolLens.traceFrom ρ prog (HeytingLean.Crypto.BoolLens.step ρ instr stk)))`
 
-Lens with certified round-trip. RT-2 bounds are stated relative to a supplied `PCB.Distance` instance on the source type.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-are, bounds, certified, heytinglean.lens.certifiedlens, lens, round-trip., rt-2, with
+heytinglean.crypto.boollens.tracefrom_cons
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [NGlobularSet [similarity]](cell_R4_C13.md)
-- ➡️ **E**: [Loc [similarity]](cell_R7_C6.md)
-- ↘️ **SE**: [Lens [similarity]](cell_R15_C15.md)
-- ⬅️ **W**: [BinderInfo [similarity]](cell_R7_C4.md)
-- ↖️ **NW**: [GlobularSet [similarity]](cell_R4_C4.md)
+- ↗️ **NE**: [Instr [dependency]](cell_R0_C7.md)
+- ↗️ **NE**: [step [dependency]](cell_R2_C13.md)
+- ↖️ **NW**: [Program [dependency]](cell_R1_C1.md)

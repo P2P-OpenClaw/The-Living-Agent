@@ -1,19 +1,23 @@
 # Cell [3,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.LoFState`
-**Module**: `HeytingLean.Quantum.LoFBloch`
-**Kind**: `inductive`
-**Centrality**: 0.001002
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.eqConstraint`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000047
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: LoFState
-**Signature**: `Type`
+**Declaration**: eqConstraint
+**Signature**: `HeytingLean.Crypto.ZK.LinComb → HeytingLean.Crypto.ZK.LinComb → HeytingLean.Crypto.ZK.Constraint`
 
-A Bloch-style real triple packaged with LoF names.
+Constraint enforcing `lhs = rhs` using a single multiplicative slot.
 
 ## Keywords
-Fin 3, j, k, mark
+a, constraint, enforcing, heytinglean.crypto.zk.r1csbool.eqconstraint, lhs, rhs, single, using
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Params [similarity]](cell_R3_C9.md)
-- ⬅️ **W**: [M3 [similarity]](cell_R3_C7.md)
+- ↖️ **NW**: [Constraint [dependency]](cell_R0_C3.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R8_C15.md)
+- ↙️ **SW**: [applyImp_strong [dependency]](cell_R8_C5.md)
+- ↙️ **SW**: [eqConstraint_head_satisfied_of_eval [dependency]](cell_R9_C0.md)
+- ↙️ **SW**: [head_satisfied_or [dependency]](cell_R9_C2.md)

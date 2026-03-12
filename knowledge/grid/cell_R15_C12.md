@@ -1,20 +1,20 @@
 # Cell [15,12] — SYNTHESIS
-**FQN**: `HeytingLean.Security.Composable.Protocol`
-**Module**: `HeytingLean.Security.Composable.IdealFunctionality`
-**Kind**: `inductive`
-**Centrality**: 0.000550
+**FQN**: `HeytingLean.Tests.TraceConcurrency.bridge_tensor_clifford_commute`
+**Module**: `HeytingLean.Tests.Compliance`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 5
 
 ## Topic
-**Declaration**: Protocol
-**Signature**: `HeytingLean.Security.Composable.IdealFunctionality → Type (max (max 1 u) v)`
+**Declaration**: bridge_tensor_clifford_commute
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (flags : optParam HeytingLean.Contracts.Examples.BridgeFlags HeytingLean.Contracts.Examples.BridgeFlags.default) (suite : optParam (HeytingLean.Contracts.Examples.BridgeSuite α R) (HeytingLean.Contracts.Examples.selectSuite α R flags)) (st : HeytingLean.Tests.TraceConcurrency.BridgeState R suite), Eq (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.tensor (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.clifford st)) (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.clifford (HeytingLean.Tests.TraceConcurrency.bridgeStep R suite HeytingLean.Tests.TraceConcurrency.BridgeOp.tensor st))`
 
-A (single-shot) protocol in the real world, attempting to realize an ideal functionality.
+Tensor and Clifford bridge steps commute when acting on any state.
 
 ## Keywords
-a, heytinglean.security.composable.protocol, in, protocol, real, single-shot, the, world
+Clifford, Tensor, commute, state
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Model [similarity]](cell_R15_C13.md)
-- ⬅️ **W**: [IntReentry [similarity]](cell_R15_C11.md)
-- ↖️ **NW**: [MolGraph [similarity]](cell_R12_C0.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [selectSuite [dependency]](cell_R10_C9.md)

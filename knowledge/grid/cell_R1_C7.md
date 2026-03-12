@@ -1,19 +1,21 @@
 # Cell [1,7] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LeanKernel.Expr`
-**Module**: `HeytingLean.LoF.LeanKernel.Expression`
-**Kind**: `inductive`
-**Centrality**: 0.001724
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.copyPairs`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `def`
+**Centrality**: 0.000053
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Expr
-**Signature**: `Type u → Type u → Type u → Type u → Type u`
+**Declaration**: copyPairs
+**Signature**: `List Nat → List (Prod Nat Nat)`
 
-Kernel expression AST with a deliberately small 9-way constructor split. We parameterize universe levels separately from expression metavariables: - `Param` / `MetaLevel` appear inside `ULevel` values (Phase 7), - `MetaExpr` is used for expression metavariables. The chosen 9 constructors align with the “core” shapes used by kernels: `bvar`, `mvar`, `sort`, `const`, `app`, `lam`, `forallE`, `letE`, `lit`.
+Pairs `(i, perm[i])` extracted from a permutation list.
 
 ## Keywords
-a, ast, deliberately, expression, heytinglean.lof.leankernel.expr, kernel, small, with
+a, extracted, from, heytinglean.crypto.zk.plonk.copypairs, i, pairs, perm
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Obj [similarity]](cell_R1_C8.md)
-- ⬅️ **W**: [Task [similarity]](cell_R1_C6.md)
+- ⬇️ **S**: [copySatisfied_of_pairs [dependency]](cell_R7_C7.md)
+- ↘️ **SE**: [satisfiedNative_iff_r1cs_of_pairs [dependency]](cell_R7_C13.md)
+- ↘️ **SE**: [Rel_iff_r1cs_of_pairs [dependency]](cell_R9_C12.md)

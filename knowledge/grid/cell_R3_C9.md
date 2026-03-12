@@ -1,19 +1,23 @@
 # Cell [3,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Lattice.GadgetSIS.Params`
-**Module**: `HeytingLean.Crypto.Lattice.FaithfulReductions`
-**Kind**: `inductive`
-**Centrality**: 0.000992
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.System.satisfiedNative`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
+**Kind**: `def`
+**Centrality**: 0.000047
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Params
-**Signature**: `Type`
+**Declaration**: satisfiedNative
+**Signature**: `(HeytingLean.Crypto.ZK.Var → Rat) → HeytingLean.Crypto.ZK.Plonk.System → Prop`
 
-No docstring available; inspect the Lean declaration directly.
+Native PLONK satisfaction: R1CS satisfaction of `toR1CS sys` together with satisfaction of the copy-constraint system.
 
 ## Keywords
-heytinglean.crypto.lattice.gadgetsis.params
+heytinglean.crypto.zk.plonk.system.satisfiednative, native, of, plonk, r1cs, satisfaction, tor1cs
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Interval [similarity]](cell_R3_C10.md)
-- ⬅️ **W**: [LoFState [similarity]](cell_R3_C8.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C13.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↘️ **SE**: [native_iff_renamed_sigma_of_bounds [dependency]](cell_R7_C10.md)
+- ↘️ **SE**: [native_iff_renamed_sigma_of_gateBounds [dependency]](cell_R7_C11.md)
+- ↘️ **SE**: [satisfiedNative_iff_r1cs_of_copySatisfied [dependency]](cell_R7_C12.md)

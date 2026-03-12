@@ -1,19 +1,21 @@
 # Cell [8,10] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.ActiveInference.DiscreteModel`
-**Module**: `HeytingLean.Quantum.ActiveInference.Core`
-**Kind**: `inductive`
-**Centrality**: 0.000569
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.compileSteps_strong`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: DiscreteModel
-**Signature**: `Type`
+**Declaration**: compileSteps_strong
+**Signature**: `∀ {n : Nat} (ρ : HeytingLean.Crypto.BoolLens.Env n) {prog : HeytingLean.Crypto.Program n} {stack : HeytingLean.Crypto.BoolLens.Stack} {stackVars : List HeytingLean.Crypto.ZK.Var} {builder : HeytingLean.Crypto.ZK.R1CSBool.Builder}, HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant builder stack stackVars → HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant (HeytingLean.Crypto.ZK.R1CSBool.compileSteps✝ ρ prog (HeytingLean.Crypto.BoolLens.traceFrom ρ prog stack) stackVars builder).fst (HeytingLean.Crypto.BoolLens.exec ρ prog stack) (HeytingLean.Crypto.ZK.R1CSBool.compileSteps✝¹ ρ prog (HeytingLean.Crypto.BoolLens.traceFrom ρ prog stack) stackVars builder).snd`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.quantum.activeinference.discretemodel
+heytinglean.crypto.zk.r1csbool.compilesteps_strong
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Scalar [similarity]](cell_R8_C11.md)
-- ⬅️ **W**: [BB84Ctor [similarity]](cell_R8_C9.md)
+- ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
+- ↗️ **NE**: [exec [dependency]](cell_R2_C12.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

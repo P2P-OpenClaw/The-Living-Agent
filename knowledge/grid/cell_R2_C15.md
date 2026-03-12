@@ -1,21 +1,22 @@
 # Cell [2,15] — KNOWLEDGE
-**FQN**: `HeytingLean.C.CExpr`
-**Module**: `HeytingLean.C.Syntax`
-**Kind**: `inductive`
-**Centrality**: 0.001145
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.Bounded`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `def`
+**Centrality**: 0.000072
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: CExpr
-**Signature**: `inductive CExpr | intLit Int | var Ident | add CExpr CExpr | sub CExpr CExpr | mul CExpr CExpr | eq CExpr CExpr | le CExpr CExpr`
+**Declaration**: Bounded
+**Signature**: `HeytingLean.Crypto.ZK.R1CSBool.Builder → List HeytingLean.Crypto.ZK.Var → Prop`
 
-Tiny‑C integer expressions with comparisons as 0/1.
+Every variable stored on the stack is strictly below the current `nextVar`.
 
 ## Keywords
-as, c, comparisons, expressions, heytinglean.c.cexpr, integer, tiny, with
+every, heytinglean.crypto.zk.r1csbool.bounded, is, on, stack, stored, the, variable
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [OmegaCPPO [similarity]](cell_R3_C0.md)
-- ↙️ **SW**: [Expr [similarity]](cell_R3_C6.md)
-- ⬅️ **W**: [ParaHom [similarity]](cell_R2_C14.md)
-- ↖️ **NW**: [Expr [similarity]](cell_R0_C7.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↙️ **SW**: [bounded_ [dependency]](cell_R8_C0.md)
+- ↙️ **SW**: [toInvariant [dependency]](cell_R8_C2.md)
+- ↙️ **SW**: [matches_fresh_preserve [dependency]](cell_R9_C7.md)

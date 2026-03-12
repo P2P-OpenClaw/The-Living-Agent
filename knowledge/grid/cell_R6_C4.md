@@ -1,19 +1,22 @@
 # Cell [6,4] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.PeriodicTable.ExabyteElementProperties`
-**Module**: `HeytingLean.Chem.PeriodicTable.ExabyteProperties`
-**Kind**: `inductive`
-**Centrality**: 0.000685
+**FQN**: `HeytingLean.Generative.IntNucleusKit.ibirth`
+**Module**: `HeytingLean.Generative.IntNucleusKit`
+**Kind**: `def`
+**Centrality**: 0.000058
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: ExabyteElementProperties
-**Signature**: `Type`
+**Declaration**: ibirth
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.IntReentry α → α → Nat`
 
-Element properties as provided by the Exabyte periodic-table dataset. Most numeric-looking fields are stored as `Option String` because the upstream mixes plain numbers and annotated strings (approximation markers, phase notes, etc.).
+Minimal breath count required for stabilisation.
 
 ## Keywords
-as, by, element, exabyte, heytinglean.chem.periodictable.exabyteelementproperties, properties, provided, the
+Nat.find
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [LoFExpr [similarity]](cell_R6_C5.md)
-- ⬅️ **W**: [Obj [similarity]](cell_R6_C3.md)
+- ↗️ **NE**: [IntReentry [dependency]](cell_R1_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R10_C15.md)
+- ↘️ **SE**: [ibirth_min [dependency]](cell_R12_C6.md)

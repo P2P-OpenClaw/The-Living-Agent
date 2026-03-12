@@ -1,19 +1,21 @@
 # Cell [13,3] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.PaymentChannels.EVMAdapter.ChannelStatus`
-**Module**: `HeytingLean.Blockchain.PaymentChannels.EVMAdapter.State`
-**Kind**: `inductive`
-**Centrality**: 0.000450
+**FQN**: `HeytingLean.Logic.Stage.DialParam.effectCollapse_self`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: ChannelStatus
-**Signature**: `Type`
+**Declaration**: effectCollapse_self
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : (HeytingLean.Logic.Modal.DialParam.ladder R 3).dial.core.Omega), Eq (HeytingLean.Logic.Stage.DialParam.collapseAtOmega R 3 a) a`
 
-No docstring available; inspect the Lean declaration directly.
+Effect-stage collapse law on the Heyting core.
 
 ## Keywords
-heytinglean.blockchain.paymentchannels.evmadapter.channelstatus
+collapse, core., effect-stage, heyting, heytinglean.logic.stage.dialparam.effectcollapse_self, law, on, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [BitComparison [similarity]](cell_R13_C4.md)
-- ⬅️ **W**: [Context [similarity]](cell_R13_C2.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [collapseAtOmega [dependency]](cell_R5_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

@@ -1,21 +1,21 @@
 # Cell [9,6] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Lattice.Dist.Seed`
-**Module**: `HeytingLean.Crypto.Lattice.Distributions`
-**Kind**: `inductive`
-**Centrality**: 0.000550
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.matches_cons_head`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Seed
-**Signature**: `Type`
+**Declaration**: matches_cons_head
+**Signature**: `∀ {builder : HeytingLean.Crypto.ZK.R1CSBool.Builder} {b : Bool} {stack : HeytingLean.Crypto.BoolLens.Stack} {v : HeytingLean.Crypto.ZK.Var} {vars : List HeytingLean.Crypto.ZK.Var}, HeytingLean.Crypto.ZK.R1CSBool.Matches builder (List.cons b stack) (List.cons v vars) → Eq (HeytingLean.Crypto.ZK.boolToRat b) (builder.assign v)`
 
-Seed wrapper for deterministic sampling.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-deterministic, for, heytinglean.crypto.lattice.dist.seed, sampling., seed, wrapper
+heytinglean.crypto.zk.r1csbool.matches_cons_head
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Atom [similarity]](cell_R9_C7.md)
-- ↘️ **SE**: [MeetQuantale [similarity]](cell_R10_C7.md)
-- ⬅️ **W**: [KrausChannel [similarity]](cell_R9_C5.md)
-- ↖️ **NW**: [Obj [similarity]](cell_R6_C3.md)
+- ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [boolToRat [dependency]](cell_R1_C2.md)

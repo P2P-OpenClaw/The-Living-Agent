@@ -1,19 +1,20 @@
 # Cell [9,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Compiler.TensorLogic.Stage`
-**Module**: `HeytingLean.Compiler.TensorLogic.Regime`
-**Kind**: `inductive`
-**Centrality**: 0.000557
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.eqConstraint_head_satisfied_of_eval`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Stage
-**Signature**: `Type`
+**Declaration**: eqConstraint_head_satisfied_of_eval
+**Signature**: `∀ (a : HeytingLean.Crypto.ZK.Var → Rat) (lhs rhs : HeytingLean.Crypto.ZK.LinComb), Eq (lhs.eval a) (rhs.eval a) → HeytingLean.Crypto.ZK.Constraint.satisfied a (HeytingLean.Crypto.ZK.R1CSBool.eqConstraint lhs rhs)`
 
-Modal stages from the dial hierarchy. Mirrors `HeytingLean.Logic.Modal.Stage`.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-dial, from, heytinglean.compiler.tensorlogic.stage, hierarchy., mirrors, modal, stages, the
+heytinglean.crypto.zk.r1csbool.eqconstraint_head_satisfied_of_eval
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Graph [similarity]](cell_R8_C15.md)
-- ➡️ **E**: [TropicalReal [similarity]](cell_R9_C1.md)
+- ↗️ **NE**: [Var [dependency]](cell_R0_C1.md)
+- ↗️ **NE**: [eqConstraint [dependency]](cell_R3_C8.md)

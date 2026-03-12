@@ -1,19 +1,22 @@
 # Cell [0,14] — ENTRY
-**FQN**: `HeytingLean.Physics.Photoemission.PhotoemissionSystem`
-**Module**: `HeytingLean.Physics.Photoemission.Tasks`
+**FQN**: `HeytingLean.Tests.TraceConcurrency.BridgeOp`
+**Module**: `HeytingLean.Tests.Compliance`
 **Kind**: `inductive`
-**Centrality**: 0.002036
+**Centrality**: 0.000340
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: PhotoemissionSystem
+**Declaration**: BridgeOp
 **Signature**: `Type`
 
-Hilbert spaces and basic distinguished states for a photoemission system.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-and, basic, distinguished, for, heytinglean.physics.photoemission.photoemissionsystem, hilbert, spaces, states
+heytinglean.tests.traceconcurrency.bridgeop
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Context [similarity]](cell_R0_C15.md)
-- ⬅️ **W**: [PreGame [similarity]](cell_R0_C13.md)
+- ↙️ **SW**: [ofNat_ctorIdx [dependency]](cell_R10_C2.md)
+- ↙️ **SW**: [bridgeActWord [dependency]](cell_R14_C5.md)
+- ↙️ **SW**: [bridgeStep [dependency]](cell_R14_C6.md)
+- ↙️ **SW**: [ofNat [dependency]](cell_R4_C0.md)

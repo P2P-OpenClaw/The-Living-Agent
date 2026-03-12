@@ -1,19 +1,21 @@
 # Cell [14,4] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.Materials.FracCoord`
-**Module**: `HeytingLean.Chem.Materials.Crystal`
+**FQN**: `HeytingLean.Visual.Region.Expr.eval`
+**Module**: `HeytingLean.Visual.RegionDiagram`
 **Kind**: `def`
-**Centrality**: 0.000430
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: FracCoord
-**Signature**: `Nat → Type`
+**Declaration**: eval
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {R : HeytingLean.LoF.Reentry α} → HeytingLean.Visual.Region.Expr R → R.Omega`
 
-No docstring available; inspect the Lean declaration directly.
+Evaluate a region expression into `Ω_R`.
 
 ## Keywords
-heytinglean.chem.materials.fraccoord
+_r, a, evaluate, expression, heytinglean.visual.region.expr.eval, into, region
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [StrongHyp [similarity]](cell_R14_C5.md)
-- ⬅️ **W**: [Var [similarity]](cell_R14_C3.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [Expr [dependency]](cell_R4_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

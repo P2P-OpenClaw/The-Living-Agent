@@ -1,22 +1,23 @@
 # Cell [5,14] — KNOWLEDGE
-**FQN**: `HeytingLean.IteratedVirtual.VChain`
-**Module**: `HeytingLean.IteratedVirtual.IteratedHom`
-**Kind**: `inductive`
-**Centrality**: 0.000723
+**FQN**: `HeytingLean.Logic.Dialectic.synthOmega`
+**Module**: `HeytingLean.Logic.Dialectic`
+**Kind**: `def`
+**Centrality**: 0.000111
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: VChain
-**Signature**: `{C : Type u} → [CategoryTheory.Category C] → C → C → Type (max u v)`
+**Declaration**: synthOmega
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → R.Omega → R.Omega → R.Omega`
 
-A formal composable chain of morphisms in a category.
+Synthesis specialised to the fixed-point lattice `Ω_R`.
 
 ## Keywords
-a, chain, composable, formal, heytinglean.iteratedvirtual.vchain, in, morphisms, of
+_r, fixed-point, heytinglean.logic.dialectic.synthomega, lattice, specialised, synthesis, the, to
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Net [similarity]](cell_R5_C13.md)
-- ↘️ **SE**: [ValTy [similarity]](cell_R5_C15.md)
-- ⬇️ **S**: [CompPresheaf [similarity]](cell_R15_C14.md)
-- ↙️ **SW**: [VirtualChain [similarity]](cell_R10_C11.md)
-- ⬅️ **W**: [System [similarity]](cell_R5_C9.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R12_C10.md)
+- ↙️ **SW**: [clifford_encode_synthOmega_fst [dependency]](cell_R12_C2.md)
+- ↙️ **SW**: [clifford_encode_synthOmega_snd [dependency]](cell_R12_C3.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R12_C8.md)

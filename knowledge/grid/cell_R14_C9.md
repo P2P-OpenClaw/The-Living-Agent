@@ -1,20 +1,20 @@
 # Cell [14,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.PosSemidef`
-**Module**: `HeytingLean.Quantum.QState`
-**Kind**: `def`
-**Centrality**: 0.000426
+**FQN**: `HeytingLean.Contracts.Examples.identity_round`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: PosSemidef
-**Signature**: `{ι : Type u_1} → [Fintype ι] → [DecidableEq ι] → Matrix ι ι Complex → Prop`
+**Declaration**: identity_round
+**Signature**: `∀ (α : Type u) [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (a : R.Omega), Eq ((HeytingLean.Contracts.Examples.identity α R).decode ((HeytingLean.Contracts.Examples.identity α R).encode a)) a`
 
-Positive-semidefinite matrix predicate specialized to finite matrices.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-finite, heytinglean.quantum.possemidef, matrices., matrix, positive-semidefinite, predicate, specialized, to
+heytinglean.contracts.examples.identity_round
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [E91Substrate [similarity]](cell_R14_C10.md)
-- ⬅️ **W**: [DataValue [similarity]](cell_R14_C8.md)
-- ↖️ **NW**: [Density [similarity]](cell_R11_C3.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [identity [dependency]](cell_R10_C8.md)

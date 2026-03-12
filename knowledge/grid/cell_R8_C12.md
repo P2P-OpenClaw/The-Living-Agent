@@ -1,19 +1,21 @@
 # Cell [8,12] — KNOWLEDGE
-**FQN**: `HeytingLean.Layouts.Nested.NestMorphism`
-**Module**: `HeytingLean.Layouts.Nested.NestCategory`
-**Kind**: `inductive`
-**Centrality**: 0.000566
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.compileTraceToR1CSFromEmpty_strong`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: NestMorphism
-**Signature**: `Type`
+**Declaration**: compileTraceToR1CSFromEmpty_strong
+**Signature**: `∀ {n : Nat} (ρ : HeytingLean.Crypto.BoolLens.Env n) {prog : HeytingLean.Crypto.Program n}, HeytingLean.Crypto.ZK.R1CSBool.StrongInvariant (HeytingLean.Crypto.ZK.R1CSBool.compileTraceToR1CSFromEmpty ρ prog).fst (HeytingLean.Crypto.BoolLens.exec ρ prog List.nil) (HeytingLean.Crypto.ZK.R1CSBool.compileTraceToR1CSFromEmpty ρ prog).snd`
 
-Morphisms between nested tuples (lying over a pointed injection on flattened leaves).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, between, heytinglean.layouts.nested.nestmorphism, lying, morphisms, nested, over, tuples
+heytinglean.crypto.zk.r1csbool.compiletracetor1csfromempty_strong
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Sym [similarity]](cell_R8_C13.md)
-- ⬅️ **W**: [Scalar [similarity]](cell_R8_C11.md)
+- ⬆️ **N**: [exec [dependency]](cell_R2_C12.md)
+- ↖️ **NW**: [Env [dependency]](cell_R0_C9.md)
+- ↖️ **NW**: [compileTraceToR1CSFromEmpty [dependency]](cell_R3_C10.md)

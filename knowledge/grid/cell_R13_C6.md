@@ -1,20 +1,21 @@
 # Cell [13,6] — KNOWLEDGE
-**FQN**: `HeytingLean.CDL.Coalgebra.ParaMealy`
-**Module**: `HeytingLean.CDL.Coalgebra.Mealy`
-**Kind**: `inductive`
-**Centrality**: 0.000442
+**FQN**: `HeytingLean.Logic.Stage.DialParam.expandAtOmega_coe`
+**Module**: `HeytingLean.Logic.StageSemantics`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: ParaMealy
-**Signature**: `Type u → Type u → Type u → Type (u + 1)`
+**Declaration**: expandAtOmega_coe
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) (n : Nat) (a : R.Omega), Eq (HeytingLean.Logic.Stage.DialParam.expandAtOmega R n a).val (Nucleus.instFunLike.coe R.nucleus (HeytingLean.Logic.Modal.DialParam.expandAt R n a.val))`
 
-A Mealy machine in `Para(Type)`: parameters `P` and a transition function `P × I × S → S × O`.
+States expand At Omega coe. Use when reasoning about nucleus property or rewriting goals that match this pattern.
 
 ## Keywords
-a, heytinglean.cdl.coalgebra.paramealy, in, machine, mealy, para, parameters, type
+at, coe., expand, heytinglean.logic.stage.dialparam.expandatomega_coe, omega, states, use, when
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [ShapeStridePair [similarity]](cell_R10_C10.md)
-- ➡️ **E**: [Bounds [similarity]](cell_R13_C7.md)
-- ⬅️ **W**: [ChannelRecord [similarity]](cell_R13_C5.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [expandAtOmega [dependency]](cell_R5_C10.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

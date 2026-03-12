@@ -1,20 +1,20 @@
 # Cell [9,14] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.QED.HasMetric`
-**Module**: `HeytingLean.Chem.QED.Minkowski`
-**Kind**: `inductive`
-**Centrality**: 0.000530
+**FQN**: `HeytingLean.Crypto.ZK.System.satisfied_cons_cons`
+**Module**: `HeytingLean.Crypto.ZK.Support`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: HasMetric
-**Signature**: `Type u → Type u → Type u`
+**Declaration**: satisfied_cons_cons
+**Signature**: `∀ {a : HeytingLean.Crypto.ZK.Var → Rat} {c : HeytingLean.Crypto.ZK.Constraint} {sys : HeytingLean.Crypto.ZK.System}, Iff (HeytingLean.Crypto.ZK.System.satisfied a { constraints := List.cons c sys.constraints }) (And (HeytingLean.Crypto.ZK.Constraint.satisfied a c) (HeytingLean.Crypto.ZK.System.satisfied a sys))`
 
-A minimal interface for a (possibly Minkowski) bilinear form `eta` on an index type `μ`.
+States satisfied cons cons. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-a, for, heytinglean.chem.qed.hasmetric, interface, minimal, minkowski, possibly
+cons, cons., heytinglean.crypto.zk.system.satisfied_cons_cons, satisfied, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Word32 [similarity]](cell_R9_C15.md)
-- ⬅️ **W**: [CStmt [similarity]](cell_R9_C13.md)
-- ↖️ **NW**: [LType [similarity]](cell_R8_C6.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [satisfied [dependency]](cell_R2_C4.md)

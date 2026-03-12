@@ -1,20 +1,22 @@
 # Cell [0,3] — ENTRY
-**FQN**: `HeytingLean.Crypto.Lattice.MLWEParams`
-**Module**: `HeytingLean.Crypto.Lattice.Problems`
+**FQN**: `HeytingLean.Crypto.ZK.Constraint`
+**Module**: `HeytingLean.Crypto.ZK.R1CS`
 **Kind**: `inductive`
-**Centrality**: 0.004031
+**Centrality**: 0.000748
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: MLWEParams
-**Signature**: `Type`
+**Declaration**: Constraint
+**Signature**: `structure Constraint where A : LinComb; B : LinComb; C : LinComb`
 
-Module-LWE problem signature (statement-first; matches ML-KEM/ML-DSA assumption families).
+A single R1CS constraint (A, B, C) meaning (A*x) * (B*x) = (C*x).
 
 ## Keywords
-heytinglean.crypto.lattice.mlweparams, matches, ml-dsa, ml-kem, module-lwe, problem, signature, statement-first
+constraint, gate, multiplication, quadratic, r1cs
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [MRSystem [similarity]](cell_R0_C4.md)
-- ↘️ **SE**: [LWEParams [similarity]](cell_R4_C8.md)
-- ⬅️ **W**: [Element [similarity]](cell_R0_C2.md)
+- ↘️ **SE**: [satisfied [dependency]](cell_R2_C4.md)
+- ↘️ **SE**: [eqConstraint [dependency]](cell_R3_C8.md)
+- ↘️ **SE**: [satisfied_ext [dependency]](cell_R7_C6.md)
+- ↙️ **SW**: [boolConstraint [dependency]](cell_R3_C0.md)

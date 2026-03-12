@@ -1,21 +1,24 @@
 # Cell [6,6] — KNOWLEDGE
-**FQN**: `HeytingLean.Coalgebra.Universal.Coalg`
-**Module**: `HeytingLean.Coalgebra.Universal.Core`
+**FQN**: `HeytingLean.Bridges.Clifford.Projector.Model.Carrier.fromPair`
+**Module**: `HeytingLean.Bridges.Clifford.Projector`
 **Kind**: `def`
-**Centrality**: 0.000681
+**Centrality**: 0.000053
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Coalg
-**Signature**: `CategoryTheory.Functor (Type u) (Type u) → Type (u + 1)`
+**Declaration**: fromPair
+**Signature**: `{α : Type v} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → {β : Type u} → [inst_1 : Mul β] → [inst_2 : Star β] → {M : HeytingLean.Bridges.Clifford.Projector.Model} → HeytingLean.Bridges.Clifford.Pair α → M.Carrier`
 
-Coalgebras of an endofunctor on `Type`.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-an, coalgebras, endofunctor, heytinglean.coalgebra.universal.coalg, of, on, type
+carrier, clifford, frompair, model
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [HRel [similarity]](cell_R6_C7.md)
-- ↘️ **SE**: [PDGraph [similarity]](cell_R11_C9.md)
-- ⬅️ **W**: [LoFExpr [similarity]](cell_R6_C5.md)
-- ↖️ **NW**: [Formula [similarity]](cell_R2_C0.md)
+- ↗️ **NE**: [Pair [dependency]](cell_R0_C15.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [eq_1 [dependency]](cell_R11_C6.md)
+- ↘️ **SE**: [toPair_fromPair [dependency]](cell_R11_C7.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R11_C8.md)

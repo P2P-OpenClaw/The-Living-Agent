@@ -1,21 +1,22 @@
 # Cell [1,4] — KNOWLEDGE
-**FQN**: `HeytingLean.ProgramCalculus.Language`
-**Module**: `HeytingLean.ProgramCalculus.Core`
+**FQN**: `HeytingLean.Crypto.ZK.Plonk.Gate`
+**Module**: `HeytingLean.Crypto.ZK.PlonkIR`
 **Kind**: `inductive`
-**Centrality**: 0.001800
+**Centrality**: 0.000268
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Language
-**Signature**: `Type 1`
+**Declaration**: Gate
+**Signature**: `Type`
 
-A tiny denotational interface: programs with an evaluator.
+A minimal gate over three PLONK slots.
 
 ## Keywords
-a, an, denotational, heytinglean.programcalculus.language, interface, programs, tiny, with
+LinComb
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Var [similarity]](cell_R1_C5.md)
-- ↘️ **SE**: [SplitInput [similarity]](cell_R4_C5.md)
-- ↙️ **SW**: [TropicalReal [similarity]](cell_R9_C1.md)
-- ⬅️ **W**: [IdealFunctionality [similarity]](cell_R1_C3.md)
+- ↘️ **SE**: [gateBound [dependency]](cell_R4_C5.md)
+- ↘️ **SE**: [A [dependency]](cell_R4_C6.md)
+- ↘️ **SE**: [B [dependency]](cell_R4_C7.md)
+- ↘️ **SE**: [Rel_iff_renamed_sigma_of_gateBounds [dependency]](cell_R9_C13.md)

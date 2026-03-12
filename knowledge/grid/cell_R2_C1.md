@@ -1,19 +1,21 @@
 # Cell [2,1] — KNOWLEDGE
-**FQN**: `HeytingLean.Probability.InfoTheory.FinDist`
-**Module**: `HeytingLean.Probability.InfoTheory.FinDist`
+**FQN**: `HeytingLean.LoF.IntNucleus`
+**Module**: `HeytingLean.LoF.IntReentry`
 **Kind**: `inductive`
-**Centrality**: 0.001391
+**Centrality**: 0.000216
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: FinDist
-**Signature**: `(α : Type u) → [Fintype α] → Type u`
+**Declaration**: IntNucleus
+**Signature**: `structure IntNucleus (α : Type u) [PrimaryAlgebra α] where act : α → α; monotone : Monotone act; idempotent : ∀ a, act (act a) = act a; apply_le : ∀ a, act a ≤ a; map_inf : ∀ a b, act (a ⊓ b) = act a ⊓ act b`
 
-No docstring available; inspect the Lean declaration directly.
+Interior-style nucleus on a primary algebra. R as logic-extraction (domain-specific interior): act plays the role of a stabilization operator that extracts the domain's self-consistent core.
 
 ## Keywords
-heytinglean.probability.infotheory.findist
+deflationary, idempotent, interior, meet-preserving, nucleus, stabilization
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [HilbertSubstrate [similarity]](cell_R2_C2.md)
-- ⬅️ **W**: [Formula [similarity]](cell_R2_C0.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ⬇️ **S**: [nucleus [dependency]](cell_R10_C1.md)
+- ↘️ **SE**: [intNucleus [dependency]](cell_R6_C10.md)

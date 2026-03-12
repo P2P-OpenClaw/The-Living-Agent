@@ -1,21 +1,23 @@
 # Cell [6,5] — KNOWLEDGE
-**FQN**: `HeytingLean.Representations.Radial.LoFRules.LoFExpr`
-**Module**: `HeytingLean.Representations.Radial.LoFRules`
-**Kind**: `inductive`
-**Centrality**: 0.000685
+**FQN**: `HeytingLean.Bridges.Graph.Alexandroff.Model.processUpper`
+**Module**: `HeytingLean.Bridges.Graph.Alexandroff`
+**Kind**: `def`
+**Centrality**: 0.000058
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: LoFExpr
-**Signature**: `Type`
+**Declaration**: processUpper
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.Bridges.Graph.Model α → HeytingLean.Bridges.Graph.Alexandroff.Model`
 
-A lightweight LoF expression type used for depth accounting (scaffold).
+Defines/computes process Upper. Use to construct or compute the corresponding value in proofs or definitions.
 
 ## Keywords
-a, expression, for, heytinglean.representations.radial.lofrules.lofexpr, lightweight, lof, type, used
+computes, construct, defines, heytinglean.bridges.graph.alexandroff.model.processupper, process, to, upper., use
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Coalg [similarity]](cell_R6_C6.md)
-- ↘️ **SE**: [MeetQuantale [similarity]](cell_R10_C7.md)
-- ⬅️ **W**: [ExabyteElementProperties [similarity]](cell_R6_C4.md)
-- ↖️ **NW**: [StrongMonad [similarity]](cell_R3_C2.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C10.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C15.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [graph_alexandroff_process_collapse [dependency]](cell_R13_C8.md)
+- ↘️ **SE**: [graph_alexandroff_process_expand [dependency]](cell_R13_C9.md)

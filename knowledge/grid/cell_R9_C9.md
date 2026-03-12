@@ -1,22 +1,21 @@
 # Cell [9,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.QKD.BB84.BB84Substrate`
-**Module**: `HeytingLean.Crypto.QKD.BB84.Tasks`
-**Kind**: `def`
-**Centrality**: 0.000544
+**FQN**: `HeytingLean.Crypto.ZK.Rename.satisfied_system`
+**Module**: `HeytingLean.Crypto.ZK.Rename`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: BB84Substrate
-**Signature**: `Type`
+**Declaration**: satisfied_system
+**Signature**: `∀ (σ : HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var) (a : HeytingLean.Crypto.ZK.Var → Rat) (sys : HeytingLean.Crypto.ZK.System), Iff (HeytingLean.Crypto.ZK.System.satisfied a (HeytingLean.Crypto.ZK.Rename.system σ sys)) (HeytingLean.Crypto.ZK.System.satisfied (fun v => a (σ v)) sys)`
 
-The substrate for BB84 tasks is the finite type of BB84 states.
+Proves satisfaction is preserved under renaming: `system sigma sys` is satisfied by `a` iff `sys` is satisfied by `a circ sigma`.
 
 ## Keywords
-bb84, for, heytinglean.crypto.qkd.bb84.bb84substrate, is, substrate, tasks, the
+sigma, system
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [E91Ctor [similarity]](cell_R9_C10.md)
-- ↘️ **SE**: [E91Substrate [similarity]](cell_R14_C10.md)
-- ↙️ **SW**: [Stage [similarity]](cell_R10_C4.md)
-- ⬅️ **W**: [Literal [similarity]](cell_R9_C8.md)
-- ↖️ **NW**: [Obj [similarity]](cell_R6_C3.md)
+- ↗️ **NE**: [System [dependency]](cell_R0_C11.md)
+- ↗️ **NE**: [system [dependency]](cell_R3_C14.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

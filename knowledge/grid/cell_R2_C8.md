@@ -1,20 +1,24 @@
 # Cell [2,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Form`
-**Module**: `HeytingLean.Crypto.Form`
-**Kind**: `inductive`
-**Centrality**: 0.001239
+**FQN**: `HeytingLean.Crypto.BoolLens.traceFrom`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `def`
+**Centrality**: 0.000095
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Form
-**Signature**: `Nat → Type`
+**Declaration**: traceFrom
+**Signature**: `{n : Nat} → HeytingLean.Crypto.BoolLens.Env n → HeytingLean.Crypto.Program n → HeytingLean.Crypto.BoolLens.Stack → HeytingLean.Crypto.BoolLens.Trace`
 
-Intermediate representation for multi-lens programs. Variables live in a finite context indexed by `Fin n`, giving us a finite semantic roster while keeping the connectives aligned with the Heyting core.
+Collect stack snapshots along an execution.
 
 ## Keywords
-and, bot, imp, or, top, var
+complexity, computability, formal methods, security, software engineering, theory of computation
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [VirtualDoubleCategory [similarity]](cell_R2_C7.md)
-- ↘️ **SE**: [ChannelGraph [similarity]](cell_R2_C9.md)
-- ⬅️ **W**: [VirtualDoubleCategory [similarity]](cell_R2_C7.md)
+- ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
+- ↗️ **NE**: [Env [dependency]](cell_R0_C9.md)
+- ↖️ **NW**: [Program [dependency]](cell_R1_C1.md)
+- ⬇️ **S**: [eq_1 [dependency]](cell_R8_C8.md)
+- ↘️ **SE**: [compileSteps_strong [dependency]](cell_R8_C10.md)
+- ↙️ **SW**: [traceFrom_cons [dependency]](cell_R7_C5.md)

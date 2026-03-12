@@ -1,19 +1,22 @@
 # Cell [10,12] — KNOWLEDGE
-**FQN**: `HeytingLean.ClosingTheLoop.Cat.SelectorObj`
-**Module**: `HeytingLean.ClosingTheLoop.Cat.Selector`
+**FQN**: `HeytingLean.Contracts.Examples.tensorPack`
+**Module**: `HeytingLean.Contracts.Examples`
 **Kind**: `def`
-**Centrality**: 0.000506
+**Centrality**: 0.000032
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: SelectorObj
-**Signature**: `{C : Type u} → [inst : CategoryTheory.Category C] → [inst_1 : CategoryTheory.CartesianMonoidalCategory C] → (B : C) → C → [CategoryTheory.Exponentiable B] → C`
+**Declaration**: tensorPack
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → optParam HeytingLean.Contracts.Examples.BridgeFlags HeytingLean.Contracts.Examples.BridgeFlags.default → HeytingLean.Contracts.Examples.BridgePack α R`
 
-The selector object `H^B` (internal hom / exponential).
+Select the tensor bridge based on feature flags.
 
 ## Keywords
-b, h, heytinglean.closingtheloop.cat.selectorobj, hom, internal, object, selector, the
+based, bridge, feature, heytinglean.contracts.examples.tensorpack, on, select, tensor, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Mode [similarity]](cell_R10_C13.md)
-- ⬅️ **W**: [VirtualChain [similarity]](cell_R10_C11.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [BridgePack [dependency]](cell_R5_C5.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R14_C11.md)
+- ↙️ **SW**: [tensor_pack_intensity_round_verified [dependency]](cell_R15_C8.md)

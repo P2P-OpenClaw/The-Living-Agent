@@ -1,19 +1,21 @@
 # Cell [7,6] — KNOWLEDGE
-**FQN**: `HeytingLean.Topos.LocSys.Loc`
-**Module**: `HeytingLean.Topos.LocSys.Grothendieck`
-**Kind**: `inductive`
-**Centrality**: 0.000630
+**FQN**: `HeytingLean.Crypto.ZK.Constraint.satisfied_ext`
+**Module**: `HeytingLean.Crypto.ZK.Support`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Loc
-**Signature**: `(K : Type uK) → [CommRing K] → Type (max (max (max (uB + 1) uK) (u_1 + 1)) (vB + 1))`
+**Declaration**: satisfied_ext
+**Signature**: `∀ {c : HeytingLean.Crypto.ZK.Constraint} {a a' : HeytingLean.Crypto.ZK.Var → Rat}, HeytingLean.Crypto.ZK.AgreesOn c.A.support a a' → HeytingLean.Crypto.ZK.AgreesOn c.B.support a a' → HeytingLean.Crypto.ZK.AgreesOn c.C.support a a' → Iff (HeytingLean.Crypto.ZK.Constraint.satisfied a c) (HeytingLean.Crypto.ZK.Constraint.satisfied a' c)`
 
-`Loc K` is a “Grothendieck-style” total category of `K`-linear local systems over varying 1-type bases (groupoids). Objects are pairs `(X, V)` with `X : Grpd` and `V : X ⥤ Coeff K`. Morphisms `(X,V) ⟶ (Y,W)` are pairs `(f : X ⥤ Y, φ : V ⟶ f*W)` where `f*` is pullback by precomposition.
+States satisfied ext. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-a, category, grothendieck-style, heytinglean.topos.locsys.loc, is, k, loc, total
+ext., goal, heytinglean.crypto.zk.constraint.satisfied_ext, satisfied, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Node [similarity]](cell_R7_C7.md)
-- ⬅️ **W**: [CertifiedLens [similarity]](cell_R7_C5.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [Constraint [dependency]](cell_R0_C3.md)
+- ↖️ **NW**: [AgreesOn [dependency]](cell_R2_C3.md)

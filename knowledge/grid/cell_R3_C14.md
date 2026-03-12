@@ -1,21 +1,22 @@
 # Cell [3,14] — KNOWLEDGE
-**FQN**: `HeytingLean.Crypto.Lattice.SISParams`
-**Module**: `HeytingLean.Crypto.Lattice.Problems`
-**Kind**: `inductive`
-**Centrality**: 0.000929
+**FQN**: `HeytingLean.Crypto.ZK.Rename.system`
+**Module**: `HeytingLean.Crypto.ZK.Rename`
+**Kind**: `def`
+**Centrality**: 0.000036
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: SISParams
-**Signature**: `Type`
+**Declaration**: system
+**Signature**: `(HeytingLean.Crypto.ZK.Var → HeytingLean.Crypto.ZK.Var) → HeytingLean.Crypto.ZK.System → HeytingLean.Crypto.ZK.System`
 
-SIS problem signature (statement-first).
+Rename variables in every constraint of a system via `σ`.
 
 ## Keywords
-heytinglean.crypto.lattice.sisparams, problem, signature, sis, statement-first
+constraints, map
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Bridge [similarity]](cell_R3_C15.md)
-- ↙️ **SW**: [LWEParams [similarity]](cell_R4_C8.md)
-- ⬅️ **W**: [LayoutAnnotation [similarity]](cell_R3_C13.md)
-- ↖️ **NW**: [MLWEParams [similarity]](cell_R0_C3.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↙️ **SW**: [native_iff_renamed_sigma_of_bounds [dependency]](cell_R7_C10.md)
+- ↙️ **SW**: [native_iff_renamed_sigma_of_gateBounds [dependency]](cell_R7_C11.md)
+- ↙️ **SW**: [satisfied_system [dependency]](cell_R9_C9.md)

@@ -1,20 +1,23 @@
 # Cell [1,14] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.Contracts.Model.Address`
-**Module**: `HeytingLean.Blockchain.Contracts.Model`
-**Kind**: `def`
-**Centrality**: 0.001493
+**FQN**: `HeytingLean.Bridges.Clifford.Projector.Model`
+**Module**: `HeytingLean.Bridges.Clifford.Projector`
+**Kind**: `inductive`
+**Centrality**: 0.000544
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: Address
-**Signature**: `Type`
+**Declaration**: Model
+**Signature**: `{"HeytingLean.LoF.PrimaryAlgebra \u03b1": "[]", "Mul \u03b2": "[]", "Star \u03b2": "[]", "\u03b1": "Type v", "\u03b2": "Type u"}`
 
-Abstract address type for the ERC20-style model.
+Clifford projector model couples the legacy bridge with a target projector carrier.
 
 ## Keywords
-address, blockchain, contract, erc20, smart_contract, token, token_standard, token_standard_implementation, token_standard_implementation_for_erc20, token_standard_implementation_for_erc20_contract
+Algebraic geometry, Algebraic structure, Clifford algebra, Linear algebra, Mathematical model, Mathematical structure, Projective geometry, Projector
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [ULevel [similarity]](cell_R1_C15.md)
-- ↙️ **SW**: [BB84Substrate [similarity]](cell_R9_C9.md)
-- ⬅️ **W**: [MLDSA204Params [similarity]](cell_R1_C13.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↙️ **SW**: [eq_1 [dependency]](cell_R11_C6.md)
+- ↙️ **SW**: [stageOccam_encode [dependency]](cell_R11_C9.md)
+- ↙️ **SW**: [projectorModel [dependency]](cell_R6_C2.md)
+- ↙️ **SW**: [fromPair [dependency]](cell_R6_C6.md)

@@ -1,20 +1,25 @@
 # Cell [4,11] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.MRSystems.MRCore`
-**Module**: `HeytingLean.LoF.MRSystems.Coalgebra`
+**FQN**: `HeytingLean.Contracts.Examples.BridgeSuite`
+**Module**: `HeytingLean.Contracts.Examples`
 **Kind**: `inductive`
-**Centrality**: 0.000824
+**Centrality**: 0.000284
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: MRCore
-**Signature**: `Type (max (u + 1) (v + 1))`
+**Declaration**: BridgeSuite
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.Reentry α → Type (u + 1)`
 
-Minimal Rosen-style (M,R) core data (no admissibility sets).
+Collection of bridge packs for the tensor, graph, and Clifford lenses.
 
 ## Keywords
-core, data, heytinglean.lof.mrsystems.mrcore, m, minimal, no, r, rosen-style
+bridge, collection, for, heytinglean.contracts.examples.bridgesuite, of, packs, tensor, the
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [PropertyId [similarity]](cell_R4_C12.md)
-- ⬅️ **W**: [Stmt [similarity]](cell_R4_C10.md)
-- ↖️ **NW**: [MRSystem [similarity]](cell_R0_C4.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [Reentry [dependency]](cell_R1_C8.md)
+- ⬇️ **S**: [bridge_graph_clifford_commute [dependency]](cell_R15_C11.md)
+- ↘️ **SE**: [bridge_tensor_clifford_commute [dependency]](cell_R15_C12.md)
+- ↙️ **SW**: [BridgeState [dependency]](cell_R10_C3.md)
+- ↙️ **SW**: [bridgeSuite [dependency]](cell_R10_C7.md)
+- ↙️ **SW**: [bridgeActWord [dependency]](cell_R14_C5.md)

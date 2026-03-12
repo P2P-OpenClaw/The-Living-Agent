@@ -1,20 +1,21 @@
 # Cell [7,4] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.LeanKernel.BinderInfo`
-**Module**: `HeytingLean.LoF.LeanKernel.Expression`
-**Kind**: `inductive`
-**Centrality**: 0.000634
+**FQN**: `HeytingLean.Crypto.BoolLens.exec_cons`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: BinderInfo
-**Signature**: `Type`
+**Declaration**: exec_cons
+**Signature**: `∀ {n : Nat} (ρ : HeytingLean.Crypto.BoolLens.Env n) (instr : HeytingLean.Crypto.Instr n) (prog : HeytingLean.Crypto.Program n) (stk : HeytingLean.Crypto.BoolLens.Stack), Eq (HeytingLean.Crypto.BoolLens.exec ρ (List.cons instr prog) stk) (HeytingLean.Crypto.BoolLens.exec ρ prog (HeytingLean.Crypto.BoolLens.step ρ instr stk))`
 
-Minimal binder info flags (modeled on Lean's `BinderInfo`).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-binder, flags, heytinglean.lof.leankernel.binderinfo, info, lean, minimal, modeled, on
+heytinglean.crypto.boollens.exec_cons
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [CertifiedLens [similarity]](cell_R7_C5.md)
-- ↘️ **SE**: [Literal [similarity]](cell_R9_C8.md)
-- ⬅️ **W**: [Modality [similarity]](cell_R7_C3.md)
+- ↗️ **NE**: [Instr [dependency]](cell_R0_C7.md)
+- ↗️ **NE**: [exec [dependency]](cell_R2_C12.md)
+- ↖️ **NW**: [Program [dependency]](cell_R1_C1.md)

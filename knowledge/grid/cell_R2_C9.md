@@ -1,19 +1,22 @@
 # Cell [2,9] — KNOWLEDGE
-**FQN**: `HeytingLean.Blockchain.PaymentChannels.ChannelGraph`
-**Module**: `HeytingLean.Blockchain.PaymentChannels.Graph`
-**Kind**: `inductive`
-**Centrality**: 0.001229
+**FQN**: `HeytingLean.Crypto.BoolLens.eval`
+**Module**: `HeytingLean.Crypto.BoolLens`
+**Kind**: `def`
+**Centrality**: 0.000091
+**Dependency Depth**: 1
 
 ## Topic
-**Declaration**: ChannelGraph
-**Signature**: `(V : Type u) → [DecidableEq V] → Type u`
+**Declaration**: eval
+**Signature**: `{n : Nat} → HeytingLean.Crypto.Form n → HeytingLean.Crypto.BoolLens.Env n → Bool`
 
-No docstring available; inspect the Lean declaration directly.
+Interpret a `Form` in the two-valued Heyting algebra (`Bool`).
 
 ## Keywords
-heytinglean.blockchain.paymentchannels.channelgraph
+Bool, Boolean algebra, Form, Heyting algebra, Interpretation, Two-valued logic
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [CatTower [similarity]](cell_R2_C10.md)
-- ⬅️ **W**: [Form [similarity]](cell_R2_C8.md)
+- ⬆️ **N**: [Env [dependency]](cell_R0_C9.md)
+- ↖️ **NW**: [Form [dependency]](cell_R0_C2.md)
+- ↙️ **SW**: [exec_compile_aux [dependency]](cell_R7_C3.md)
+- ↙️ **SW**: [compile_output_eval [dependency]](cell_R9_C8.md)

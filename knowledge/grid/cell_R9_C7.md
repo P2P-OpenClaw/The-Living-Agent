@@ -1,21 +1,21 @@
 # Cell [9,7] — KNOWLEDGE
-**FQN**: `HeytingLean.Compiler.TensorLogic.Atom`
-**Module**: `HeytingLean.Compiler.TensorLogic.AST`
-**Kind**: `inductive`
-**Centrality**: 0.000550
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.matches_fresh_preserve`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: Atom
-**Signature**: `Type`
+**Declaration**: matches_fresh_preserve
+**Signature**: `∀ {builder : HeytingLean.Crypto.ZK.R1CSBool.Builder} {stack : HeytingLean.Crypto.BoolLens.Stack} {vars : List HeytingLean.Crypto.ZK.Var} {value : Rat}, HeytingLean.Crypto.ZK.R1CSBool.Matches builder stack vars → HeytingLean.Crypto.ZK.R1CSBool.Bounded builder vars → HeytingLean.Crypto.ZK.R1CSBool.Matches (builder.fresh value).fst stack vars`
 
-A ground atom (fact instance).
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, atom, fact, ground, heytinglean.compiler.tensorlogic.atom, instance
+cryptography, zero-knowledge proofs
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Instance [similarity]](cell_R7_C11.md)
-- ➡️ **E**: [Literal [similarity]](cell_R9_C8.md)
-- ↘️ **SE**: [AtomPat [similarity]](cell_R12_C11.md)
-- ⬅️ **W**: [Seed [similarity]](cell_R9_C6.md)
+- ↗️ **NE**: [Stack [dependency]](cell_R0_C12.md)
+- ↗️ **NE**: [Bounded [dependency]](cell_R2_C15.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)

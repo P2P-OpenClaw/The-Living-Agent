@@ -1,22 +1,21 @@
 # Cell [1,6] — KNOWLEDGE
-**FQN**: `HeytingLean.Constructor.CT.Task`
-**Module**: `HeytingLean.Constructor.CT.Core`
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.Compiled`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
 **Kind**: `inductive`
-**Centrality**: 0.001738
+**Centrality**: 0.000144
+**Dependency Depth**: 0
 
 ## Topic
-**Declaration**: Task
-**Signature**: `Type u → Type u`
+**Declaration**: Compiled
+**Signature**: `Type`
 
-A CT task over a substrate `σ`: a finite collection of input/output attribute pairs. Semantics are provided by substrate‑specific models.
+Result of compiling a Boolean form to R1CS.
 
 ## Keywords
-a, ct, heytinglean.constructor.ct.task, over, substrate, task
+a, boolean, compiling, form, heytinglean.crypto.zk.r1csbool.compiled, of, result, to
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [TaskCT [similarity]](cell_R1_C12.md)
-- ↘️ **SE**: [CompPresheaf [similarity]](cell_R15_C14.md)
-- ⬇️ **S**: [Expr [similarity]](cell_R1_C7.md)
-- ↙️ **SW**: [Attribute [similarity]](cell_R8_C0.md)
-- ⬅️ **W**: [Var [similarity]](cell_R1_C5.md)
+- ↘️ **SE**: [assignment [dependency]](cell_R4_C9.md)
+- ↘️ **SE**: [eq_1 [dependency]](cell_R8_C8.md)
+- ↙️ **SW**: [compile [dependency]](cell_R3_C4.md)

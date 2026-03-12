@@ -1,19 +1,22 @@
 # Cell [12,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Constructor.CT.Examples.QubitCtor`
-**Module**: `HeytingLean.Constructor.CT.Examples.QubitLike`
-**Kind**: `inductive`
-**Centrality**: 0.000468
+**FQN**: `HeytingLean.Logic.Dialectic.oscillationOmega.eq_1`
+**Module**: `HeytingLean.Logic.Dialectic`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: QubitCtor
-**Signature**: `Type`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α), Eq (HeytingLean.Logic.Dialectic.oscillationOmega R) (HeytingLean.Logic.Dialectic.synthOmega R R.process R.counterProcess)`
 
-Constructors for the qubit-like task model: just two primitive constructors and closure under serial/parallel composition.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-constructors, for, heytinglean.constructor.ct.examples.qubitctor, just, model, qubit-like, task, the
+heytinglean.logic.dialectic.oscillationomega.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Side [similarity]](cell_R12_C9.md)
-- ⬅️ **W**: [W [similarity]](cell_R12_C7.md)
+- ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
+- ⬆️ **N**: [oscillationOmega [dependency]](cell_R6_C8.md)
+- ↗️ **NE**: [synthOmega [dependency]](cell_R5_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

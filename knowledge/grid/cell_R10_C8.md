@@ -1,21 +1,24 @@
 # Cell [10,8] — KNOWLEDGE
-**FQN**: `HeytingLean.Calculus.CalculusNucleus`
-**Module**: `HeytingLean.Calculus.CalculusLens`
-**Kind**: `inductive`
-**Centrality**: 0.000514
+**FQN**: `HeytingLean.Contracts.Examples.identity`
+**Module**: `HeytingLean.Contracts.Examples`
+**Kind**: `def`
+**Centrality**: 0.000041
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: CalculusNucleus
-**Signature**: `(α : Type u) → [CompleteLattice α] → Type u`
+**Declaration**: identity
+**Signature**: `(α : Type u) → [inst : HeytingLean.LoF.PrimaryAlgebra α] → (R : HeytingLean.LoF.Reentry α) → HeytingLean.Contracts.RoundTrip R α`
 
-Minimal nucleus-style record used by the calculus lens.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-by, calculus, heytinglean.calculus.calculusnucleus, minimal, nucleus-style, record, the, used
+algebraic, assistants, category, function, geometry, identity, intuitionistic, logic, proof, theory, topos, type
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [PreGame [similarity]](cell_R0_C13.md)
-- ➡️ **E**: [CellularSheaf [similarity]](cell_R10_C9.md)
-- ↙️ **SW**: [Basis [similarity]](cell_R13_C1.md)
-- ⬅️ **W**: [MeetQuantale [similarity]](cell_R10_C7.md)
+- ⬆️ **N**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [RoundTrip [dependency]](cell_R4_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↘️ **SE**: [identity_shadow [dependency]](cell_R14_C10.md)
+- ↘️ **SE**: [identity_round [dependency]](cell_R14_C9.md)
+- ↙️ **SW**: [identity_round_verified [dependency]](cell_R15_C5.md)

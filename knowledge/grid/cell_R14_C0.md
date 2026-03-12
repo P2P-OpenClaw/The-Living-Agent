@@ -1,20 +1,21 @@
 # Cell [14,0] — KNOWLEDGE
-**FQN**: `HeytingLean.Chem.PeriodicTable.Subshell`
-**Module**: `HeytingLean.Chem.PeriodicTable.ElectronConfiguration`
-**Kind**: `inductive`
-**Centrality**: 0.000434
+**FQN**: `HeytingLean.Visual.Clifford.Diagram.comp.inj`
+**Module**: `HeytingLean.Visual.OperatorDiagram`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: Subshell
-**Signature**: `Type`
+**Declaration**: inj
+**Signature**: `∀ {α : Type u} {inst : HeytingLean.LoF.PrimaryAlgebra α} {M : HeytingLean.Bridges.Clifford.Model α} {f g f_1 g_1 : HeytingLean.Visual.Clifford.Diagram M}, Eq (f.comp g) (f_1.comp g_1) → And (Eq f f_1) (Eq g g_1)`
 
-A subshell label `(n, l)` with principal quantum number `n` and orbital label `l`.
+States inj. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-a, heytinglean.chem.periodictable.subshell, l, label, n, principal, subshell, with
+goal, heytinglean.visual.clifford.diagram.comp.inj, inj., matches, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [GlobularSet [similarity]](cell_R4_C4.md)
-- ➡️ **E**: [Generator [similarity]](cell_R13_C15.md)
-- ↘️ **SE**: [System [similarity]](cell_R14_C1.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C9.md)
+- ↗️ **NE**: [Diagram [dependency]](cell_R4_C15.md)

@@ -1,20 +1,21 @@
 # Cell [11,7] — KNOWLEDGE
-**FQN**: `HeytingLean.Computational.Homology.F2Matrix`
-**Module**: `HeytingLean.Computational.Homology.F2Matrix`
-**Kind**: `inductive`
-**Centrality**: 0.000487
+**FQN**: `HeytingLean.Bridges.Clifford.Projector.Model.Carrier.toPair_fromPair`
+**Module**: `HeytingLean.Bridges.Clifford.Projector`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 3
 
 ## Topic
-**Declaration**: F2Matrix
-**Signature**: `Type`
+**Declaration**: toPair_fromPair
+**Signature**: `∀ {α : Type v} [inst : HeytingLean.LoF.PrimaryAlgebra α] {β : Type u} [inst_1 : Mul β] [inst_2 : Star β] {M : HeytingLean.Bridges.Clifford.Projector.Model} (p : HeytingLean.Bridges.Clifford.Pair α), Eq (HeytingLean.Bridges.Clifford.Projector.Model.Carrier.fromPair p).toPair p`
 
-A small, executable matrix over `F₂`, represented row-major as `Bool`s.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-a, executable, f, heytinglean.computational.homology.f2matrix, matrix, over, represented, small
+heytinglean.bridges.clifford.projector.model.carrier.topair_frompair
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [LaurentPoly [similarity]](cell_R9_C11.md)
-- ➡️ **E**: [Crossing [similarity]](cell_R11_C8.md)
-- ⬅️ **W**: [ModMatrices [similarity]](cell_R11_C6.md)
+- ↗️ **NE**: [Pair [dependency]](cell_R0_C15.md)
+- ↗️ **NE**: [Model [dependency]](cell_R1_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)

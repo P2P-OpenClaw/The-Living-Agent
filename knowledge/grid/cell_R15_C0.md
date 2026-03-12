@@ -1,20 +1,22 @@
 # Cell [15,0] — SYNTHESIS
-**FQN**: `HeytingLean.Chem.PeriodicTable.atomicNumber`
-**Module**: `HeytingLean.Chem.PeriodicTable.CIAAW2024`
-**Kind**: `def`
-**Centrality**: 0.001208
+**FQN**: `HeytingLean.Contracts.stageOccam_spec`
+**Module**: `HeytingLean.Contracts.RoundTrip`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: atomicNumber
-**Signature**: `HeytingLean.Chem.PeriodicTable.Element → Nat`
+**Declaration**: stageOccam_spec
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) {β : Type v} (C : HeytingLean.Contracts.RoundTrip R β) (b : β), Eq (HeytingLean.Contracts.interiorized R C (HeytingLean.Contracts.stageOccam R C b)) (HeytingLean.Epistemic.occam R (C.decode b).val)`
 
 No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-heytinglean.chem.periodictable.atomicnumber
+heytinglean.contracts.stageoccam_spec
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [Element [dependency]](cell_R0_C2.md)
-- ➡️ **E**: [LSteps [similarity]](cell_R14_C15.md)
-- ↘️ **SE**: [name [similarity]](cell_R15_C1.md)
+- ⬆️ **N**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↗️ **NE**: [interiorized [dependency]](cell_R10_C6.md)
+- ↗️ **NE**: [Reentry [dependency]](cell_R1_C8.md)
+- ↗️ **NE**: [occam [dependency]](cell_R5_C13.md)

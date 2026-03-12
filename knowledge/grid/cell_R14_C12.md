@@ -1,20 +1,21 @@
 # Cell [14,12] — KNOWLEDGE
-**FQN**: `HeytingLean.LoF.Combinators.Topos.ClosedSieve`
-**Module**: `HeytingLean.LoF.Combinators.Topos.ClosedSievesHeyting`
-**Kind**: `def`
-**Centrality**: 0.000422
+**FQN**: `HeytingLean.Contracts.interiorized.eq_1`
+**Module**: `HeytingLean.Bridges.Tensor`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 4
 
 ## Topic
-**Declaration**: ClosedSieve
-**Signature**: `{C : Type u} → [inst : CategoryTheory.Category C] → CategoryTheory.GrothendieckTopology C → C → Type (max u v)`
+**Declaration**: eq_1
+**Signature**: `∀ {α : Type u} [inst : HeytingLean.LoF.PrimaryAlgebra α] (R : HeytingLean.LoF.Reentry α) {β : Type v} (C : HeytingLean.Contracts.RoundTrip R β) (b : β), Eq (HeytingLean.Contracts.interiorized R C b) (Nucleus.instFunLike.coe R.nucleus (C.decode b).val)`
 
-The type of `J`-closed sieves on `X`, presented as the range of the sieve nucleus.
+No docstring available; inspect the Lean declaration directly.
 
 ## Keywords
-closed, heytinglean.lof.combinators.topos.closedsieve, j, of, on, sieves, the, type
+heytinglean.contracts.interiorized.eq_1
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ➡️ **E**: [Reentry [similarity]](cell_R14_C13.md)
-- ⬅️ **W**: [LocalOperator [similarity]](cell_R14_C11.md)
-- ↖️ **NW**: [BB84Substrate [similarity]](cell_R9_C9.md)
+- ⬆️ **N**: [RoundTrip [dependency]](cell_R4_C12.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [interiorized [dependency]](cell_R10_C6.md)

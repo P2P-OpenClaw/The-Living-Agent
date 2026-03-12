@@ -1,21 +1,20 @@
 # Cell [9,5] — KNOWLEDGE
-**FQN**: `HeytingLean.Quantum.KrausChannel`
-**Module**: `HeytingLean.Quantum.QChannel`
-**Kind**: `inductive`
-**Centrality**: 0.000550
+**FQN**: `HeytingLean.Crypto.ZK.R1CSBool.linhead_or.eq_1`
+**Module**: `HeytingLean.Crypto.ZK.R1CSBool`
+**Kind**: `theorem`
+**Centrality**: 0.000023
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: KrausChannel
-**Signature**: `Nat → Nat → Type`
+**Declaration**: eq_1
+**Signature**: `∀ (vz vx vy vmul : HeytingLean.Crypto.ZK.Var), Eq (HeytingLean.Crypto.ZK.R1CSBool.linhead_or vz vx vy vmul) { const := 0, terms := List.cons { fst := vz, snd := 1 } (List.cons { fst := vmul, snd := 1 } (List.cons { fst := vx, snd := -1 } (List.cons { fst := vy, snd := -1 } List.nil))) }`
 
-Finite Kraus channel represented by an explicit list of Kraus operators.
+States eq 1. Use when your goal matches this shape or to rewrite subterms using this result.
 
 ## Keywords
-isometryMatrix, ops, tracePreserving
+1., eq, goal, heytinglean.crypto.zk.r1csbool.linhead_or.eq_1, states, use, when, your
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↗️ **NE**: [RecoveryView [similarity]](cell_R2_C11.md)
-- ➡️ **E**: [Seed [similarity]](cell_R9_C6.md)
-- ↙️ **SW**: [System [similarity]](cell_R14_C1.md)
-- ⬅️ **W**: [ChainView [similarity]](cell_R9_C4.md)
+- ↖️ **NW**: [Var [dependency]](cell_R0_C1.md)
+- ↖️ **NW**: [linhead_or [dependency]](cell_R3_C2.md)

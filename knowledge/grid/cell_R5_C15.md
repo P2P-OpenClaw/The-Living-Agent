@@ -1,19 +1,22 @@
 # Cell [5,15] — KNOWLEDGE
-**FQN**: `HeytingLean.Process.ValTy`
-**Module**: `HeytingLean.Process.Syntax`
+**FQN**: `HeytingLean.Contracts.IntRoundTrip`
+**Module**: `HeytingLean.Contracts.RoundTripInt`
 **Kind**: `inductive`
-**Centrality**: 0.000714
+**Centrality**: 0.000102
+**Dependency Depth**: 2
 
 ## Topic
-**Declaration**: ValTy
-**Signature**: `Type`
+**Declaration**: IntRoundTrip
+**Signature**: `{α : Type u} → [inst : HeytingLean.LoF.PrimaryAlgebra α] → HeytingLean.LoF.IntReentry α → Type v → Type (max u v)`
 
-No docstring available; inspect the Lean declaration directly.
+A round-trip contract for an interior nucleus core.
 
 ## Keywords
-heytinglean.process.valty
+a, an, contract, for, heytinglean.contracts.introundtrip, interior, nucleus, round-trip
 
 ---
 ## Navigation (real dependency / similarity edges)
-- ↙️ **SW**: [HaltSys [similarity]](cell_R6_C0.md)
-- ⬅️ **W**: [VChain [similarity]](cell_R5_C14.md)
+- ↖️ **NW**: [PrimaryAlgebra [dependency]](cell_R0_C0.md)
+- ↖️ **NW**: [IntReentry [dependency]](cell_R1_C13.md)
+- ↙️ **SW**: [interiorizedInt [dependency]](cell_R10_C13.md)
+- ↙️ **SW**: [interiorizedInt_id [dependency]](cell_R14_C13.md)
