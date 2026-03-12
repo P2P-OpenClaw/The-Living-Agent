@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -79,14 +80,15 @@ def agenthalo_status(nucleusdb_root: Path) -> dict:
 def publish_via_agenthalo(
     *,
     nucleusdb_root: Path,
+    title: str,
+    paper_text: str,
     dry_run: bool,
     live: bool,
 ) -> dict:
+    with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tmp:
+        tmp.write(paper_text)
+        temp_path = Path(tmp.name)
     status = agenthalo_status(nucleusdb_root)
-    if status["returncode"] != 0:
-        return {"status": "pending_publication", "surface": "agenthalo-cli", "status_check": status}
-    if dry_run or not live:
-        return {"status": "dry_run", "surface": "agenthalo-cli", "status_check": status}
     cmd = [
         "cargo",
         "run",
@@ -97,13 +99,58 @@ def publish_via_agenthalo(
         "--",
         "p2pclaw",
         "bridge",
-        "run-once",
+        "publish-paper",
+        "--title",
+        title,
+        "--content-file",
+        str(temp_path),
     ]
+    if live and not dry_run:
+        cmd.append("--live")
     proc = run(cmd, cwd=nucleusdb_root, check=False)
+    temp_path.unlink(missing_ok=True)
+    parsed = None
+    if proc.stdout.strip():
+        try:
+            parsed = json.loads(proc.stdout)
+        except json.JSONDecodeError:
+            parsed = None
+    if status["returncode"] != 0:
+        return {
+            "status": "pending_publication",
+            "surface": "agenthalo-bridge",
+            "status_check": status,
+            "publish_command": cmd,
+            "publish_returncode": proc.returncode,
+            "publish_stdout": proc.stdout.strip(),
+            "publish_stderr": proc.stderr.strip(),
+        }
+    bridge_result = ((parsed or {}).get("result")) if isinstance(parsed, dict) else None
+    verification = (bridge_result or {}).get("verification") if isinstance(bridge_result, dict) else None
+    if verification and not verification.get("verified", False):
+        return {
+            "status": "rejected",
+            "surface": "agenthalo-bridge",
+            "status_check": status,
+            "bridge_response": parsed,
+        }
+    if dry_run or not live:
+        return {
+            "status": "dry_run",
+            "surface": "agenthalo-bridge",
+            "status_check": status,
+            "bridge_response": parsed,
+        }
+    publish_result = (bridge_result or {}).get("publish_result") if isinstance(bridge_result, dict) else None
     return {
-        "status": "published" if proc.returncode == 0 else "pending_publication",
-        "surface": "agenthalo-cli",
+        "status": (
+            publish_result.get("status")
+            if isinstance(publish_result, dict) and publish_result.get("status")
+            else ("published" if proc.returncode == 0 else "pending_publication")
+        ),
+        "surface": "agenthalo-bridge",
         "status_check": status,
+        "bridge_response": parsed,
         "publish_command": cmd,
         "publish_returncode": proc.returncode,
         "publish_stdout": proc.stdout.strip(),
@@ -216,13 +263,15 @@ def main() -> int:
         else:
             print(payload)
         return 0
-    publish = publish_via_agenthalo(
-        nucleusdb_root=Path(args.nucleusdb_root),
-        dry_run=args.dry_run,
-        live=args.live,
-    )
     accepted = bool(report["composite"]["passed"])
     if accepted:
+        publish = publish_via_agenthalo(
+            nucleusdb_root=Path(args.nucleusdb_root),
+            title=title_line,
+            paper_text=paper_text,
+            dry_run=args.dry_run,
+            live=args.live,
+        )
         stored_path = store_result_paper(
             living_agent_root,
             cycle=args.cycle,

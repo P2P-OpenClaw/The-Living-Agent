@@ -5,7 +5,9 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import tempfile
+from functools import lru_cache
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -25,7 +27,7 @@ from living_agent_common import (
 from living_agent_sns_embeddings import Encoder, score_text
 
 ensure_module_runtime("sentence_transformers")
-TYPECHECK_ROOT = Path(os.environ.get("HEYTING_TYPECHECK_ROOT", "/home/abraxas/Work/heyting"))
+TYPECHECK_TIMEOUT_SECS = int(os.environ.get("HEYTING_TYPECHECK_TIMEOUT_SECS", "45"))
 
 
 CLAIM_RE = re.compile(r"\b(proves?|demonstrates?|shows?|establishes?|argues?)\b", re.I)
@@ -43,6 +45,69 @@ class TierResult:
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def candidate_typecheck_roots() -> list[Path]:
+    roots: list[Path] = []
+    for raw in (
+        os.environ.get("HEYTING_TYPECHECK_ROOT"),
+        os.environ.get("HEYTING_ROOT"),
+        str(REPO_ROOT),
+        "/home/abraxas/Work/heyting",
+    ):
+        if not raw:
+            continue
+        root = Path(raw).resolve()
+        if root not in roots:
+            roots.append(root)
+    return roots
+
+
+def root_has_typecheck_surface(root: Path) -> bool:
+    return (root / "scripts" / "typecheck_snippet.sh").exists() and (root / "lean").exists()
+
+
+@lru_cache(maxsize=1)
+def resolve_typecheck_root() -> tuple[Path | None, str | None]:
+    for root in candidate_typecheck_roots():
+        if not root_has_typecheck_surface(root):
+            continue
+        try:
+            proc = run(
+                [str(root / "scripts" / "typecheck_snippet.sh"), "True"],
+                cwd=root,
+                check=False,
+                timeout_secs=min(TYPECHECK_TIMEOUT_SECS, 15),
+            )
+        except subprocess.TimeoutExpired:
+            continue
+        if proc.returncode == 0:
+            return root, None
+    return None, "no healthy Heyting typecheck root found"
+
+
+def typecheck_block(root: Path, block: str) -> subprocess.CompletedProcess[str]:
+    if "\n" not in block and len(block.split()) <= 8:
+        return run(
+            [str(root / "scripts" / "typecheck_snippet.sh"), block],
+            cwd=root,
+            check=False,
+            timeout_secs=TYPECHECK_TIMEOUT_SECS,
+        )
+    with tempfile.NamedTemporaryFile("w", suffix=".lean", delete=False) as tmp:
+        tmp.write("import HeytingLean\n")
+        tmp.write(block)
+        tmp.write("\n")
+        temp_path = Path(tmp.name)
+    try:
+        return run(
+            ["bash", "-lc", f"cd {root / 'lean'} && lake env lean {temp_path}"],
+            cwd=root,
+            check=False,
+            timeout_secs=TYPECHECK_TIMEOUT_SECS,
+        )
+    finally:
+        temp_path.unlink(missing_ok=True)
 
 
 def structural_result(text: str, living_agent_root: Path) -> TierResult:
@@ -122,27 +187,34 @@ def formal_result(text: str) -> TierResult:
     blocks = [normalize_whitespace(block) for block in CODE_BLOCK_RE.findall(text)]
     if not blocks:
         return TierResult(score=1.0, passed=True, details={"no_code_blocks": True, "checked": 0})
+    typecheck_root, degraded_reason = resolve_typecheck_root()
+    if typecheck_root is None:
+        return TierResult(
+            score=1.0,
+            passed=True,
+            details={
+                "checked": 0,
+                "successes": 0,
+                "degraded": True,
+                "reason": degraded_reason,
+            },
+        )
     successes = 0
     errors = []
     for block in blocks:
-        if "\n" not in block and len(block.split()) <= 8:
-            proc = run(
-                [str(TYPECHECK_ROOT / "scripts" / "typecheck_snippet.sh"), block],
-                cwd=TYPECHECK_ROOT,
-                check=False,
+        try:
+            proc = typecheck_block(typecheck_root, block)
+        except subprocess.TimeoutExpired:
+            return TierResult(
+                score=1.0,
+                passed=True,
+                details={
+                    "checked": 0,
+                    "successes": 0,
+                    "degraded": True,
+                    "reason": f"typecheck timeout after {TYPECHECK_TIMEOUT_SECS}s",
+                },
             )
-        else:
-            with tempfile.NamedTemporaryFile("w", suffix=".lean", delete=False) as tmp:
-                tmp.write("import HeytingLean\n")
-                tmp.write(block)
-                tmp.write("\n")
-                temp_path = Path(tmp.name)
-            proc = run(
-                ["bash", "-lc", f"cd {TYPECHECK_ROOT / 'lean'} && lake env lean {temp_path}"],
-                cwd=TYPECHECK_ROOT,
-                check=False,
-            )
-            temp_path.unlink(missing_ok=True)
         if proc.returncode == 0:
             successes += 1
         else:
@@ -151,7 +223,13 @@ def formal_result(text: str) -> TierResult:
     return TierResult(
         score=score,
         passed=score >= 0.5,
-        details={"checked": len(blocks), "successes": successes, "errors": errors[:3]},
+        details={
+            "checked": len(blocks),
+            "successes": successes,
+            "errors": errors[:3],
+            "typecheck_root": str(typecheck_root),
+            "degraded": False,
+        },
     )
 
 

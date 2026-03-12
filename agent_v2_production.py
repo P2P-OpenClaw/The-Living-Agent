@@ -54,8 +54,14 @@ def estimate_tokens(text):
 
 
 def run_heyting_json(script_name, args):
+    upstream_script_path = os.path.join(HEYTING_ROOT, "scripts", script_name)
     local_script_path = os.path.join(LOCAL_BRIDGE_DIR, script_name)
-    script_path = local_script_path if os.path.exists(local_script_path) else os.path.join(HEYTING_ROOT, "scripts", script_name)
+    if os.path.exists(upstream_script_path):
+        script_path = upstream_script_path
+    elif os.path.exists(local_script_path):
+        script_path = local_script_path
+    else:
+        raise RuntimeError(f"missing bridge script: {script_name}")
     cmd = [HEYTING_PYTHON, script_path] + args
     env = os.environ.copy()
     env["HEYTING_ROOT"] = HEYTING_ROOT

@@ -89,7 +89,9 @@ def run(
     *,
     cwd: Path | None = None,
     input_text: str | None = None,
+    env: dict[str, str] | None = None,
     check: bool = True,
+    timeout_secs: int | None = None,
 ) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         argv,
@@ -97,7 +99,9 @@ def run(
         input=input_text,
         text=True,
         capture_output=True,
+        env=env,
         check=check,
+        timeout=timeout_secs,
     )
 
 
